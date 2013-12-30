@@ -1,0 +1,69 @@
+/*
+ * cms.css
+ */
+
+/*
+ * GENERAL
+ */
+body { padding-top:60px; background-color:#B6B6B6; }
+a,
+a:hover,
+a:focus   { color:#002F5D; }
+a:active,
+a:visited { color:#002F5D; }
+
+/*
+ * MENU PRINCIPAL
+ */
+.menu-principal { background-color:#4D4D4D; }
+
+/* NOMBRE DEL SITIO */
+.menu-principal a.navbar-brand,
+.menu-principal a.navbar-brand:active,
+.menu-principal a.navbar-brand:visited   { color:white; }
+.menu-principal a.navbar-brand:hover,
+.menu-principal a.navbar-brand:focus     { background-color:#071B2E; color:#FFB700; }
+
+/* OPCIONES */
+.menu-principal .navbar-nav li a,
+.menu-principal .navbar-nav li a:active,
+.menu-principal .navbar-nav li a:visited { color:#FFFFFF; }
+.menu-principal .navbar-nav li a:hover,
+.menu-principal .navbar-nav li a:focus   { background-color:#071B2E; color:#FFB700; }
+
+/*
+ * CONTENIDO
+ */
+.contenido            { background-color:white; color:black; }
+.contenido blockquote { border-left: 5px solid #002F5D; }
+
+/* EN EL JUMBOTRON PONER LA IMAGEN DE RUBY */
+.jumbotron    { background-color:#002F5D; background-image:url('../imagenes/pendulo.png'); background-repeat:no-repeat; background-position:left center; margin-top:6px; }
+.jumbotron h2,
+.jumbotron p  { padding-left:220px; color:white; }
+
+/* BOTONES  */
+.publicacion-completa,
+.publicacion-completa:active,
+.publicacion-completa:visited { background-color:#002F5D; border-color:#002F5D; color:white; }
+.publicacion-completa:hover,
+.publicacion-completa:focus   { background-color:#071B2E; border-color:#071B2E; color:#FFB700; }
+
+/* SCREENSHOTS */
+.screenshots img { padding:10px; }
+
+/* PAGINACION */
+.pagination > .active > a,
+.pagination > .active > a:hover,
+.pagination > .active > a:focus { background-color:gray; border-color:gray; color:white; }
+
+/*
+ * MENU SECUNDARIO
+ */
+.panel-menu-secundario { background-color:#4D4D4D; border-color:#4D4D4D; padding:0; }
+.menu-secundario       { background-color:#4D4D4D; border-color:#4D4D4D; line-height:0.5; font-size:9pt; padding:4px; }
+
+/*
+ * PIE
+ */
+footer { background-color:#4D4D4D; color:#BFBFBF; }
