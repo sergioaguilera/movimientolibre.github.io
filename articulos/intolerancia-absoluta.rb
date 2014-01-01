@@ -1,4 +1,4 @@
-
+# encoding: utf-8
 def publicacion(dir)
 
     p             = Publicacion.new
@@ -10,7 +10,7 @@ def publicacion(dir)
     p.autor       = 'rosy'
     p.categorias  = ['Política']
     p.contenido   = <<FIN_CONTENIDO
-!intolerancia-absoluta/in_an_absolut_world-mexico-small.jpg!:intolerancia-absoluta/in_an_absolut_world-mexico.jpg
+!<intolerancia-absoluta/in_an_absolut_world-mexico-small.jpg(Intolerancia absoluta)!:intolerancia-absoluta/in_an_absolut_world-mexico.jpg
 
 El vodka "Absolut":http://www.absolut.com tiene una de las más ingeniosas campañas publicitarias, de hecho, se ha vuelto todo un icono del medio publicitario. Podríamos asegurar que no existe un consumidor que no haya visto algún anuncio de "su conocida botella":http://absolutad.com/absolut_gallery/singles/.
 

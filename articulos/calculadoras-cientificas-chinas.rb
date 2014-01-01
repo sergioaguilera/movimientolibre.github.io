@@ -1,4 +1,4 @@
-
+# encoding: utf-8
 def publicacion(dir)
 
     p             = Publicacion.new
@@ -9,15 +9,17 @@ def publicacion(dir)
     p.fecha       = "2007-07-28 23:50"
     p.categorias  = ['Vida cotidiana']
     p.contenido   = <<FIN_CONTENIDO
+!<calculadoras-cientificas-chinas/monton-1-small.jpg(Monton de calculadoras cientificas chinas)!:calculadoras-cientificas-chinas/monton-1.jpg
+
 Es bien sabido que la industria china ha estado creciendo a pasos agigantados en los últimos años. Una de las estrategias para lograrlo es la fabricación de los productos exitosos, similares a los originales, pero a un precio muy bajo. Nos hemos encontrado con copias de casi todo, una de ellas salió en televisión abierta y fué muy comentada: réplicas de la Virgen de Guadalupe con razgos orientales.
 
 Su servidor quedó sorprendido al encontrar en "Waldos":http://www.waldos.com/ (establecimento que dice vender todo a un sólo precio) un producto de particular aprecio, a un costo y en tal cantidad que nunca me la hubiera imaginado: *calculadoras científicas* _sin marca_ a *$11.50* más I.V.A.
 
-!calculadoras-cientificas-chinas/monton-1-small.jpg!:calculadoras-cientificas-chinas/monton-1.jpg !calculadoras-cientificas-chinas/monton-2-small.jpg!:calculadoras-cientificas-chinas/monton-2.jpg !calculadoras-cientificas-chinas/frente-small.jpg!:calculadoras-cientificas-chinas/frente.jpg !calculadoras-cientificas-chinas/atras-small.jpg!:calculadoras-cientificas-chinas/atras.jpg
+<!-- break -->
+
+!calculadoras-cientificas-chinas/monton-2-small.jpg!:calculadoras-cientificas-chinas/monton-2.jpg !calculadoras-cientificas-chinas/frente-small.jpg!:calculadoras-cientificas-chinas/frente.jpg !calculadoras-cientificas-chinas/atras-small.jpg!:calculadoras-cientificas-chinas/atras.jpg
 
 ¡Que barbaridad! ¡A lo que han llegado! Pues no me quedé con las ganas, y nomás por curiosidad me compré una y un par de pilas "AA" (que por cierto, también costaron $11.50 más I.V.A. en la misma tienda).
-
-<!-- break -->
 
 Debo de aclarar el por qué de mi aprecio por dicho aparato. Mis estudios de licenciatura son de Ingeniero Mecánico Administrador, y fui parte de una generación que ya no usaba la *regla de cálculo* (mis hermanos que me llevan más de 15 años sí la usuaron) pero al mismo tiempo, la computadora más común era la IBM PC, no usábamos como hoy poderosas computadoras portátiles, _Palm_ o similares. Nuestra mejor _arma_ fue la *calculadora científica*.
 

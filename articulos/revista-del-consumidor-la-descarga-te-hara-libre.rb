@@ -1,4 +1,4 @@
-
+# encoding: utf-8
 def publicacion(dir)
 
     p             = Publicacion.new
@@ -9,7 +9,7 @@ def publicacion(dir)
     p.fecha       = "2009-05-09 14:00"
     p.categorias  = ['Educación', 'GNU/Linux']
     p.contenido   = <<FIN_CONTENIDO
-!revista-del-consumidor-la-descarga-te-hara-libre/portada-software-gratis.jpg!
+!<revista-del-consumidor-la-descarga-te-hara-libre/portada-software-gratis.jpg(software gratis)!
 
 Una muy grata sorpresa es encontrar un artículo dedicado al _software gratuito_ en una revista de circulación nacional. Es en la "Revista del Consumidor":http://revistadelconsumidor.gob.mx/ de Mayo de 2009. En la portada aparece como "Software Gratis que sí te ayuda a ahorrar (y no te convierte en pirata)".
 

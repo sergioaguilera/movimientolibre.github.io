@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
-  version="2.0"
-  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
     <title>Movimiento Libre</title>
     <link>http://www.movimientolibre.com</link>
     <description>Colección de ideas.</description>
     <item>
+      <title>Gentoo Linux... ¡10 años compilando!</title>
+      <link>http://www.movimientolibre.com/articulos/gentoo-linux-10-years.html</link>
+      <description>&lt;p style=&quot;float:left;&quot;&gt;&lt;img src=&quot;gentoo-linux-10-years/banner.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;El 5 de octubre de 2009 se celebró el décimo aniversario de la distribución &lt;a href=&quot;http://www.gentoo.org/&quot;&gt;Gentoo Linux&lt;/a&gt; con la liberación de un &lt;em&gt;LiveDVD&lt;/em&gt; conmemorativo. Hace &lt;a href=&quot;http://www.gentoo.org/news/20090722-anniversary.xml&quot;&gt;diez años&lt;/a&gt;, el proyecto &lt;em&gt;Enoch&lt;/em&gt; fue renombrado como &lt;em&gt;Gentoo&lt;/em&gt; y el nombre de dominio &lt;strong&gt;gentoo.org&lt;/strong&gt; fue registrado.&lt;/p&gt;</description>
+      <author>guivaloz</author>
+      <pubDate>Tue, 06 Oct 2009 22:00:00 -0500</pubDate>
+      <dc:date>2009-10-06T22:00:00-05:00</dc:date>
+    </item>
+    <item>
       <title>Revista del Consumidor - La descarga te hará libre</title>
       <link>http://www.movimientolibre.com/articulos/revista-del-consumidor-la-descarga-te-hara-libre.html</link>
-      <description>&lt;p&gt;&lt;img src=&quot;revista-del-consumidor-la-descarga-te-hara-libre/portada-software-gratis.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+      <description>&lt;p style=&quot;float:left;&quot;&gt;&lt;img src=&quot;revista-del-consumidor-la-descarga-te-hara-libre/portada-software-gratis.jpg&quot; title=&quot;software gratis&quot; alt=&quot;software gratis&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Una muy grata sorpresa es encontrar un artículo dedicado al &lt;em&gt;software gratuito&lt;/em&gt; en una revista de circulación nacional. Es en la &lt;a href=&quot;http://revistadelconsumidor.gob.mx/&quot;&gt;Revista del Consumidor&lt;/a&gt; de Mayo de 2009. En la portada aparece como &amp;#8220;Software Gratis que sí te ayuda a ahorrar (y no te convierte en pirata)&amp;#8221;.&lt;/p&gt;
 &lt;p&gt;Escrito por Sara Velázquez, habla a cerca de las desventajas de usar &lt;em&gt;software pirata&lt;/em&gt; y que la solución, en estos tiempos de crisis, es recurrir al software gratuito. Ella menciona: &amp;#8220;Por lo regular, lo que es gratis suena a que es malo, o que será de menor calidad, pero no siempre es así. Por ejemplo, este artículo fue escrito utilizando OpenOffice 3.0, un paquete gratuito para oficina que no le pide nada al popular Office 2007.&amp;#8221;&lt;/p&gt;</description>
       <author>guivaloz</author>
@@ -21,7 +30,7 @@
     <item>
       <title>Intolerancia absoluta</title>
       <link>http://www.movimientolibre.com/articulos/intolerancia-absoluta.html</link>
-      <description>&lt;p&gt;&lt;a href=&quot;intolerancia-absoluta/in_an_absolut_world-mexico.jpg&quot;&gt;&lt;img src=&quot;intolerancia-absoluta/in_an_absolut_world-mexico-small.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p style=&quot;float:left;&quot;&gt;&lt;a href=&quot;intolerancia-absoluta/in_an_absolut_world-mexico.jpg&quot;&gt;&lt;img src=&quot;intolerancia-absoluta/in_an_absolut_world-mexico-small.jpg&quot; title=&quot;Intolerancia absoluta&quot; alt=&quot;Intolerancia absoluta&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;El vodka &lt;a href=&quot;http://www.absolut.com&quot;&gt;Absolut&lt;/a&gt; tiene una de las más ingeniosas campañas publicitarias, de hecho, se ha vuelto todo un icono del medio publicitario. Podríamos asegurar que no existe un consumidor que no haya visto algún anuncio de &lt;a href=&quot;http://absolutad.com/absolut_gallery/singles/&quot;&gt;su conocida botella&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.absolut.com/es/iaaw&quot;&gt;In An Absolut World&lt;/a&gt; es la actual campaña publicitaria, donde se juega con la idea del mundo al revés. Para México se hizo el siguiente anuncio, trata de un mapa de México el cual nos recuerda nuestro pasado, los tiempos en los que &lt;a href=&quot;http://es.wikipedia.org/wiki/Antonio_L%C3%B3pez_de_Santa_Anna&quot;&gt;Antonio López de Santa Anna&lt;/a&gt; aún no &lt;a href=&quot;http://es.wikipedia.org/wiki/Antonio_L%C3%B3pez_de_Santa_Anna#Exiliado&quot;&gt;malbarataba gran parte del territorio&lt;/a&gt;, que ahora es de los Estados Unidos de América.&lt;/p&gt;</description>
       <author>rosy</author>
@@ -29,9 +38,19 @@
       <dc:date>2008-04-11T14:10:00-05:00</dc:date>
     </item>
     <item>
+      <title>Renovar la licencia de automovilista en Lerdo, Durango</title>
+      <link>http://www.movimientolibre.com/articulos/licencia-automovilista.html</link>
+      <description>&lt;p style=&quot;float:left;&quot;&gt;&lt;a href=&quot;licencia-automovilista/00-licencia-de-automovilista.jpg&quot;&gt;&lt;img src=&quot;licencia-automovilista/00-licencia-de-automovilista-small.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;El mes pasado dediqué una mañana a cumplir con las obligaciones ciudadanas de pagar predial, tenencia y refrendos. Aproveché la vuelta para que mi esposa renovara su licencia de manejo, sin saber la cantidad de trámites y traslados que debía hacer.&lt;/p&gt;
+&lt;p&gt;En este mes llegó mi turno, tenía que renovar mi &lt;strong&gt;licencia de manejo&lt;/strong&gt; y pasar por los mismos trámites que había tenido mi esposa. Decidí documentar minuciosamente todo el proceso. Lo que a continuación expongo es un ejemplo de la desconsideración que tienen algunas autoridades con el tiempo y recursos de nosotros los ciudadanos.&lt;/p&gt;</description>
+      <author>guivaloz</author>
+      <pubDate>Mon, 18 Feb 2008 10:20:00 -0600</pubDate>
+      <dc:date>2008-02-18T10:20:00-06:00</dc:date>
+    </item>
+    <item>
       <title>PHP4 ha muerto, larga vida a PHP5</title>
       <link>http://www.movimientolibre.com/articulos/php4-ha-muerto-larga-vida-a-php5.html</link>
-      <description>&lt;p&gt;&lt;a href=&quot;http://gophp5.org/&quot;&gt;&lt;img src=&quot;php4-a-muerto-larga-vida-a-php5/gophp5_logo.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p style=&quot;float:left;&quot;&gt;&lt;a href=&quot;http://gophp5.org/&quot;&gt;&lt;img src=&quot;php4-a-muerto-larga-vida-a-php5/gophp5_logo.png&quot; title=&quot;php5 logo&quot; alt=&quot;php5 logo&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://es.wikipedia.org/wiki/Php&quot;&gt;&lt;span class=&quot;caps&quot;&gt;PHP&lt;/span&gt;&lt;/a&gt; es un lenguaje de programación interpretado que nació con la intención de elaborar páginas web dinámicas. Gracias a que es software libre y de que puede operar en la mayoría de los sistemas operativos (&lt;span class=&quot;caps&quot;&gt;GNU&lt;/span&gt;/Linux, MacOS, Windows, sólo por mencionarlos) es hoy en día el lenguaje de programación &lt;em&gt;libre&lt;/em&gt; más usado en aplicaciones web.&lt;/p&gt;
 &lt;p&gt;PHP4 tiene siete años de haber sido liberado y PHP5 lleva tres. La principal diferencia entre ambas versiones está en la mejor implementación de la &lt;a href=&quot;http://es.wikipedia.org/wiki/OOP&quot;&gt;programación orientada a objetos&lt;/a&gt;. Si estudiáramos dos sistemas que hicieran exactamente lo mismo, donde uno estuviese programado en PHP4 y el otro en PHP5, los códigos (o sea los programas) serían muy distintos uno del otro.&lt;/p&gt;</description>
       <author>guivaloz</author>
@@ -39,15 +58,32 @@
       <dc:date>2008-02-02T11:20:00-06:00</dc:date>
     </item>
     <item>
+      <title>Cirugía nasal</title>
+      <link>http://www.movimientolibre.com/articulos/cirugia-nasal.html</link>
+      <description>&lt;p style=&quot;float:left;&quot;&gt;&lt;img src=&quot;cirugia-nasal/despues-de-la-cirugia.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Los días pasaron tan rápido como el agua y la fecha de hubiera deseado que no llegara, llegó. Ni modo&amp;#8230; a aguantarse como los machos (pero tuve tanto miedo como ni se imaginan) y a pensar en que vale la pena todo esto por respirar mejor. Eso ocurrió ayer viernes, un &lt;em&gt;via crucis&lt;/em&gt; inolvidable.&lt;/p&gt;</description>
+      <author>guivaloz</author>
+      <pubDate>Sat, 29 Sep 2007 14:00:00 -0500</pubDate>
+      <dc:date>2007-09-29T14:00:00-05:00</dc:date>
+    </item>
+    <item>
       <title>Calculadoras Científicas Chinas</title>
       <link>http://www.movimientolibre.com/articulos/calculadoras-cientificas-chinas.html</link>
-      <description>&lt;p&gt;Es bien sabido que la industria china ha estado creciendo a pasos agigantados en los últimos años. Una de las estrategias para lograrlo es la fabricación de los productos exitosos, similares a los originales, pero a un precio muy bajo. Nos hemos encontrado con copias de casi todo, una de ellas salió en televisión abierta y fué muy comentada: réplicas de la Virgen de Guadalupe con razgos orientales.&lt;/p&gt;
-&lt;p&gt;Su servidor quedó sorprendido al encontrar en &lt;a href=&quot;http://www.waldos.com/&quot;&gt;Waldos&lt;/a&gt; (establecimento que dice vender todo a un sólo precio) un producto de particular aprecio, a un costo y en tal cantidad que nunca me la hubiera imaginado: &lt;strong&gt;calculadoras científicas&lt;/strong&gt; &lt;em&gt;sin marca&lt;/em&gt; a &lt;strong&gt;$11.50&lt;/strong&gt; más I.V.A.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;calculadoras-cientificas-chinas/monton-1.jpg&quot;&gt;&lt;img src=&quot;calculadoras-cientificas-chinas/monton-1-small.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;calculadoras-cientificas-chinas/monton-2.jpg&quot;&gt;&lt;img src=&quot;calculadoras-cientificas-chinas/monton-2-small.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;calculadoras-cientificas-chinas/frente.jpg&quot;&gt;&lt;img src=&quot;calculadoras-cientificas-chinas/frente-small.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;calculadoras-cientificas-chinas/atras.jpg&quot;&gt;&lt;img src=&quot;calculadoras-cientificas-chinas/atras-small.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;¡Que barbaridad! ¡A lo que han llegado! Pues no me quedé con las ganas, y nomás por curiosidad me compré una y un par de pilas &amp;#8220;AA&amp;#8221; (que por cierto, también costaron $11.50 más I.V.A. en la misma tienda).&lt;/p&gt;</description>
+      <description>&lt;p style=&quot;float:left;&quot;&gt;&lt;a href=&quot;calculadoras-cientificas-chinas/monton-1.jpg&quot;&gt;&lt;img src=&quot;calculadoras-cientificas-chinas/monton-1-small.jpg&quot; title=&quot;Monton de calculadoras cientificas chinas&quot; alt=&quot;Monton de calculadoras cientificas chinas&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Es bien sabido que la industria china ha estado creciendo a pasos agigantados en los últimos años. Una de las estrategias para lograrlo es la fabricación de los productos exitosos, similares a los originales, pero a un precio muy bajo. Nos hemos encontrado con copias de casi todo, una de ellas salió en televisión abierta y fué muy comentada: réplicas de la Virgen de Guadalupe con razgos orientales.&lt;/p&gt;
+&lt;p&gt;Su servidor quedó sorprendido al encontrar en &lt;a href=&quot;http://www.waldos.com/&quot;&gt;Waldos&lt;/a&gt; (establecimento que dice vender todo a un sólo precio) un producto de particular aprecio, a un costo y en tal cantidad que nunca me la hubiera imaginado: &lt;strong&gt;calculadoras científicas&lt;/strong&gt; &lt;em&gt;sin marca&lt;/em&gt; a &lt;strong&gt;$11.50&lt;/strong&gt; más I.V.A.&lt;/p&gt;</description>
       <author>guivaloz</author>
       <pubDate>Sat, 28 Jul 2007 23:50:00 -0500</pubDate>
       <dc:date>2007-07-28T23:50:00-05:00</dc:date>
+    </item>
+    <item>
+      <title>Wallpaper &quot;Miss Marie&quot;</title>
+      <link>http://www.movimientolibre.com/articulos/miss-marie.html</link>
+      <description>&lt;p style=&quot;float:left;&quot;&gt;&lt;a href=&quot;miss-marie/miss-marie-1600x1200.jpg&quot;&gt;&lt;img src=&quot;miss-marie/miss-marie-small.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No&amp;#8230; si pensaban que el fondo de pantalla &amp;#8220;Miss Marie&amp;#8221; iba a ser una bellísimia y curvilínea dama&amp;#8230; no&amp;#8230; están equivocados.&lt;/p&gt;</description>
+      <author>guivaloz</author>
+      <pubDate>Mon, 21 May 2007 00:00:00 -0500</pubDate>
+      <dc:date>2007-05-21T00:00:00-05:00</dc:date>
     </item>
   </channel>
 </rss>

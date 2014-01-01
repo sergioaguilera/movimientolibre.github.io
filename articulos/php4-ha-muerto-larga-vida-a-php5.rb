@@ -1,4 +1,4 @@
-
+# encoding: utf-8
 def publicacion(dir)
 
     p             = Publicacion.new
@@ -9,7 +9,7 @@ def publicacion(dir)
     p.fecha       = "2008-02-02 11:20"
     p.categorias  = ['PHP']
     p.contenido   = <<FIN_CONTENIDO
-!php4-a-muerto-larga-vida-a-php5/gophp5_logo.png!:http://gophp5.org/
+!<php4-a-muerto-larga-vida-a-php5/gophp5_logo.png(php5 logo)!:http://gophp5.org/
 
 "PHP":http://es.wikipedia.org/wiki/Php es un lenguaje de programación interpretado que nació con la intención de elaborar páginas web dinámicas. Gracias a que es software libre y de que puede operar en la mayoría de los sistemas operativos (GNU/Linux, MacOS, Windows, sólo por mencionarlos) es hoy en día el lenguaje de programación _libre_ más usado en aplicaciones web.
 
