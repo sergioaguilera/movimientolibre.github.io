@@ -1,15 +1,10 @@
-# encoding: utf-8
-def publicacion(dir)
+Intolerancia absoluta
+=====================
 
-    p             = Publicacion.new
-    p.directorio  = dir
-    p.archivo     = 'intolerancia-absoluta'
-    p.nombre      = 'Intolerancia absoluta'
-    p.nombre_menu = 'Intolerancia absoluta'
-    p.fecha       = "2008-04-11 14:10"
-    p.autor       = 'rosy'
-    p.categorias  = ['Política']
-    p.contenido   = <<FIN_CONTENIDO
+Autor: guivaloz
+Fecha: 2008-04-11 14:10
+Categorías: Política
+
 ![Intolerancia Absoluta](intolerancia-absoluta/in_an_absolut_world-mexico-small.jpg)
 
 El vodka [Absolut](http://www.absolut.com) tiene una de las más ingeniosas campañas publicitarias, de hecho, se ha vuelto todo un icono del medio publicitario. Podríamos asegurar que no existe un consumidor que no haya visto algún anuncio de [su conocida botella](http://absolutad.com/absolut_gallery/singles/).
@@ -23,13 +18,3 @@ Dicho anuncio sólo apareció en revistas nacionales y espectaculares de la Ciud
 La empresa sueca ha retirado esta campaña y dado ha conocer un [comunicado](http://www.absolut.com/iaaw/blog/in-an-absolut-world-according-to-mexico) donde expresa que no hubo intensión de motivar a transgredir las fronteras o crear un sentimiento antiamericano en México.
 
 Pero bueno... ¿qué los Estados Unidos no han navegado siempre con su bandera de libertad de expresión? ellos que aman tanto su bandera que hasta se la ponen de calzones, y que sin ningún reparo ridiculizan a latinos, musulmanes, judíos, canadienses, etc. _bajo las faldas de la libertad de expresión_; ellos que llevan la guerra a otros países en pro de la  democracia y derechos humanos... ¿les ofende un mapa?... ¿pues qué acaso ignoran que las cosas alguna vez fueron así?.
-FIN_CONTENIDO
-
-    # Entregar la publicacion
-    p
-
-end
-
-=begin
-  intolerancia-absoluta/in_an_absolut_world-mexico.jpg
-=end

@@ -1,13 +1,10 @@
-# encoding: utf-8
-def publicacion(dir)
+Gentoo Linux... ¡10 años compilando!
+====================================
 
-    p             = Publicacion.new
-    p.directorio  = dir
-    p.archivo     = 'gentoo-linux-10-years'
-    p.nombre      = 'Gentoo Linux... ¡10 años compilando!'
-    p.nombre_menu = '10 años de Gentoo Linux'
-    p.fecha       = "2009-10-06 22:00"
-    p.contenido   = <<FIN_CONTENIDO
+Autor: guivaloz
+Fecha: 2009-10-06 22:00
+Categorías: Gentoo
+
 ![10 años de Gentoo Linux](gentoo-linux-10-years/banner.jpg)
 
 El 5 de octubre de 2009 se celebró el décimo aniversario de la distribución [Gentoo Linux](http://www.gentoo.org/) con la liberación de un _LiveDVD_ conmemorativo. Hace [diez años](http://www.gentoo.org/news/20090722-anniversary.xml), el proyecto _Enoch_ fue renombrado como _Gentoo_ y el nombre de dominio *gentoo.org* fue registrado.
@@ -25,10 +22,3 @@ Y manuales de instalación están en línea como:
 * [Guía rápida de instalación en x86](http://www.gentoo.org/doc/es/gentoo-x86-quickinstall.xml)
 
 Gentoo Linux es una distribución de Linux completamente gratuita, versátil y rápida orientada hacia desarrolladores y profesionales de la red. Al contrario que otras distribuciones, Gentoo Linux tiene un sistema avanzado de administración de paquetes llamado _Portage_. _Portage_ es un sistema verdadero de ports siguiendo la tradición de los ports BSD, pero ya que está basado en Python tiene varias características avanzadas incluyendo dependencias, administración de paquetes afinada, instalaciones "falsas" (tipo OpenBSD), unmerging seguro, perfiles de sistema, paquetes virtuales, administración de archivos de configuración y más.
-FIN_CONTENIDO
-    p.categorias = ['Gentoo']
-
-    # Entregar la publicacion
-    p
-
-end

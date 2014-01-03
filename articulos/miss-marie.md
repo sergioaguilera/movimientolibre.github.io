@@ -1,14 +1,10 @@
-# encoding: utf-8
-def publicacion(dir)
+Wallpaper "Miss Marie"
+======================
 
-    p             = Publicacion.new
-    p.directorio  = dir
-    p.archivo     = 'miss-marie'
-    p.nombre      = 'Wallpaper "Miss Marie"'
-    p.nombre_menu = 'Miss Marie'
-    p.fecha       = "2007-05-21 00:00"
-    p.categorias  = ['Wallpapers']
-    p.contenido   = <<FIN_CONTENIDO
+Autor: guivaloz
+Fecha: 2007-05-21 00:00
+Categorías: Wallpapers
+
 ![miss-marie/miss-marie-small.png](Miss Marie)
 
 No... si pensaban que el fondo de pantalla "Miss Marie" iba a ser una bellísimia y curvilínea dama... no... están equivocados.
@@ -22,13 +18,3 @@ Pero aunque "Miss Marie" no es de nuesta especie, me encanta, me asombra en su d
 Basta ya de habladuría y les muestro lo que a mi gusto es uno de los mejores fondo de pantalla del tipo "naturaleza" que he encontrado, de esos que nos tranquilizan y nos dan una sensación de bienestar:
 
 Levanto mi sombrero al autor de esta fotografía, al Danés *ipol*, y les paso el vínculo original de donde obtuve esta imagen en [kde-look](http://www.kde-look.org/content/show.php/Miss+Marie?content=58713)
-FIN_CONTENIDO
-
-    # Entregar la publicacion
-    p
-
-end
-
-=begin
-  miss-marie/miss-marie-1600x1200.jpg
-=end

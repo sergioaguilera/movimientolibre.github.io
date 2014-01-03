@@ -1,14 +1,10 @@
-# encoding: utf-8
-def publicacion(dir)
+Calculadoras Científicas Chinas
+===============================
 
-    p             = Publicacion.new
-    p.directorio  = dir
-    p.archivo     = 'calculadoras-cientificas-chinas'
-    p.nombre      = 'Calculadoras Científicas Chinas'
-    p.nombre_menu = 'Calculadoras Científicas Chinas'
-    p.fecha       = "2007-07-28 23:50"
-    p.categorias  = ['Vida cotidiana']
-    p.contenido   = <<FIN_CONTENIDO
+Autor: guivaloz
+Fecha: 2007-07-28 23:50
+Categorías: Vida cotidiana
+
 ![Monton de calculadoras](calculadoras-cientificas-chinas/monton-1-small.jpg)
 
 Es bien sabido que la industria china ha estado creciendo a pasos agigantados en los últimos años. Una de las estrategias para lograrlo es la fabricación de los productos exitosos, similares a los originales, pero a un precio muy bajo. Nos hemos encontrado con copias de casi todo, una de ellas salió en televisión abierta y fué muy comentada: réplicas de la Virgen de Guadalupe con razgos orientales.
@@ -38,24 +34,4 @@ Los cálculos que he hecho han dado respuestas correctas. Tiene las típicas fun
 
 En conclusión sí es una _buena_ calculadora científica a un precio más que accesible. Si valoramos el cúmulo de conocimiento que involucra el aparato, más la infinita cantidad de aplicaciones de nuestros cálculos a la hora de elaborar una tarea, proyecto u obra; es fantástico. Imagínense que hubiera pensado [Leonardo Da Vinci](http://en.wikipedia.org/wiki/Leonardo_da_vinci) si simplemente alguien del futuro le dijera que las calculadoras científicas son tan baratas como una botella de agua.
 
-P.D. Espero algún día ver en los pasillos de [Waldos](http://www.waldos.com)"" y de otras tiendas, discos compactos de [Ubuntu](http://www.ubuntu.com) a $11.50 más I.V.A. No creo que falte mucho :D
-FIN_CONTENIDO
-
-    # Entregar la publicacion
-    p
-
-end
-
-=begin
-
-!<calculadoras-cientificas-chinas/monton-1-small.jpg(Monton de calculadoras cientificas chinas)!:calculadoras-cientificas-chinas/monton-1.jpg
-!calculadoras-cientificas-chinas/monton-2-small.jpg!:calculadoras-cientificas-chinas/monton-2.jpg
-!calculadoras-cientificas-chinas/frente-small.jpg!:calculadoras-cientificas-chinas/frente.jpg
-!calculadoras-cientificas-chinas/atras-small.jpg!:calculadoras-cientificas-chinas/atras.jpg
-
-!calculadoras-cientificas-chinas/casio-fx-8000g-small.jpg!:calculadoras-cientificas-chinas/casio-fx-8000g.jpg
-!calculadoras-cientificas-chinas/casio-fx-7500g-small.jpg!:calculadoras-cientificas-chinas/casio-fx-7500g.jpg
-
-!calculadoras-cientificas-chinas/encendida-small.jpg!:calculadoras-cientificas-chinas/encendida.jpg
-
-=end
+P.D. Espero algún día ver en los pasillos de [Waldos](http://www.waldos.com) y de otras tiendas, discos compactos de [Ubuntu](http://www.ubuntu.com) a $11.50 más I.V.A. No creo que falte mucho :D

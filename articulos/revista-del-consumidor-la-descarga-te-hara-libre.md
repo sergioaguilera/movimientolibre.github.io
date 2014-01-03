@@ -1,14 +1,10 @@
-# encoding: utf-8
-def publicacion(dir)
+Revista del Consumidor - La descarga te hará libre
+==================================================
 
-    p             = Publicacion.new
-    p.directorio  = dir
-    p.archivo     = 'revista-del-consumidor-la-descarga-te-hara-libre'
-    p.nombre      = 'Revista del Consumidor - La descarga te hará libre'
-    p.nombre_menu = 'Revista del Consumidor'
-    p.fecha       = "2009-05-09 14:00"
-    p.categorias  = ['Educación', 'GNU/Linux']
-    p.contenido   = <<FIN_CONTENIDO
+Autor: guivaloz
+Fecha: 2009-05-09 14:00
+Categorías: Educación, GNU/Linux
+
 ![software gratis](revista-del-consumidor-la-descarga-te-hara-libre/portada-software-gratis.jpg)
 
 Una muy grata sorpresa es encontrar un artículo dedicado al _software gratuito_ en una revista de circulación nacional. Es en la [Revista del Consumidor](http://revistadelconsumidor.gob.mx/) de Mayo de 2009. En la portada aparece como "Software Gratis que sí te ayuda a ahorrar (y no te convierte en pirata)".
@@ -26,17 +22,3 @@ La Revista del Consumidor es un medio de la "Procuraduría Federal del Consumido
 ![Portada](revista-del-consumidor-la-descarga-te-hara-libre/revista-del-consumidor-2009-05-portada-small.jpg) ![01](revista-del-consumidor-la-descarga-te-hara-libre/la-descarga-te-hara-libre-01-small.jpg) ![02](revista-del-consumidor-la-descarga-te-hara-libre/la-descarga-te-hara-libre-02-small.jpg) ![03](revista-del-consumidor-la-descarga-te-hara-libre/la-descarga-te-hara-libre-03-small.jpg) ![04](revista-del-consumidor-la-descarga-te-hara-libre/la-descarga-te-hara-libre-04-small.jpg)
 
 Felicito a la PROFECO y a los editores de la [Revista del Consumidor](http://revistadelconsumidor.gob.mx/) por promover el Software Libre. Y no se pierdan este número; la revista está llena de consejos, recetas y análisis de precios muy interesantes.
-FIN_CONTENIDO
-
-    # Entregar la publicacion
-    p
-
-end
-
-=begin
-  revista-del-consumidor-la-descarga-te-hara-libre/revista-del-consumidor-2009-05-portada.jpg
-  revista-del-consumidor-la-descarga-te-hara-libre/la-descarga-te-hara-libre-01.jpg
-  revista-del-consumidor-la-descarga-te-hara-libre/la-descarga-te-hara-libre-02.jpg
-  revista-del-consumidor-la-descarga-te-hara-libre/la-descarga-te-hara-libre-03.jpg
-  revista-del-consumidor-la-descarga-te-hara-libre/la-descarga-te-hara-libre-04.jpg
-=end

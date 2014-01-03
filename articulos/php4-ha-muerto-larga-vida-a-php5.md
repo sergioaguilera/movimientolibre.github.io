@@ -1,14 +1,10 @@
-# encoding: utf-8
-def publicacion(dir)
+PHP4 ha muerto, larga vida a PHP5
+=================================
 
-    p             = Publicacion.new
-    p.directorio  = dir
-    p.archivo     = 'php4-ha-muerto-larga-vida-a-php5'
-    p.nombre      = 'PHP4 ha muerto, larga vida a PHP5'
-    p.nombre_menu = 'PHP4 ha muerto'
-    p.fecha       = "2008-02-02 11:20"
-    p.categorias  = ['PHP']
-    p.contenido   = <<FIN_CONTENIDO
+Autor: guivaloz
+Fecha: 2008-02-02 11:20
+Categorías: PHP
+
 ![php5 logo](php4-a-muerto-larga-vida-a-php5/gophp5_logo.png)
 
 [PHP](http://es.wikipedia.org/wiki/Php) es un lenguaje de programación interpretado que nació con la intención de elaborar páginas web dinámicas. Gracias a que es software libre y de que puede operar en la mayoría de los sistemas operativos (GNU/Linux, MacOS, Windows, sólo por mencionarlos) es hoy en día el lenguaje de programación _libre_ más usado en aplicaciones web.
@@ -24,13 +20,3 @@ La problemática actual es que muchos proveedores de _hosting_ no han cambiado a
 *Llegó el tiempo de tomar medidas más drásticas*. "GoPHP5.org":http://gophp5.org/ es una iniciativa de numerosos proyectos y organizaciones de la comunidad de desarrollo de PHP, como Drupal, Moodle, PEAR, phpMyAdmin, PHPUnit y más para detener conjuntamente, el próximo 5 de febrero, el [soporte al código de PHP4](http://javieraroche.com/2007/07/06/gophp5com-quitando-el-soporte-a-php4/) en sus proyectos en favor de PHP5, mucho más avanzado tecnológicamente.
 
 Nadie afirmará que los cambios sean fáciles. Respetando la pluralidad de voces, hay quienes desean [mantener al PHP4](http://stopphp5.org/.) Personalmente, yo sólo uso y recomiendo PHP5.
-FIN_CONTENIDO
-
-    # Entregar la publicacion
-    p
-
-end
-
-=begin
-  http://gophp5.org/
-=end

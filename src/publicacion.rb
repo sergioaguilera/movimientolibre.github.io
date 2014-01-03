@@ -23,7 +23,8 @@
 # Librerias
 #
 require 'rubygems'
-require 'redcloth'
+#~ require 'redcloth'
+require 'kramdown'
 
 #
 # Clase Publicacion
@@ -139,7 +140,8 @@ class Publicacion
         else
             mostrar = @contenido
         end
-        texto = RedCloth.new(mostrar)
+        #~ texto = RedCloth.new(mostrar)
+        texto = Kramdown::Document.new(mostrar)
         # El titulo de la página tendrá el nombre de la publicación, por eso no va aquí
         a = Array.new
         a << "  <p><small>#@fecha - #@autor</small></p>" if @aparece_en_pagina_inicial
@@ -157,12 +159,13 @@ class Publicacion
     #
     def breve
         if @contenido =~ /<!-- break -->/
-            texto      = RedCloth.new($`)
+            mostrar    = $`
             incompleto = true
         else
-            texto      = RedCloth.new(@contenido)
+            mostrar    = @contenido
             incompleto = false
         end
+        texto = Kramdown::Document.new(mostrar)
         a = Array.new
         if @en_raiz
             vinculo = @directorio + '/' + @archivo + '.html'
@@ -220,13 +223,13 @@ class Publicacion
     #
     def rss
         if @contenido =~ /<!-- break -->/
-            texto      = RedCloth.new($`)
+            mostrar    = $`
             incompleto = true
         else
-            texto      = RedCloth.new(@contenido)
+            mostrar    = @contenido
             incompleto = false
         end
-        texto.to_html
+        Kramdown::Document.new(mostrar).to_html
     end
 
     #
