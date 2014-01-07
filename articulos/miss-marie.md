@@ -4,7 +4,7 @@ Wallpaper "Miss Marie"
 Fecha: 2007-05-21 00:00
 Categorías: Wallpapers
 
-![miss-marie/miss-marie-small.png](Miss Marie)
+![Miss Marie](miss-marie/miss-marie-small.png)
 
 No... si pensaban que el fondo de pantalla "Miss Marie" iba a ser una bellísimia y curvilínea dama... no... están equivocados.
 
