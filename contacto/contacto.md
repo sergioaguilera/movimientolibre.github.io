@@ -1,6 +1,7 @@
 Acerca del autor de este sitio web
 ==================================
 
+Corto: Acerca del autor
 Fecha: 2006-08-01 00:00
 
 El presente sitio es mantenido por *Guillermo Valdés Lozano*. Actualmente trabaja en el desarrollo de aplicaciones web usando Software Libre.

@@ -1,7 +1,6 @@
 Gentoo Linux... ¡10 años compilando!
 ====================================
 
-Autor: guivaloz
 Fecha: 2009-10-06 22:00
 Categorías: Gentoo
 

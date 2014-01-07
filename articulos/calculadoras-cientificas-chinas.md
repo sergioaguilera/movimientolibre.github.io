@@ -1,7 +1,6 @@
 Calculadoras Científicas Chinas
 ===============================
 
-Autor: guivaloz
 Fecha: 2007-07-28 23:50
 Categorías: Vida cotidiana
 

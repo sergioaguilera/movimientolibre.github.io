@@ -23,7 +23,7 @@
 # Librerias
 #
 require 'rubygems'
-#~ require 'redcloth'
+require 'redcloth'
 require 'kramdown'
 
 #

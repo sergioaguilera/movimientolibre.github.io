@@ -1,7 +1,7 @@
 Revista del Consumidor - La descarga te hará libre
 ==================================================
 
-Autor: guivaloz
+Corto: La descarga te hará libre
 Fecha: 2009-05-09 14:00
 Categorías: Educación, GNU/Linux
 

@@ -1,7 +1,6 @@
 PHP4 ha muerto, larga vida a PHP5
 =================================
 
-Autor: guivaloz
 Fecha: 2008-02-02 11:20
 Categorías: PHP
 

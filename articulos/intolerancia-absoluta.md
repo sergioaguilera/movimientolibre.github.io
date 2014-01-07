@@ -1,7 +1,7 @@
 Intolerancia absoluta
 =====================
 
-Autor: guivaloz
+Autor: rosy
 Fecha: 2008-04-11 14:10
 Categorías: Política
 

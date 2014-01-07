@@ -1,7 +1,6 @@
 Wallpaper "Miss Marie"
 ======================
 
-Autor: guivaloz
 Fecha: 2007-05-21 00:00
 Categorías: Wallpapers
 

@@ -1,7 +1,7 @@
 Renovar la licencia de automovilista en Lerdo, Durango
 ======================================================
 
-Autor: guivaloz
+Corto: Licencia automovilista
 Fecha: 2008-02-18 10:20
 Categorías: Política
 

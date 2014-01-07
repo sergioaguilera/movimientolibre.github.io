@@ -1,7 +1,6 @@
 Cirugía nasal
 =============
 
-Autor: guivaloz
 Fecha: 2007-09-29 14:00
 Categorías: Vida cotidiana
 
