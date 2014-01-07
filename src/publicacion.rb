@@ -34,7 +34,7 @@ class Publicacion
     #
     # Propiedades modificables
     #
-    attr_writer :nombre, :nombre_menu, :directorio, :archivo, :fecha, :autor, :contenido, :categorias, :aparece_en_pagina_inicial, :en_raiz, :en_otro
+    attr_writer :nombre, :nombre_menu, :directorio, :archivo, :fecha, :autor, :contenido, :categorias, :aparece_en_pagina_inicial, :en_raiz, :en_otro, :tipo
 
     #
     # Propiedades leibles
@@ -57,6 +57,7 @@ class Publicacion
         @aparece_en_pagina_inicial = true
         @en_raiz                   = false     # Verdadero cuando la publicación va para la página inicial
         @en_otro                   = false     # Verdadero cuando la publicación va para el directorio autores o categorias
+        @tipo                      = 'rb'      # Dos tipos 'rb' (ruby) o 'md' (markdown), por defecto rb
         # Propiedades no modificables
         @vinculos_categorias       = Hash.new
     end
@@ -140,8 +141,9 @@ class Publicacion
         else
             mostrar = @contenido
         end
-        #~ texto = RedCloth.new(mostrar)
-        texto = Kramdown::Document.new(mostrar)
+        # De acuerdo al tipo, el contenido se procesará
+        texto = RedCloth.new(mostrar)           if @tipo == 'rb'
+        texto = Kramdown::Document.new(mostrar) if @tipo == 'md'
         # El titulo de la página tendrá el nombre de la publicación, por eso no va aquí
         a = Array.new
         a << "  <p><small>#@fecha - #@autor</small></p>" if @aparece_en_pagina_inicial
@@ -165,7 +167,10 @@ class Publicacion
             mostrar    = @contenido
             incompleto = false
         end
-        texto = Kramdown::Document.new(mostrar)
+        # De acuerdo al tipo, el contenido se procesará
+        texto = RedCloth.new(mostrar)           if @tipo == 'rb'
+        texto = Kramdown::Document.new(mostrar) if @tipo == 'md'
+        # Arreglo
         a = Array.new
         if @en_raiz
             vinculo = @directorio + '/' + @archivo + '.html'
@@ -229,7 +234,10 @@ class Publicacion
             mostrar    = @contenido
             incompleto = false
         end
-        Kramdown::Document.new(mostrar).to_html
+        # De acuerdo al tipo, el contenido se procesará
+        texto = RedCloth.new(mostrar)           if @tipo == 'rb'
+        texto = Kramdown::Document.new(mostrar) if @tipo == 'md'
+        texto.to_html
     end
 
     #

@@ -108,10 +108,8 @@ class Imprenta
         end
         # Asignar el autor por defecto en las publicaciones que no lo tengan
         pubs.each { |pub| pub.autor = @autor_por_defecto if pub.autor == '' }
-        # Ordenar las publicaciones por fecha, los más recientes primero
-        ordenadas = pubs.sort_by { |pub| pub.fecha }
-        # Almacenar en @publicaciones un arreglo de objetos con las publicaciones
-        @publicaciones = ordenadas.reverse
+        # Almacenar en @publicaciones
+        @publicaciones.concat(pubs)
     end
 
     #
@@ -125,11 +123,12 @@ class Imprenta
             next if archivos.size == 0          # Si no hay archivos, brincarse al siguiente directorio
             # Bucle para cada archivo
             archivos.sort.each do |arch|
-                p            = Publicacion.new          # Nueva publicación
-                p.directorio = dir                      # Pasamos el directorio en el que vamos
-                p.archivo    = arch[/([\w_-]+)\.md/,1]  # Como arch viene como directorio/archivo.md nos quedamos con el nombre del archivo
-                renglon      = 0                        # Para saber en qué renglón andamos
-                contenido = String.new                  # No se puede acumular en una propiedad, así que juntaremos el contenido en esta variable local
+                p            = Publicacion.new           # Nueva publicación
+                p.tipo       = 'md'                      # Tipo de contenido: md = markdown
+                p.directorio = dir                       # Pasamos el directorio en el que vamos
+                p.archivo    = arch[/([\w._-]+)\.md/,1]  # Como arch viene como directorio/archivo.md nos quedamos con el nombre del archivo
+                renglon      = 0                         # Para saber en qué renglón andamos
+                contenido = String.new                   # No se puede acumular en una propiedad, así que juntaremos el contenido en esta variable local
                 # Bucle para abrir, leer linea por linea y cerrar
                 IO.foreach(arch) do |linea|
                     renglon += 1
@@ -156,10 +155,8 @@ class Imprenta
                 @cantidad += 1                                 # Incrementar la cantidad de las mismas
             end
         end
-        # Ordenar las publicaciones por fecha, los más recientes primero
-        ordenadas = pubs.sort_by { |pub| pub.fecha }
-        # Almacenar en @publicaciones un arreglo de objetos con las publicaciones
-        @publicaciones = ordenadas.reverse
+        # Almacenar en @publicaciones
+        @publicaciones.concat(pubs)
     end
 
     #
@@ -254,7 +251,11 @@ class Imprenta
         @en_raiz = false
         @en_otro = false
         # Cargar las publicaciones
+        self.cargar_publicaciones_rb
         self.cargar_publicaciones_md
+        # Ordenar las publicaciones por fecha, los más recientes primero
+        ordenadas      = @publicaciones.sort_by { |pub| pub.fecha }
+        @publicaciones = ordenadas.reverse
         # Inicializar la plantilla de todas las publicaciones, excepto de la página inicial
         @plantilla                    = Plantilla.new
         @plantilla.titulo_sitio       = @titulo_sitio
