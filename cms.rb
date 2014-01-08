@@ -66,7 +66,7 @@ imprenta.frase_sitio = DESCRIPCION_SITIO
 # imprenta.anuncio = ''
 
 # Arreglo con los nombres de los directorios donde se encuentran las publicaciones
-imprenta.publicaciones_directorios = %w{ articulos contacto }
+imprenta.publicaciones_directorios = %w{ articulos presentaciones contacto }
 
 # Arreglo con las etiquetas de los directorios donde se encuentran las publicaciones
 # Por ejemplo, un directorio llamado guia_inicio puede aparecer como "Guía de inicio"
@@ -83,8 +83,9 @@ ARCHIVO_RSS = 'rss.xml'
 # No necesariamente tienen que ser los mismos que defina en publicaciones_directorios
 # Puede agregar sus propios vínculos a otros sitios u omitir los directorios que prefiera
 menu_principal = Menu.new
-menu_principal.agregar('Artículos', 'articulos/')
-menu_principal.agregar('Contacto',  'contacto/')
+menu_principal.agregar('Artículos',      'articulos/')
+menu_principal.agregar('Presentaciones', 'presentaciones/')
+menu_principal.agregar('Contacto',       'contacto/')
 
 # Opcionalmente puede mostrar la descripción en la tercer columna
 # imprenta.contenido_secundario = ''

@@ -9,6 +9,20 @@
     <link>http://www.movimientolibre.com</link>
     <description>Colección de ideas.</description>
     <item>
+      <title>Distribuciones GNU/Linux, entornos y programas libres</title>
+      <link>http://www.movimientolibre.com/presentaciones/distribuciones-gnulinux.html</link>
+      <description>
+&lt;p&gt;&lt;img src=&quot;distribuciones-gnulinux/03-distribuciones-small.jpg&quot; alt=&quot;Distribuciones GNU/Linux 1&quot; /&gt; &lt;img src=&quot;distribuciones-gnulinux/09-scientific-small.jpg&quot; alt=&quot;Distribuciones GNU/Linux 2&quot; /&gt; &lt;img src=&quot;distribuciones-gnulinux/17-equivalentes-small.jpg&quot; alt=&quot;Distribuciones GNU/Linux 3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para el XX Semana Académica en la &lt;a href=&quot;http://www.uadec.mx/&quot;&gt;Universidad Autónoma de Coahuila&lt;/a&gt; su servidor elaboró esta amena y visual presentación sobre las distribuciones GNU/Linux y los entornos de escritorio más populares.&lt;/p&gt;
+
+&lt;p&gt;Descargar &lt;a href=&quot;distribuciones-gnulinux/distribuciones-gnulinux.pdf&quot;&gt;Presentación 3.2 MB&lt;/a&gt; y &lt;a href=&quot;distribuciones-gnulinux/distribuciones-gnulinux.tar.gz&quot;&gt;Fuentes LaTeX 6.2 MB&lt;/a&gt;.&lt;/p&gt;
+</description>
+      <author>guivaloz</author>
+      <pubDate>Tue, 19 Oct 2010 23:55:00 -0500</pubDate>
+      <dc:date>2010-10-19T23:55:00-05:00</dc:date>
+    </item>
+    <item>
       <title>Gentoo Linux... ¡10 años compilando!</title>
       <link>http://www.movimientolibre.com/articulos/gentoo-linux-10-years.html</link>
       <description>
@@ -35,6 +49,34 @@
       <author>guivaloz</author>
       <pubDate>Sat, 09 May 2009 14:00:00 -0500</pubDate>
       <dc:date>2009-05-09T14:00:00-05:00</dc:date>
+    </item>
+    <item>
+      <title>Audio y Video en GNU/Linux</title>
+      <link>http://www.movimientolibre.com/presentaciones/audio-y-video-en-gnu-linux.html</link>
+      <description>
+&lt;p&gt;&lt;img src=&quot;audio-y-video-en-gnu-linux/screenshot-audacity.png&quot; alt=&quot;Audacity&quot; /&gt; &lt;img src=&quot;audio-y-video-en-gnu-linux/screenshot-xine.png&quot; alt=&quot;Xine&quot; /&gt; &lt;img src=&quot;audio-y-video-en-gnu-linux/screenshot-vlc.png&quot; alt=&quot;VLC&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Con motivo del &lt;em&gt;VI Simposium Nacional de Sistemas Computacionales e Informática (SINASCI)&lt;/em&gt; organizado por el &lt;a href=&quot;http://www.itslerdo.edu.mx/&quot;&gt;Instituto Tecnológico Superior de Lerdo&lt;/a&gt; elaboré esta sencilla presentación para mostrar las cualidades de los programas multimedia LAME, Audacity, FFMPEG, MPlayer, Xine y VLC. Todos son Software Libre.&lt;/p&gt;
+
+&lt;p&gt;Descargar &lt;a href=&quot;audio-y-video-en-gnu-linux/audio-y-video-en-gnu-linux.pdf&quot;&gt;Presentación&lt;/a&gt; y &lt;a href=&quot;audio-y-video-en-gnu-linux/audio-y-video-en-gnu-linux.tar.gz&quot;&gt;Fuentes LaTeX&lt;/a&gt;.&lt;/p&gt;
+</description>
+      <author>guivaloz</author>
+      <pubDate>Sun, 26 Oct 2008 20:45:00 -0600</pubDate>
+      <dc:date>2008-10-26T20:45:00-06:00</dc:date>
+    </item>
+    <item>
+      <title>Consejos para una Informática Ecológica</title>
+      <link>http://www.movimientolibre.com/presentaciones/consejos-informatica-ecologica.html</link>
+      <description>
+&lt;p&gt;&lt;img src=&quot;consejos-informatica-ecologica/screenshot1-small.jpg&quot; alt=&quot;Informática Ecológica 1&quot; /&gt; &lt;img src=&quot;consejos-informatica-ecologica/screenshot2-small.jpg&quot; alt=&quot;Informática Ecológica &quot; /&gt; &lt;img src=&quot;consejos-informatica-ecologica/screenshot3-small.jpg&quot; alt=&quot;Informática Ecológica &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ante una nueva era donde hay más conciencia por la conservación del medio ambiente nos vemos en la necesidad de buscar mejores alternativas, más eficientes energéticamente hablando, de nuestros equipos informáticos. Las nuevas tecnologías del Kernel Linux, los fabricantes de equipos de cómputo y los usuarios debemos de hacer esfuerzos por lograr disminuir el consumo de energía en pro de nuestro mundo.&lt;/p&gt;
+
+&lt;p&gt;Descargar &lt;a href=&quot;consejos-informatica-ecologica/consejos-informatica-ecologica.pdf&quot;&gt;Presentación&lt;/a&gt; y &lt;a href=&quot;consejos-informatica-ecologica/consejos-informatica-ecologica.tar.gz&quot;&gt;Fuentes LaTeX&lt;/a&gt;.&lt;/p&gt;
+</description>
+      <author>guivaloz</author>
+      <pubDate>Sat, 17 May 2008 15:30:00 -0500</pubDate>
+      <dc:date>2008-05-17T15:30:00-05:00</dc:date>
     </item>
     <item>
       <title>Intolerancia absoluta</title>
@@ -108,31 +150,6 @@
       <author>guivaloz</author>
       <pubDate>Sat, 28 Jul 2007 23:50:00 -0500</pubDate>
       <dc:date>2007-07-28T23:50:00-05:00</dc:date>
-    </item>
-    <item>
-      <title>Wallpaper &quot;Miss Marie&quot;</title>
-      <link>http://www.movimientolibre.com/articulos/miss-marie.html</link>
-      <description>
-&lt;p&gt;&lt;img src=&quot;miss-marie/miss-marie-small.png&quot; alt=&quot;Miss Marie&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;No… si pensaban que el fondo de pantalla “Miss Marie” iba a ser una bellísimia y curvilínea dama… no… están equivocados.&lt;/p&gt;
-
-</description>
-      <author>guivaloz</author>
-      <pubDate>Mon, 21 May 2007 00:00:00 -0500</pubDate>
-      <dc:date>2007-05-21T00:00:00-05:00</dc:date>
-    </item>
-    <item>
-      <title>Acerca del autor de este sitio web</title>
-      <link>http://www.movimientolibre.com/contacto/contacto.html</link>
-      <description>
-&lt;p&gt;El presente sitio es mantenido por &lt;em&gt;Guillermo Valdés Lozano&lt;/em&gt;. Actualmente trabaja en el desarrollo de aplicaciones web usando Software Libre.&lt;/p&gt;
-
-&lt;p&gt;También hace notables esfuerzos en la divulgación del &lt;a href=&quot;http://es.wikipedia.org/wiki/Software_libre&quot;&gt;Software Libre&lt;/a&gt;. Queda a su servicio para asesorías, pláticas o conferencias sobre el tema, ya sea para instituciones educativas, gubernamentales o privadas.&lt;/p&gt;
-</description>
-      <author>guivaloz</author>
-      <pubDate>Tue, 01 Aug 2006 00:00:00 -0500</pubDate>
-      <dc:date>2006-08-01T00:00:00-05:00</dc:date>
     </item>
   </channel>
 </rss>
