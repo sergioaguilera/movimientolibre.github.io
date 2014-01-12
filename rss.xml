@@ -16,11 +16,37 @@
 
 &lt;p&gt;Para el XX Semana Académica en la &lt;a href=&quot;http://www.uadec.mx/&quot;&gt;Universidad Autónoma de Coahuila&lt;/a&gt; su servidor elaboró esta amena y visual presentación sobre las distribuciones GNU/Linux y los entornos de escritorio más populares.&lt;/p&gt;
 
-&lt;p&gt;Descargar &lt;a href=&quot;distribuciones-gnulinux/distribuciones-gnulinux.pdf&quot;&gt;Presentación 3.2 MB&lt;/a&gt; y &lt;a href=&quot;distribuciones-gnulinux/distribuciones-gnulinux.tar.gz&quot;&gt;Fuentes LaTeX 6.2 MB&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&quot;descargar&quot;&gt;Descargar&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;distribuciones-gnulinux/distribuciones-gnulinux.pdf&quot;&gt;Presentación 3.2 MB&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;distribuciones-gnulinux/distribuciones-gnulinux.tar.gz&quot;&gt;Fuentes LaTeX 6.2 MB&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 </description>
       <author>guivaloz</author>
       <pubDate>Tue, 19 Oct 2010 23:55:00 -0500</pubDate>
       <dc:date>2010-10-19T23:55:00-05:00</dc:date>
+    </item>
+    <item>
+      <title>Edubuntu en la educación</title>
+      <link>http://www.movimientolibre.com/presentaciones/edubuntu-en-la-educacion.html</link>
+      <description>
+&lt;p&gt;&lt;img src=&quot;edubuntu-en-la-educacion/edubuntu-en-la-educacion-1-small.jpg&quot; alt=&quot;Edubuntu 1&quot; /&gt; &lt;img src=&quot;edubuntu-en-la-educacion/edubuntu-en-la-educacion-2-small.jpg&quot; alt=&quot;Edubuntu 2&quot; /&gt; &lt;img src=&quot;edubuntu-en-la-educacion/edubuntu-en-la-educacion-3-small.jpg&quot; alt=&quot;Edubuntu 3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para la &lt;a href=&quot;http://www.conacyt.mx/Comunicacion/sncyt/index.html&quot;&gt;16va. Semana Nacional de Ciencia y Tecnología&lt;/a&gt; en un evento organizado por el &lt;a href=&quot;http://www.coecyt-coah.gob.mx/&quot;&gt;COECYT de Coahuila&lt;/a&gt; representando a &lt;a href=&quot;http://www.innovatic.org.mx/&quot;&gt;InnovaTIC&lt;/a&gt; y al &lt;a href=&quot;http://www.gulag.org.mx/&quot;&gt;GULAG&lt;/a&gt;, elaboré la presentación “Edubuntu en la educación”.&lt;/p&gt;
+
+&lt;p&gt;Este material es una semblanza de lo que es el Software Libre, &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;Ubuntu&lt;/a&gt; y &lt;a href=&quot;http://www.edubuntu.org/&quot;&gt;Edubuntu&lt;/a&gt;, haciendo énfasis en su aplicación para el ámbito educativo. Se le hace la pregunta al público de que si sabe cuánto se gasta por comprar software privativo, si sabe que se estén usando copias ilegales del mismo y si es justo que sólo se enseñe una alternativa comercial habiendo otras libres. Concluye reflexionando sobre el potencial de la Comarca Lagunera para integrarse a las Industrias de la Información y Comunicación.&lt;/p&gt;
+
+&lt;h4 id=&quot;descargar&quot;&gt;Descargar&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;edubuntu-en-la-educacion/edubuntu-en-la-educacion.pdf&quot;&gt;Presentación 5.4 MB&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;edubuntu-en-la-educacion/edubuntu-en-la-educacion.tar.gz&quot;&gt;Fuentes LaTeX 12.3 MB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <author>guivaloz</author>
+      <pubDate>Wed, 28 Oct 2009 01:00:00 -0600</pubDate>
+      <dc:date>2009-10-28T01:00:00-06:00</dc:date>
     </item>
     <item>
       <title>Gentoo Linux... ¡10 años compilando!</title>
@@ -58,7 +84,12 @@
 
 &lt;p&gt;Con motivo del &lt;em&gt;VI Simposium Nacional de Sistemas Computacionales e Informática (SINASCI)&lt;/em&gt; organizado por el &lt;a href=&quot;http://www.itslerdo.edu.mx/&quot;&gt;Instituto Tecnológico Superior de Lerdo&lt;/a&gt; elaboré esta sencilla presentación para mostrar las cualidades de los programas multimedia LAME, Audacity, FFMPEG, MPlayer, Xine y VLC. Todos son Software Libre.&lt;/p&gt;
 
-&lt;p&gt;Descargar &lt;a href=&quot;audio-y-video-en-gnu-linux/audio-y-video-en-gnu-linux.pdf&quot;&gt;Presentación&lt;/a&gt; y &lt;a href=&quot;audio-y-video-en-gnu-linux/audio-y-video-en-gnu-linux.tar.gz&quot;&gt;Fuentes LaTeX&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&quot;descargar&quot;&gt;Descargar&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;audio-y-video-en-gnu-linux/audio-y-video-en-gnu-linux.pdf&quot;&gt;Presentación&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;audio-y-video-en-gnu-linux/audio-y-video-en-gnu-linux.tar.gz&quot;&gt;Fuentes LaTeX&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 </description>
       <author>guivaloz</author>
       <pubDate>Sun, 26 Oct 2008 20:45:00 -0600</pubDate>
@@ -72,7 +103,12 @@
 
 &lt;p&gt;Ante una nueva era donde hay más conciencia por la conservación del medio ambiente nos vemos en la necesidad de buscar mejores alternativas, más eficientes energéticamente hablando, de nuestros equipos informáticos. Las nuevas tecnologías del Kernel Linux, los fabricantes de equipos de cómputo y los usuarios debemos de hacer esfuerzos por lograr disminuir el consumo de energía en pro de nuestro mundo.&lt;/p&gt;
 
-&lt;p&gt;Descargar &lt;a href=&quot;consejos-informatica-ecologica/consejos-informatica-ecologica.pdf&quot;&gt;Presentación&lt;/a&gt; y &lt;a href=&quot;consejos-informatica-ecologica/consejos-informatica-ecologica.tar.gz&quot;&gt;Fuentes LaTeX&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&quot;descargar&quot;&gt;Descargar&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;consejos-informatica-ecologica/consejos-informatica-ecologica.pdf&quot;&gt;Presentación&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;consejos-informatica-ecologica/consejos-informatica-ecologica.tar.gz&quot;&gt;Fuentes LaTeX&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 </description>
       <author>guivaloz</author>
       <pubDate>Sat, 17 May 2008 15:30:00 -0500</pubDate>
@@ -135,21 +171,6 @@
       <author>guivaloz</author>
       <pubDate>Sat, 29 Sep 2007 14:00:00 -0500</pubDate>
       <dc:date>2007-09-29T14:00:00-05:00</dc:date>
-    </item>
-    <item>
-      <title>Calculadoras Científicas Chinas</title>
-      <link>http://www.movimientolibre.com/articulos/calculadoras-cientificas-chinas.html</link>
-      <description>
-&lt;p&gt;&lt;img src=&quot;calculadoras-cientificas-chinas/monton-1-small.jpg&quot; alt=&quot;Monton de calculadoras&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Es bien sabido que la industria china ha estado creciendo a pasos agigantados en los últimos años. Una de las estrategias para lograrlo es la fabricación de los productos exitosos, similares a los originales, pero a un precio muy bajo. Nos hemos encontrado con copias de casi todo, una de ellas salió en televisión abierta y fué muy comentada: réplicas de la Virgen de Guadalupe con razgos orientales.&lt;/p&gt;
-
-&lt;p&gt;Su servidor quedó sorprendido al encontrar en &lt;a href=&quot;http://www.waldos.com/&quot;&gt;Waldos&lt;/a&gt; (establecimento que dice vender todo a un sólo precio) un producto de particular aprecio, a un costo y en tal cantidad que nunca me la hubiera imaginado: &lt;em&gt;calculadoras científicas&lt;/em&gt; &lt;em&gt;sin marca&lt;/em&gt; a &lt;em&gt;$11.50&lt;/em&gt; más I.V.A.&lt;/p&gt;
-
-</description>
-      <author>guivaloz</author>
-      <pubDate>Sat, 28 Jul 2007 23:50:00 -0500</pubDate>
-      <dc:date>2007-07-28T23:50:00-05:00</dc:date>
     </item>
   </channel>
 </rss>
