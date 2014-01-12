@@ -28,6 +28,27 @@
       <dc:date>2010-10-19T23:55:00-05:00</dc:date>
     </item>
     <item>
+      <title>Taller de Ruby Básico</title>
+      <link>http://www.movimientolibre.com/presentaciones/ruby-basico-taller.html</link>
+      <description>
+&lt;p&gt;&lt;img src=&quot;ruby-basico-taller/diapositiva-03-small.png&quot; alt=&quot;Rubi Basico 03&quot; /&gt; &lt;img src=&quot;ruby-basico-taller/diapositiva-16-small.png&quot; alt=&quot;Rubi Basico 16&quot; /&gt; &lt;img src=&quot;ruby-basico-taller/diapositiva-25-small.png&quot; alt=&quot;Rubi Basico 25&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;!/presentaciones/!:/presentaciones/ruby-basico-taller/diapositiva-03.png !/presentaciones/!:/presentaciones/ruby-basico-taller/diapositiva-16.png !/presentaciones/!:/presentaciones/ruby-basico-taller/diapositiva-25.png&lt;/p&gt;
+
+&lt;p&gt;Para el “Foro Académico Regional 2009”:http://www.sistemasitl.com/foro2009/html/ en el “Instituto Tecnológico de la Laguna”:http://www.itlalaguna.edu.mx/ su servidor impartió un Taller Básico de Ruby. Los asistentes conocieron y practicaron las bases de este relativamente nuevo lenguaje de programación que promete un gran futuro.&lt;/p&gt;
+
+&lt;h4 id=&quot;descargar&quot;&gt;Descargar&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;ruby-basico-taller/taller-de-ruby-basico.pdf&quot;&gt;Presentación 354 KB&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;ruby-basico-taller/taller-de-ruby-basico.tar.gz&quot;&gt;Fuentes LaTeX 5 KB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <author>guivaloz</author>
+      <pubDate>Sun, 22 Nov 2009 23:55:00 -0600</pubDate>
+      <dc:date>2009-11-22T23:55:00-06:00</dc:date>
+    </item>
+    <item>
       <title>Edubuntu en la educación</title>
       <link>http://www.movimientolibre.com/presentaciones/edubuntu-en-la-educacion.html</link>
       <description>
@@ -75,6 +96,31 @@
       <author>guivaloz</author>
       <pubDate>Sat, 09 May 2009 14:00:00 -0500</pubDate>
       <dc:date>2009-05-09T14:00:00-05:00</dc:date>
+    </item>
+    <item>
+      <title>KDE 4 Reinventando el entorno gráfico</title>
+      <link>http://www.movimientolibre.com/presentaciones/kde-4-reinventando-el-entorno-grafico.html</link>
+      <description>
+&lt;p&gt;&lt;img src=&quot;kde-4-reinventando-el-entorno-grafico/03-que-es-kde-small.png&quot; alt=&quot;Que es KDE&quot; /&gt; &lt;img src=&quot;kde-4-reinventando-el-entorno-grafico/08-aplicaciones-small.png&quot; alt=&quot;KDE Aplicaciones&quot; /&gt; &lt;img src=&quot;kde-4-reinventando-el-entorno-grafico/15-version-4-small.png&quot; alt=&quot;KDE4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Con motivo del &lt;a href=&quot;http://www.gulag.org.mx/eventos/2009-04-25-flisol.html&quot;&gt;Festival Latinoamericano de Instalación de Software Libre, FLISOL 2009&lt;/a&gt; he elaborado esta presentación sobre el origen y la nueva versión del &lt;a href=&quot;http://www.kde.org&quot;&gt;KDE&lt;/a&gt; llamándola &lt;em&gt;KDE 4 - Reinventando el entorno gráfico.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Fuertes e innovadores cambios nos ofrece la versión 4 de este entorno de escritorio e infraestructura de desarrollo para sistemas Unix/Linux. Aunado a ello una gran comunidad de desarrolladores, traductores, diseñadores y promotores han incrementado sus esfuerzos para lograr crear lo mejor de lo mejor para el Software Libre.&lt;/p&gt;
+
+&lt;p&gt;Esta presentación está basada en los materiales de &lt;a href=&quot;http://ungethym.blogspot.com/2009/04/presenting-kde-at-linuxinfotag-in.html&quot;&gt;Thomas Thym&lt;/a&gt; y de &lt;a href=&quot;http://www.arturo.hoffstadt.cl/wp/2008/08/27/kde-4&quot;&gt;Arturo Hoffstadt&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Una de las frases de la nueva campaña de KDE simboliza lo que les digo: &lt;em&gt;“Sé libre de pedir un deseo, y entonces ayuda a que se vuelva realidad”&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;descargar&quot;&gt;Descargar&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;kde-4-reinventando-el-entorno-grafico/kde-4-reinventando-el-entorno-grafico.pdf&quot;&gt;Presentación 8.7 MB&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;kde-4-reinventando-el-entorno-grafico/kde-4-reinventando-el-entorno-grafico.tar.gz&quot;&gt;Fuentes LaTeX 14.7 MB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <author>guivaloz</author>
+      <pubDate>Tue, 21 Apr 2009 12:00:00 -0500</pubDate>
+      <dc:date>2009-04-21T12:00:00-05:00</dc:date>
     </item>
     <item>
       <title>Audio y Video en GNU/Linux</title>
@@ -143,34 +189,6 @@
       <author>guivaloz</author>
       <pubDate>Mon, 18 Feb 2008 10:20:00 -0600</pubDate>
       <dc:date>2008-02-18T10:20:00-06:00</dc:date>
-    </item>
-    <item>
-      <title>PHP4 ha muerto, larga vida a PHP5</title>
-      <link>http://www.movimientolibre.com/articulos/php4-ha-muerto-larga-vida-a-php5.html</link>
-      <description>
-&lt;p&gt;&lt;img src=&quot;php4-a-muerto-larga-vida-a-php5/gophp5_logo.png&quot; alt=&quot;php5 logo&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://es.wikipedia.org/wiki/Php&quot;&gt;PHP&lt;/a&gt; es un lenguaje de programación interpretado que nació con la intención de elaborar páginas web dinámicas. Gracias a que es software libre y de que puede operar en la mayoría de los sistemas operativos (GNU/Linux, MacOS, Windows, sólo por mencionarlos) es hoy en día el lenguaje de programación &lt;em&gt;libre&lt;/em&gt; más usado en aplicaciones web.&lt;/p&gt;
-
-&lt;p&gt;PHP4 tiene siete años de haber sido liberado y PHP5 lleva tres. La principal diferencia entre ambas versiones está en la mejor implementación de la &lt;a href=&quot;http://es.wikipedia.org/wiki/OOP&quot;&gt;programación orientada a objetos&lt;/a&gt;. Si estudiáramos dos sistemas que hicieran exactamente lo mismo, donde uno estuviese programado en PHP4 y el otro en PHP5, los códigos (o sea los programas) serían muy distintos uno del otro.&lt;/p&gt;
-
-</description>
-      <author>guivaloz</author>
-      <pubDate>Sat, 02 Feb 2008 11:20:00 -0600</pubDate>
-      <dc:date>2008-02-02T11:20:00-06:00</dc:date>
-    </item>
-    <item>
-      <title>Cirugía nasal</title>
-      <link>http://www.movimientolibre.com/articulos/cirugia-nasal.html</link>
-      <description>
-&lt;p&gt;&lt;img src=&quot;cirugia-nasal/despues-de-la-cirugia.jpg&quot; alt=&quot;Después de la cirugía&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Los días pasaron tan rápido como el agua y la fecha de hubiera deseado que no llegara, llegó. Ni modo… a aguantarse como los machos (pero tuve tanto miedo como ni se imaginan) y a pensar en que vale la pena todo esto por respirar mejor. Eso ocurrió ayer viernes, un &lt;em&gt;via crucis&lt;/em&gt; inolvidable.&lt;/p&gt;
-
-</description>
-      <author>guivaloz</author>
-      <pubDate>Sat, 29 Sep 2007 14:00:00 -0500</pubDate>
-      <dc:date>2007-09-29T14:00:00-05:00</dc:date>
     </item>
   </channel>
 </rss>
