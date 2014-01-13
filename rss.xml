@@ -9,6 +9,33 @@
     <link>http://www.movimientolibre.com</link>
     <description>Colección de ideas.</description>
     <item>
+      <title>Oferta de trabajo</title>
+      <link>http://www.movimientolibre.com/articulos/oferta-de-trabajo.html</link>
+      <description>
+&lt;p&gt;Escribo, en esta ocasión después de mucho tiempo, para hacer de su conocimiento una oferta de trabajo y para que me ayuden a propagar mi llamado.&lt;/p&gt;
+
+&lt;p&gt;Tengo una oferta de trabajo para un desarrollador; trabajará conmigo, aprenderá mucho y será estable (el trabajo) por largo tiempo (claro, si hace lo que tiene hacer). Sueldo ~7K.&lt;/p&gt;
+
+&lt;p&gt;Deberá aprobar los exámenes que aplicaré.&lt;/p&gt;
+
+&lt;h4 id=&quot;de-inicio-estn-estas-primeras-condiciones&quot;&gt;De inicio están estas primeras condiciones:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Que tenga conocimiento de los lenguajes PHP, C++ y/o Java. Además de SQL.&lt;/li&gt;
+  &lt;li&gt;Carrera terminada. Título o cédula profesional es mejor.&lt;/li&gt;
+  &lt;li&gt;Debe comunicarse directamente a mi correo electrónico: &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#103;&amp;#117;&amp;#105;&amp;#118;&amp;#097;&amp;#108;&amp;#111;&amp;#122;&amp;#064;&amp;#109;&amp;#111;&amp;#118;&amp;#105;&amp;#109;&amp;#105;&amp;#101;&amp;#110;&amp;#116;&amp;#111;&amp;#108;&amp;#105;&amp;#098;&amp;#114;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#103;&amp;#117;&amp;#105;&amp;#118;&amp;#097;&amp;#108;&amp;#111;&amp;#122;&amp;#064;&amp;#109;&amp;#111;&amp;#118;&amp;#105;&amp;#109;&amp;#105;&amp;#101;&amp;#110;&amp;#116;&amp;#111;&amp;#108;&amp;#105;&amp;#098;&amp;#114;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt;. Cualquier pregunta que me haga a través de otro medio (por ejemplo teléfono) no la responderé y lo consideraré como descalificado.&lt;/li&gt;
+  &lt;li&gt;Entregar Curriculum Vitae detallando sus habilidades y experiencias en desarrollo. Como archivo PDF adjunto en un mensaje de correo electrónico (entregar cualquier otro formato descalifica también).&lt;/li&gt;
+  &lt;li&gt;Son puntos buenos compartir código que haya escrito; preferentemente usando la plataforma &lt;a href=&quot;http://github.com&quot;&gt;http://github.com&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Este llamado se cierra el &lt;strong&gt;15 de enero de 2014&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Muchas gracias.&lt;/p&gt;
+</description>
+      <author>guivaloz</author>
+      <pubDate>Mon, 13 Jan 2014 09:00:00 -0600</pubDate>
+      <dc:date>2014-01-13T09:00:00-06:00</dc:date>
+    </item>
+    <item>
       <title>Distribuciones GNU/Linux, entornos y programas libres</title>
       <link>http://www.movimientolibre.com/presentaciones/distribuciones-gnulinux.html</link>
       <description>
@@ -174,21 +201,6 @@
       <author>rosy</author>
       <pubDate>Fri, 11 Apr 2008 14:10:00 -0500</pubDate>
       <dc:date>2008-04-11T14:10:00-05:00</dc:date>
-    </item>
-    <item>
-      <title>Renovar la licencia de automovilista en Lerdo, Durango</title>
-      <link>http://www.movimientolibre.com/articulos/licencia-automovilista.html</link>
-      <description>
-&lt;p&gt;&lt;img src=&quot;licencia-automovilista/00-licencia-de-automovilista-small.jpg&quot; alt=&quot;Licencia de conducir&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;El mes pasado dediqué una mañana a cumplir con las obligaciones ciudadanas de pagar predial, tenencia y refrendos. Aproveché la vuelta para que mi esposa renovara su licencia de manejo, sin saber la cantidad de trámites y traslados que debía hacer.&lt;/p&gt;
-
-&lt;p&gt;En este mes llegó mi turno, tenía que renovar mi &lt;em&gt;licencia de manejo&lt;/em&gt; y pasar por los mismos trámites que había tenido mi esposa. Decidí documentar minuciosamente todo el proceso. Lo que a continuación expongo es un ejemplo de la desconsideración que tienen algunas autoridades con el tiempo y recursos de nosotros los ciudadanos.&lt;/p&gt;
-
-</description>
-      <author>guivaloz</author>
-      <pubDate>Mon, 18 Feb 2008 10:20:00 -0600</pubDate>
-      <dc:date>2008-02-18T10:20:00-06:00</dc:date>
     </item>
   </channel>
 </rss>
