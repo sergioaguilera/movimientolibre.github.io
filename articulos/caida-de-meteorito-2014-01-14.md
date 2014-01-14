@@ -1,14 +1,16 @@
-Caída de un meteorito
-=====================
+Avistamiento de un bólido
+=========================
 
-Fecha: 2014-01-14
+Fecha: 2014-01-14 15:55
 Categorías: Vida cotidiana, Astronomía
 
-Les informo que mi esposa Rosa Elena y su servidor veníamos conduciendo la mañana de hoy por el Periférico (en Gómez Palacio, Durango, México) y antes de subir el paso a desnivel que está frente a la Soriana Hamburgo vimos la caída de un **metorito/bólido**.
+![Diagrama avistamiento del bólido 14 enero 2014](caida-de-meteorito-2014-01-14/diagrama-avistamiento-bolido-2014-01-14.jpg)
 
-Rosy me ha dado dos notas regionales sobre el fenómeno:
+Les informo que mi esposa Rosa Elena y su servidor veníamos conduciendo la mañana de hoy por el Periférico (en Gómez Palacio, Durango, México) y antes de subir el paso a desnivel que está frente a _Soriana Hamburgo_ vimos un **bólido** surcar el cielo.
 
-* <http://www.movimientolibre.com/articulos/caida-de-meteorito-2014-01-14.html>
+Rosy me ha dado dos notas regionales sobre el fenómeno, además de otra por parte de Sergio:
+
+* <http://conexiontotal.mx/2014/01/14/meteorito-cae-en-saltillo/>
 * <http://www.vanguardia.com.mx/caeovniensaltilloautoridadeslobuscan-1923456.html>
 * <http://www.elsiglodetorreon.com.mx/noticia/952770.reportan-caida-de-meteorito-en-saltillo.html>
 
@@ -16,7 +18,7 @@ Rosy me ha dado dos notas regionales sobre el fenómeno:
 
 <!-- break -->
 
-Algunos datos que les puedo dar:
+#### Algunos datos que les puedo dar
 
 * Fue cerca de las 7:10 a.m. de hoy 14 de enero de 2014.
 * La trayectoria fue Sur a Norte.
@@ -29,3 +31,7 @@ Algunos datos que les puedo dar:
 * No toco el suelo; claro, el fenómeno luminoso terminó en las alturas.
 
 Espero que estos datos sirvan para que en conjunto pueda triangularse su altitud y posible lugar de caída, si es que algo haya llegado al suelo.
+
+#### Actualización
+
+He cambiado el título de _Caida de Meteorito_ a _Avistamiento de un bólido_ porque no se debe llamar **meteorito** cuando no se tiene una muestra física que se trate de una roca que vino del espacio. Mientras tanto, por el fenómeno visual, lo correcto es llamarle **bólido**.
