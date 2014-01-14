@@ -8,6 +8,7 @@ Les informo que mi esposa Rosa Elena y su servidor veníamos conduciendo la mañ
 
 Rosy me ha dado dos notas regionales sobre el fenómeno:
 
+* <http://www.movimientolibre.com/articulos/caida-de-meteorito-2014-01-14.html>
 * <http://www.vanguardia.com.mx/caeovniensaltilloautoridadeslobuscan-1923456.html>
 * <http://www.elsiglodetorreon.com.mx/noticia/952770.reportan-caida-de-meteorito-en-saltillo.html>
 
@@ -27,4 +28,4 @@ Algunos datos que les puedo dar:
 * No noté que dejara estela de humo.
 * No toco el suelo; claro, el fenómeno luminoso terminó en las alturas.
 
-Espero que estos datos sirvan para que en conjunto pueda triangularse su altitud y posible caía.
+Espero que estos datos sirvan para que en conjunto pueda triangularse su altitud y posible lugar de caída, si es que algo haya llegado al suelo.
