@@ -10,6 +10,8 @@ Tengo una oferta de trabajo para un desarrollador; trabajará conmigo, aprender�
 
 Deberá aprobar los exámenes que aplicaré.
 
+<!-- break -->
+
 #### De inicio están estas primeras condiciones:
 
 * Que tenga conocimiento de los lenguajes PHP, C++ y/o Java. Además de SQL.

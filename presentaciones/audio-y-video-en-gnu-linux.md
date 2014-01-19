@@ -6,7 +6,7 @@ Categorías: GNU/Linux
 
 ![Audacity](audio-y-video-en-gnu-linux/screenshot-audacity.png) ![Xine](audio-y-video-en-gnu-linux/screenshot-xine.png) ![VLC](audio-y-video-en-gnu-linux/screenshot-vlc.png)
 
-Con motivo del *VI Simposium Nacional de Sistemas Computacionales e Informática (SINASCI)* organizado por el [Instituto Tecnológico Superior de Lerdo](http://www.itslerdo.edu.mx/) elaboré esta sencilla presentación para mostrar las cualidades de los programas multimedia LAME, Audacity, FFMPEG, MPlayer, Xine y VLC. Todos son Software Libre.
+Con motivo del **VI Simposium Nacional de Sistemas Computacionales e Informática (SINASCI)** organizado por el [Instituto Tecnológico Superior de Lerdo](http://www.itslerdo.edu.mx/) elaboré esta sencilla presentación para mostrar las cualidades de los programas multimedia LAME, Audacity, FFMPEG, MPlayer, Xine y VLC. Todos son Software Libre.
 
 #### Descargar
 

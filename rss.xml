@@ -41,18 +41,6 @@
 
 &lt;p&gt;Deberá aprobar los exámenes que aplicaré.&lt;/p&gt;
 
-&lt;h4 id=&quot;de-inicio-estn-estas-primeras-condiciones&quot;&gt;De inicio están estas primeras condiciones:&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Que tenga conocimiento de los lenguajes PHP, C++ y/o Java. Además de SQL.&lt;/li&gt;
-  &lt;li&gt;Carrera terminada. Título o cédula profesional es mejor.&lt;/li&gt;
-  &lt;li&gt;Debe comunicarse directamente a mi correo electrónico: &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#103;&amp;#117;&amp;#105;&amp;#118;&amp;#097;&amp;#108;&amp;#111;&amp;#122;&amp;#064;&amp;#109;&amp;#111;&amp;#118;&amp;#105;&amp;#109;&amp;#105;&amp;#101;&amp;#110;&amp;#116;&amp;#111;&amp;#108;&amp;#105;&amp;#098;&amp;#114;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#103;&amp;#117;&amp;#105;&amp;#118;&amp;#097;&amp;#108;&amp;#111;&amp;#122;&amp;#064;&amp;#109;&amp;#111;&amp;#118;&amp;#105;&amp;#109;&amp;#105;&amp;#101;&amp;#110;&amp;#116;&amp;#111;&amp;#108;&amp;#105;&amp;#098;&amp;#114;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt;. Cualquier pregunta que me haga a través de otro medio (por ejemplo teléfono) no la responderé y lo consideraré como descalificado.&lt;/li&gt;
-  &lt;li&gt;Entregar Curriculum Vitae detallando sus habilidades y experiencias en desarrollo. Como archivo PDF adjunto en un mensaje de correo electrónico (entregar cualquier otro formato descalifica también).&lt;/li&gt;
-  &lt;li&gt;Son puntos buenos compartir código que haya escrito; preferentemente usando la plataforma &lt;a href=&quot;http://github.com&quot;&gt;http://github.com&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Este llamado se cierra el &lt;strong&gt;15 de enero de 2014&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Muchas gracias.&lt;/p&gt;
 </description>
       <author>guivaloz</author>
       <pubDate>Mon, 13 Jan 2014 09:00:00 -0600</pubDate>
@@ -78,14 +66,33 @@
       <dc:date>2010-10-19T23:55:00-05:00</dc:date>
     </item>
     <item>
+      <title>Virtualización con QEmu</title>
+      <link>http://www.movimientolibre.com/presentaciones/virtualizacion-con-qemu.html</link>
+      <description>
+&lt;p&gt;&lt;img src=&quot;virtualizacion-con-qemu/diapositiva-03-small.jpg&quot; alt=&quot;Virtualización QEmu 1&quot; /&gt; &lt;img src=&quot;virtualizacion-con-qemu/diapositiva-14-small.jpg&quot; alt=&quot;Virtualización QEmu 2&quot; /&gt; &lt;img src=&quot;virtualizacion-con-qemu/diapositiva-16-small.jpg&quot; alt=&quot;Virtualización QEmu 3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Con motivo del &lt;a href=&quot;http://www.estudiosdeldesarrollo.net/foss/&quot;&gt;Congreso Iberoamericano FOSS 2009&lt;/a&gt; que organiza la &lt;a href=&quot;http://www.uaz.edu.mx/&quot;&gt;Universidad Autónoma de Zacatecas&lt;/a&gt; he elaborado la conferencia &lt;strong&gt;Virtualización con QEmu&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;En este material se ilustra de forma sencilla cómo se usa el virtualizador QEmu y cómo lo he usado en la impartición de clases de GNU/Linux en la &lt;a href=&quot;http://www.utt.edu.mx/&quot;&gt;Universidad Tecnológica de Torreón&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;descargar&quot;&gt;Descargar&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;virtualizacion-con-qemu/virtualizacion-con-qemu.pdf&quot;&gt;Presentación 5.5 MB&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;virtualizacion-con-qemu/virtualizacion-con-qemu.tar.gz&quot;&gt;Fuentes LaTeX 5.5 MB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <author>guivaloz</author>
+      <pubDate>Sat, 28 Nov 2009 23:00:00 -0600</pubDate>
+      <dc:date>2009-11-28T23:00:00-06:00</dc:date>
+    </item>
+    <item>
       <title>Taller de Ruby Básico</title>
       <link>http://www.movimientolibre.com/presentaciones/ruby-basico-taller.html</link>
       <description>
 &lt;p&gt;&lt;img src=&quot;ruby-basico-taller/diapositiva-03-small.png&quot; alt=&quot;Rubi Basico 03&quot; /&gt; &lt;img src=&quot;ruby-basico-taller/diapositiva-16-small.png&quot; alt=&quot;Rubi Basico 16&quot; /&gt; &lt;img src=&quot;ruby-basico-taller/diapositiva-25-small.png&quot; alt=&quot;Rubi Basico 25&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;!/presentaciones/!:/presentaciones/ruby-basico-taller/diapositiva-03.png !/presentaciones/!:/presentaciones/ruby-basico-taller/diapositiva-16.png !/presentaciones/!:/presentaciones/ruby-basico-taller/diapositiva-25.png&lt;/p&gt;
-
-&lt;p&gt;Para el “Foro Académico Regional 2009”:http://www.sistemasitl.com/foro2009/html/ en el “Instituto Tecnológico de la Laguna”:http://www.itlalaguna.edu.mx/ su servidor impartió un Taller Básico de Ruby. Los asistentes conocieron y practicaron las bases de este relativamente nuevo lenguaje de programación que promete un gran futuro.&lt;/p&gt;
+&lt;p&gt;Para el &lt;a href=&quot;http://www.sistemasitl.com/foro2009/html/&quot;&gt;Foro Académico Regional 2009&lt;/a&gt; en el &lt;a href=&quot;http://www.itlalaguna.edu.mx/&quot;&gt;Instituto Tecnológico de la Laguna&lt;/a&gt; su servidor impartió un Taller Básico de Ruby. Los asistentes conocieron y practicaron las bases de este relativamente nuevo lenguaje de programación que promete un gran futuro.&lt;/p&gt;
 
 &lt;h4 id=&quot;descargar&quot;&gt;Descargar&lt;/h4&gt;
 
@@ -153,7 +160,7 @@
       <description>
 &lt;p&gt;&lt;img src=&quot;kde-4-reinventando-el-entorno-grafico/03-que-es-kde-small.png&quot; alt=&quot;Que es KDE&quot; /&gt; &lt;img src=&quot;kde-4-reinventando-el-entorno-grafico/08-aplicaciones-small.png&quot; alt=&quot;KDE Aplicaciones&quot; /&gt; &lt;img src=&quot;kde-4-reinventando-el-entorno-grafico/15-version-4-small.png&quot; alt=&quot;KDE4&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Con motivo del &lt;a href=&quot;http://www.gulag.org.mx/eventos/2009-04-25-flisol.html&quot;&gt;Festival Latinoamericano de Instalación de Software Libre, FLISOL 2009&lt;/a&gt; he elaborado esta presentación sobre el origen y la nueva versión del &lt;a href=&quot;http://www.kde.org&quot;&gt;KDE&lt;/a&gt; llamándola &lt;em&gt;KDE 4 - Reinventando el entorno gráfico.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Con motivo del &lt;a href=&quot;http://www.gulag.org.mx/eventos/2009-04-25-flisol.html&quot;&gt;Festival Latinoamericano de Instalación de Software Libre, FLISOL 2009&lt;/a&gt; he elaborado esta presentación sobre el origen y la nueva versión del &lt;a href=&quot;http://www.kde.org&quot;&gt;KDE&lt;/a&gt; llamándola &lt;strong&gt;KDE 4 - Reinventando el entorno gráfico&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Fuertes e innovadores cambios nos ofrece la versión 4 de este entorno de escritorio e infraestructura de desarrollo para sistemas Unix/Linux. Aunado a ello una gran comunidad de desarrolladores, traductores, diseñadores y promotores han incrementado sus esfuerzos para lograr crear lo mejor de lo mejor para el Software Libre.&lt;/p&gt;
 
@@ -173,42 +180,25 @@
       <dc:date>2009-04-21T12:00:00-05:00</dc:date>
     </item>
     <item>
-      <title>Audio y Video en GNU/Linux</title>
-      <link>http://www.movimientolibre.com/presentaciones/audio-y-video-en-gnu-linux.html</link>
+      <title>Software Libre en tiempos de crisis</title>
+      <link>http://www.movimientolibre.com/presentaciones/software-libre-en-tiempos-de-crisis.html</link>
       <description>
-&lt;p&gt;&lt;img src=&quot;audio-y-video-en-gnu-linux/screenshot-audacity.png&quot; alt=&quot;Audacity&quot; /&gt; &lt;img src=&quot;audio-y-video-en-gnu-linux/screenshot-xine.png&quot; alt=&quot;Xine&quot; /&gt; &lt;img src=&quot;audio-y-video-en-gnu-linux/screenshot-vlc.png&quot; alt=&quot;VLC&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;software-libre-en-tiempos-de-crisis/software-libre-en-tiempos-de-crisis-1-small.png&quot; alt=&quot;S.L. en tiempos de crisis 1&quot; /&gt; &lt;img src=&quot;software-libre-en-tiempos-de-crisis/software-libre-en-tiempos-de-crisis-2-small.png&quot; alt=&quot;S.L. en tiempos de crisis 2&quot; /&gt; &lt;img src=&quot;software-libre-en-tiempos-de-crisis/software-libre-en-tiempos-de-crisis-3-small.png&quot; alt=&quot;S.L. en tiempos de crisis 3&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Con motivo del &lt;em&gt;VI Simposium Nacional de Sistemas Computacionales e Informática (SINASCI)&lt;/em&gt; organizado por el &lt;a href=&quot;http://www.itslerdo.edu.mx/&quot;&gt;Instituto Tecnológico Superior de Lerdo&lt;/a&gt; elaboré esta sencilla presentación para mostrar las cualidades de los programas multimedia LAME, Audacity, FFMPEG, MPlayer, Xine y VLC. Todos son Software Libre.&lt;/p&gt;
+&lt;p&gt;No cabe duda que la crisis mundial, a pesar de los comentarios optimistas de nuestro gobierno, nos envuelve a todos y afecta la economía empresarial y familiar. Es este contexto, uno de los principales rubros donde buscamos reducción de costos es el de las Tecnologías de Información. He aquí una gran oportunidad para usar Software Libre, ya que si no podemos ahorrar en la compra y mantenimiento de hardware, sí lo podemos hacer al dejar de pagar el alto costo de las licencias privativas de software.&lt;/p&gt;
+
+&lt;p&gt;Punto aparte del ahorro económico, sabemos que el software es cada vez más el gran intermediario entre la información y la inteligencia humana. De la misma manera que nos preocupa la libertad para poder acceder a la información, nos debe preocupar con igual intensidad quién controla este intermediario y qué garantías tenemos de su transparencia y fiabilidad. El Software Libre, al dar acceso al código, es el único que puede garantizar esta transparencia.&lt;/p&gt;
 
 &lt;h4 id=&quot;descargar&quot;&gt;Descargar&lt;/h4&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;audio-y-video-en-gnu-linux/audio-y-video-en-gnu-linux.pdf&quot;&gt;Presentación&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;audio-y-video-en-gnu-linux/audio-y-video-en-gnu-linux.tar.gz&quot;&gt;Fuentes LaTeX&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;software-libre-en-tiempos-de-crisis/software-libre-en-tiempos-de-crisis.pdf&quot;&gt;Presentación&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;software-libre-en-tiempos-de-crisis/software-libre-en-tiempos-de-crisis.tar.gz&quot;&gt;Fuentes LaTeX&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
       <author>guivaloz</author>
-      <pubDate>Sun, 26 Oct 2008 20:45:00 -0600</pubDate>
-      <dc:date>2008-10-26T20:45:00-06:00</dc:date>
-    </item>
-    <item>
-      <title>Consejos para una Informática Ecológica</title>
-      <link>http://www.movimientolibre.com/presentaciones/consejos-informatica-ecologica.html</link>
-      <description>
-&lt;p&gt;&lt;img src=&quot;consejos-informatica-ecologica/screenshot1-small.jpg&quot; alt=&quot;Informática Ecológica 1&quot; /&gt; &lt;img src=&quot;consejos-informatica-ecologica/screenshot2-small.jpg&quot; alt=&quot;Informática Ecológica &quot; /&gt; &lt;img src=&quot;consejos-informatica-ecologica/screenshot3-small.jpg&quot; alt=&quot;Informática Ecológica &quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Ante una nueva era donde hay más conciencia por la conservación del medio ambiente nos vemos en la necesidad de buscar mejores alternativas, más eficientes energéticamente hablando, de nuestros equipos informáticos. Las nuevas tecnologías del Kernel Linux, los fabricantes de equipos de cómputo y los usuarios debemos de hacer esfuerzos por lograr disminuir el consumo de energía en pro de nuestro mundo.&lt;/p&gt;
-
-&lt;h4 id=&quot;descargar&quot;&gt;Descargar&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;consejos-informatica-ecologica/consejos-informatica-ecologica.pdf&quot;&gt;Presentación&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;consejos-informatica-ecologica/consejos-informatica-ecologica.tar.gz&quot;&gt;Fuentes LaTeX&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>guivaloz</author>
-      <pubDate>Sat, 17 May 2008 15:30:00 -0500</pubDate>
-      <dc:date>2008-05-17T15:30:00-05:00</dc:date>
+      <pubDate>Sat, 14 Mar 2009 16:00:00 -0600</pubDate>
+      <dc:date>2009-03-14T16:00:00-06:00</dc:date>
     </item>
   </channel>
 </rss>
