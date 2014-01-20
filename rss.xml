@@ -9,6 +9,19 @@
     <link>http://www.movimientolibre.com</link>
     <description>Colección de ideas.</description>
     <item>
+      <title>OpenStreetMap</title>
+      <link>http://www.movimientolibre.com/presentaciones/openstreetmap.html</link>
+      <description>
+&lt;p&gt;&lt;img src=&quot;openstreetmap/openstreetmap01small.png&quot; alt=&quot;OSM&quot; /&gt; &lt;img src=&quot;openstreetmap/openstreetmap02small.png&quot; alt=&quot;OSM 2&quot; /&gt; &lt;img src=&quot;openstreetmap/openstreetmap03small.png&quot; alt=&quot;OSM 3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;El pasado 14 de diciembre de 2013 expuse en el &lt;a href=&quot;http://gulag.org.mx&quot;&gt;Grupo de Usuarios de GNU/Linux de la Laguna&lt;/a&gt; el tema &lt;strong&gt;OpenStreetMap&lt;/strong&gt;. De éste material extraigo estos apuntes:&lt;/p&gt;
+
+</description>
+      <author>guivaloz</author>
+      <pubDate>Sun, 19 Jan 2014 20:00:00 -0600</pubDate>
+      <dc:date>2014-01-19T20:00:00-06:00</dc:date>
+    </item>
+    <item>
       <title>Avistamiento de un bólido</title>
       <link>http://www.movimientolibre.com/articulos/caida-de-meteorito-2014-01-14.html</link>
       <description>
@@ -178,27 +191,6 @@
       <author>guivaloz</author>
       <pubDate>Tue, 21 Apr 2009 12:00:00 -0500</pubDate>
       <dc:date>2009-04-21T12:00:00-05:00</dc:date>
-    </item>
-    <item>
-      <title>Software Libre en tiempos de crisis</title>
-      <link>http://www.movimientolibre.com/presentaciones/software-libre-en-tiempos-de-crisis.html</link>
-      <description>
-&lt;p&gt;&lt;img src=&quot;software-libre-en-tiempos-de-crisis/software-libre-en-tiempos-de-crisis-1-small.png&quot; alt=&quot;S.L. en tiempos de crisis 1&quot; /&gt; &lt;img src=&quot;software-libre-en-tiempos-de-crisis/software-libre-en-tiempos-de-crisis-2-small.png&quot; alt=&quot;S.L. en tiempos de crisis 2&quot; /&gt; &lt;img src=&quot;software-libre-en-tiempos-de-crisis/software-libre-en-tiempos-de-crisis-3-small.png&quot; alt=&quot;S.L. en tiempos de crisis 3&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;No cabe duda que la crisis mundial, a pesar de los comentarios optimistas de nuestro gobierno, nos envuelve a todos y afecta la economía empresarial y familiar. Es este contexto, uno de los principales rubros donde buscamos reducción de costos es el de las Tecnologías de Información. He aquí una gran oportunidad para usar Software Libre, ya que si no podemos ahorrar en la compra y mantenimiento de hardware, sí lo podemos hacer al dejar de pagar el alto costo de las licencias privativas de software.&lt;/p&gt;
-
-&lt;p&gt;Punto aparte del ahorro económico, sabemos que el software es cada vez más el gran intermediario entre la información y la inteligencia humana. De la misma manera que nos preocupa la libertad para poder acceder a la información, nos debe preocupar con igual intensidad quién controla este intermediario y qué garantías tenemos de su transparencia y fiabilidad. El Software Libre, al dar acceso al código, es el único que puede garantizar esta transparencia.&lt;/p&gt;
-
-&lt;h4 id=&quot;descargar&quot;&gt;Descargar&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;software-libre-en-tiempos-de-crisis/software-libre-en-tiempos-de-crisis.pdf&quot;&gt;Presentación&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;software-libre-en-tiempos-de-crisis/software-libre-en-tiempos-de-crisis.tar.gz&quot;&gt;Fuentes LaTeX&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>guivaloz</author>
-      <pubDate>Sat, 14 Mar 2009 16:00:00 -0600</pubDate>
-      <dc:date>2009-03-14T16:00:00-06:00</dc:date>
     </item>
   </channel>
 </rss>

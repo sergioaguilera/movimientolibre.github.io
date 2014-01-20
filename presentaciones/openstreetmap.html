@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="alternate" type="application/rss+xml" title="Movimiento Libre" href="../rss.xml" />
+  <title>Movimiento Libre | OpenStreetMap</title>
+  <!-- TWITTER BOOTSTRAP INICIA -->
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootswatch/3.0.0/journal/bootstrap.min.css" rel="stylesheet">
+  <!-- ESTILOS CSS PROPIOS DE ESTE CMS -->
+  <link href="../css/cms.css" rel="stylesheet">
+  <!-- SOPORTE PARA IE8 -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+  <!-- TWITTER BOOTSTRAP TERMINA -->
+</head>
+<body>
+  <!-- MENU PRINCIPAL -->
+  <div class="navbar navbar-default navbar-fixed-top menu-principal" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">Movimiento Libre</a>
+      </div>
+    <div class="navbar-collapse collapse">
+<ul class="nav navbar-nav">
+  <li><a href="../articulos/">Artículos</a></li>
+  <li><a href="../presentaciones/">Presentaciones</a></li>
+  <li><a href="../contacto/">Contacto</a></li>
+</ul>
+    </div>
+    </div>
+  </div>
+  <div class="container contenido">
+    <!-- JUMBOTRON -->
+    <div class="jumbotron">
+      <h2>Movimiento Libre</h2>
+      <p>Colección de ideas.</p>
+    </div>
+    <!-- CONTENIDO -->
+    <h1>OpenStreetMap</h1>
+  <p><small>2014-01-19 20:00 - guivaloz</small></p>
+
+<p><img src="openstreetmap/openstreetmap01small.png" alt="OSM" /> <img src="openstreetmap/openstreetmap02small.png" alt="OSM 2" /> <img src="openstreetmap/openstreetmap03small.png" alt="OSM 3" /></p>
+
+<p>El pasado 14 de diciembre de 2013 expuse en el <a href="http://gulag.org.mx">Grupo de Usuarios de GNU/Linux de la Laguna</a> el tema <strong>OpenStreetMap</strong>. De éste material extraigo estos apuntes:</p>
+
+<h4 id="generalidades-de-gis">Generalidades de GIS</h4>
+
+<ul>
+  <li>Se denomina <strong>Información Geográfica</strong> a aquellos datos georreferenciados involucrados como parte de un sistema para operaciones administrativas, científicas o legales.</li>
+  <li>Un <strong>Sistema de Información Geográfica</strong> (GIS en inglés) es una integración organizada de hardware, software y datos geográficos diseñado para capturar, almacenar, manipular, analizar y desplegar información geográficamente referenciada. Con el fin de resolver complejos problemas de planificación y gestión geográfica.</li>
+  <li>Es notable que al pensar en mapas lo primero que se nos ocurra sea <strong>Google Maps</strong>. La empresa ha realizado en excelente trabajo y un gran negocio al ofrecer mapas en la internet. Aunque para el usuario común no le cuesta usar estos servicios, pierden sus derechos al ceder todas sus contribuciones a Google.</li>
+  <li>Lamentablemente para la mayoría de los países la información geográfica pública NO es de libre uso. <strong>El ciudadano viene pagando dos veces por ésta</strong>, la primera vía los impuestos para generarla y luego, por segunda vez, para obtenerla. Al mismo tiempo, <strong>puede estar sujeta a licencias que limitan su forma de uso</strong>.</li>
+</ul>
+
+<h4 id="las-virtudes-de-openstreetmap-osm">Las virtudes de OpenStreetMap (OSM)</h4>
+
+<ul>
+  <li>Conocimiento local: Enfatiza el conocimiento local. Los colaboradores utilizan imágenes aéreas, dispositivos GPS y mapas de campo de baja tecnología para verificar que OSM sea preciso y esté actualizado.</li>
+  <li>Impulsado por la comunidad: La comunidad de OSM es diversa, apasionada y crece cada día. Los colaboradores incluyen a mapeadores entusiastas, profesionales de GIS, ingenieros que ejecutan los servidores de OSM, mapeadores humanitarios de zonas afectadas por desastres y muchos más.</li>
+  <li>Datos abiertos: OSM es <em>open data</em>: usted es libre de utilizarlo para cualquier propósito, siempre y cuando se le dé crédito a OSM y sus colaboradores. Si altera o construye sobre los datos de ciertas maneras, deberá distribuir el resultado sólo bajo la misma licencia.</li>
+</ul>
+
+<h4 id="las-herramientas-para-usar-osm">Las herramientas para usar OSM</h4>
+
+<ul>
+  <li>En el navegador de internet ingrese a <a href="http://www.openstreetmap.org">OpenStreetMap</a>, haga una cuenta y edite el mapa.</li>
+  <li>Descargue el editor de mapas en Java <a href="https://josm.openstreetmap.de/">JOSM</a>.</li>
+  <li>Entre los muchos programas especializados destaca <a href="http://qgis.org/">QGIS</a> que es multiplataforma.</li>
+</ul>
+
+<h4 id="alcance-de-un-sistema-gis">Alcance de un sistema GIS</h4>
+
+<ul>
+  <li>Disponer con certeza y rapidez de la información y las ubicaciones de los puntos de interés. Esto significa hacer búsquedas y obtener mapas inmediatos de escuelas, negocios, zonas de riesgo, etc. desde PC, laptop, tablet o celular.</li>
+  <li>Ahorro de costos e independencia de proveedores externos. Al implementar un servidor de mosaicos propio, se ahorrarán costos de proveedores externos, en especial.</li>
+  <li>Aprovechar las tecnologías de los teléfonos inteligentes con GPS. Por medio de programas libres se podrán registrar la ruta y los datos georreferenciados de los recorridos usando hardware económico.</li>
+  <li>Publicación de mapas en los sitios web con información para el ciudadano.</li>
+</ul>
+
+<h4 id="descargar">Descargar:</h4>
+
+<ul>
+  <li><a href="openstreetmap/openstreetmap.pdf">Presentación PDF 8.3 MB</a></li>
+  <li><a href="openstreetmap/openstreetmap.tar.gz">Fuentes LaTeX 16.4 MB</a></li>
+</ul>
+
+  </div>
+  <!-- PIE -->
+  <footer>
+    <div class="container">
+    <!-- MENU SECUNDARIO -->
+    <div class="panel panel-default panel-menu-secundario">
+      <div class="panel-body">
+<div class="panel panel-default col-md-4 menu-secundario">
+  <div class="panel-heading">Últimas publicaciones</div>
+<ul class="list-group">
+      <li class="list-group-item"><a href="../presentaciones/openstreetmap.html">OpenStreetMap</a></li>
+      <li class="list-group-item"><a href="../articulos/caida-de-meteorito-2014-01-14.html">Avistamiento de un bólido</a></li>
+      <li class="list-group-item"><a href="../articulos/oferta-de-trabajo.html">Oferta de trabajo</a></li>
+      <li class="list-group-item"><a href="../presentaciones/distribuciones-gnulinux.html">Distribuciones GNU/Linux</a></li>
+      <li class="list-group-item"><a href="../presentaciones/virtualizacion-con-qemu.html">Virtualización con QEmu</a></li>
+      <li class="list-group-item"><a href="../presentaciones/ruby-basico-taller.html">Taller de Ruby Básico</a></li>
+      <li class="list-group-item"><a href="../presentaciones/edubuntu-en-la-educacion.html">Edubuntu en la educación</a></li>
+      <li class="list-group-item"><a href="../articulos/gentoo-linux-10-years.html">Gentoo Linux... ¡10 años compilando!</a></li>
+      <li class="list-group-item"><a href="../articulos/revista-del-consumidor-la-descarga-te-hara-libre.html">La descarga te hará libre</a></li>
+      <li class="list-group-item"><a href="../presentaciones/kde-4-reinventando-el-entorno-grafico.html">KDE 4 Reinventando el entorno gráfico</a></li>
+</ul>
+</div><div class="panel panel-default col-md-4 menu-secundario">
+  <div class="panel-heading">Categorías</div>
+<ul class="list-group">
+      <li class="list-group-item"><a href="../categorias/astronomia.html">Astronomía (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/educacion.html">Educación (3)</a></li>
+      <li class="list-group-item"><a href="../categorias/gis.html">GIS (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/gnu_linux.html">GNU/Linux (8)</a></li>
+      <li class="list-group-item"><a href="../categorias/gentoo.html">Gentoo (3)</a></li>
+      <li class="list-group-item"><a href="../categorias/inkscape.html">Inkscape (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/kde.html">KDE (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/kernel.html">Kernel (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/latex.html">LaTeX (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/mini-itx.html">Mini-ITX (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/openstreetmap.html">OpenStreetMap (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/php.html">PHP (2)</a></li>
+      <li class="list-group-item"><a href="../categorias/politica.html">Política (2)</a></li>
+      <li class="list-group-item"><a href="../categorias/qemu.html">QEmu (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/ruby.html">Ruby (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/trabajo.html">Trabajo (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/ubuntu.html">Ubuntu (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/vida_cotidiana.html">Vida cotidiana (3)</a></li>
+      <li class="list-group-item"><a href="../categorias/wallpapers.html">Wallpapers (1)</a></li>
+</ul>
+</div><div class="panel panel-default col-md-4 menu-secundario">
+  <div class="panel-heading">Autores</div>
+<ul class="list-group">
+      <li class="list-group-item"><a href="../autores/guivaloz.html">guivaloz (27)</a></li>
+      <li class="list-group-item"><a href="../autores/rosy.html">rosy (1)</a></li>
+</ul>
+</div><div class="panel panel-default col-md-4 menu-secundario">
+  <div class="panel-heading">Sindicalización</div>
+<ul class="list-group">
+      <li class="list-group-item"><a href="../rss.xml"><img src="../imagenes/rss.png" alt="RSS 2.0"> RSS 2.0</a></li>
+</ul>
+</div>
+      </div>
+    </div>
+  Copyright (c) 2006-2013 Guillermo Valdés Lozano.<br>
+  Se otorga permiso para copiar, distribuir y/o modificar este documento bajo los términos de la Licencia de Documentación Libre de GNU, Versión 1.2 o cualquier otra versión posterior publicada por la Free Software Foundation; sin Secciones Invariantes ni Textos de Cubierta Delantera ni Textos de Cubierta Trasera.<br>
+  Una copia de la licencia está incluida en la sección titulada GNU Free Documentation License.
+
+    </div>
+  </footer>
+  <!-- CODIGO JAVASCRIPT DE BOOTSTRAP PUESTO AL FINAL PARA QUE SE CARGUE MAS RAPIDO LA PAGINA -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
