@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="alternate" type="application/rss+xml" title="Movimiento Libre" href="../rss.xml" />
+  <title>Movimiento Libre | Apuntes de Git</title>
+  <!-- TWITTER BOOTSTRAP INICIA -->
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootswatch/3.0.0/journal/bootstrap.min.css" rel="stylesheet">
+  <!-- ESTILOS CSS PROPIOS DE ESTE CMS -->
+  <link href="../css/cms.css" rel="stylesheet">
+  <!-- SOPORTE PARA IE8 -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+  <!-- TWITTER BOOTSTRAP TERMINA -->
+</head>
+<body>
+  <!-- MENU PRINCIPAL -->
+  <div class="navbar navbar-default navbar-fixed-top menu-principal" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">Movimiento Libre</a>
+      </div>
+    <div class="navbar-collapse collapse">
+<ul class="nav navbar-nav">
+  <li><a href="../apuntes/">Apuntes</a></li>
+  <li><a href="../articulos/">Artículos</a></li>
+  <li><a href="../presentaciones/">Presentaciones</a></li>
+  <li><a href="../contacto/">Contacto</a></li>
+</ul>
+    </div>
+    </div>
+  </div>
+  <div class="container contenido">
+    <!-- JUMBOTRON -->
+    <div class="jumbotron">
+      <h2>Movimiento Libre</h2>
+      <p>Colección de ideas.</p>
+    </div>
+    <!-- CONTENIDO -->
+    <h1>Apuntes de Git</h1>
+  <p><small>2014-01-21 19:20 - guivaloz</small></p>
+
+<ul>
+  <li>GIT es un software de Control de Revisiones. Esto significa que es capaz de recordar los estados previos en que se hayan guardado los muchos archivos de un sistema.</li>
+  <li>GIT también se puede comunicar con computadoras y servidores remotos, para lograr así la descarga, sincronización y actualización en un solo comando.</li>
+  <li>GIT es Software Libre con licencia GPL versión 2. Usado por los desarrolladores del kernel Linux y diseñado por Linus Torvalds.</li>
+</ul>
+
+<h4 id="para-averiguar-la-versin-instalada">Para averiguar la versión instalada</h4>
+
+<p>Para averiguar la versión instalada.</p>
+
+<pre><code>$ git version
+git version 1.8.3.2
+</code></pre>
+
+<p>Ejecute GIT sin parámetros para mostrar una ayuda simple.</p>
+
+<pre><code>$ git
+</code></pre>
+
+<h4 id="antes-de-su-primer-uso">Antes de su primer uso</h4>
+
+<p>Debe configurar sus datos personales. Con estos datos se firmarán sus cambios y aportaciones al código.</p>
+
+<pre><code>$ git config --global user.name "Tu Nombre Completo"
+$ git config --global user.email tunombre@servidor.com
+</code></pre>
+
+<p>También es recomendable crear un par de llaves OpenSSH para asegurar la transmisión de datos entre el servidor y su equipo.</p>
+
+<pre><code>$ ssh-keygen
+$ scp .ssh/id_rsa.pub usuario@servidor.com:/home/usuario/millavepublica.pub
+</code></pre>
+
+<h4 id="descarga-de-un-repositorio-en-gihub">Descarga de un repositorio en GiHub</h4>
+
+<p>GitHub es el repositorio más grande y popular de software que usa GIT. Obtener un clon de un software desde ahí es sencillo. Por ejemplo, para descargar <a href="http://getbootstrap.com/">Twitter Bootstrap</a>:</p>
+
+<pre><code>$ mkdir -p ~/Descargas/GIT/bootstrap
+$ cd ~/Descargas/GIT
+$ git clone git@github.com:twbs/bootstrap.git
+$ cd bootstrap
+</code></pre>
+
+<p>Haga una cuenta gratuita o de pago en GitHub para subir su llave pública OpenSSH.</p>
+
+<h4 id="iniciar-un-repositorio">Iniciar un repositorio</h4>
+
+<p>Cabe resaltar la flexibilidad de Git en que puede iniciar un nuevo repositorio en su propio equipo o en el servidor local; y en cualquier directorio de su disco duro interno o unidad de almacenamiento extena. Para iniciar un repositorio cámbiese al directorio base del mismo y ejecute <em>git init</em>.</p>
+
+<pre><code>$ cd ~/Documentos/Prueba
+$ git init
+</code></pre>
+
+<p>Se creará un directorio oculto con nombre <strong>.git</strong>. Como dato importante, de aquí en delante, todos los comandos Git de este repositorio debe ejecutarlos en el directorio base, donde está oculto <strong>.git</strong>.</p>
+
+<h4 id="directorios-y-archivos-a-ignorar">Directorios y archivos a ignorar</h4>
+
+<p>No todos los archivos que ponga en su copia local tienen que estar necesariamente también en el repositorio. Es conveniente que archivos temporales, por ejemplo los creador por <strong>LaTeX</strong> (aux, log, toc), sean excluidos. Edite el archivo <em>exclude</em>:</p>
+
+<pre><code>$ nano -w .git/info/exclude
+</code></pre>
+
+<p>Y en cada línea agregue los nombres de archivos y directorios que NO serán incluidos en el repositorio; puede usar comodines como el asterisco. Por ejemplo:</p>
+
+<pre><code>.*
+*~
+*.aux
+*.log
+*.toc
+*.geany
+</code></pre>
+
+<h4 id="agregar-archivos-al-repositorio-local">Agregar archivos al repositorio local</h4>
+
+<p>Para agregar archivos y directorios, nuevos y modificados al repositorio, debe de estar en el directorio base y ejecutar:</p>
+
+<pre><code>$ cd ~/Documentos/Prueba
+$ git add .
+</code></pre>
+
+<p>Para mostrar el listado con los cambios en el repositorio que están en espera de aplicarse ejecute:</p>
+
+<pre><code>$ git status
+</code></pre>
+
+<p>Éstos están pendientes de ser integrados o <em>comiteados</em>.</p>
+
+<h4 id="remover-archivos-o-directorios-antes-de-integrar">Remover archivos o directorios antes de integrar</h4>
+
+<p>Si al ver el status nota que un archivo o directorio NO debiera incluirse, ejecute el comando rm.</p>
+
+<pre><code>$ git rm directorio/archivoquenodebeincluirse.txt
+</code></pre>
+
+<p>Y revise de nuevo.</p>
+
+<pre><code>$ git status
+</code></pre>
+
+<p>De otra forma, para agregar archivos y tomar en cuenta de una vez los eliminados use:</p>
+
+<pre><code>$ git add . --all
+</code></pre>
+
+<h4 id="integrar-los-cambios">Integrar los cambios</h4>
+
+<p>Después de agregar, modificar o eliminar archivos proceda a integrar. Para integrar hay que hacer un <em>commit</em>. Este comando debe de incluir un comentario.</p>
+
+<pre><code>$ git commit -m "He terminado la rama de Informática."
+</code></pre>
+
+<p>Después de éste, ejecute otro status para observar que ya no hay nada más nuevo.</p>
+
+<pre><code>$ git status
+</code></pre>
+
+<p>Cada integración agrega un registro en una bitácora de cambios. La bitacora puede verse con <em>git log</em>.</p>
+
+<pre><code>$ git log
+</code></pre>
+
+<h4 id="descargue-las-novedades-del-servidor">Descargue las novedades del servidor</h4>
+
+<p>Para actualizar su copia local con las novedades en el servidor, ya sea por que otra persona haya subido aportaciones o porque usted haya hecho cambios en otro equipo, <em>jale</em> una actualización del servidor. En caso de no haber cambios, mostrará un mensaje de que está al día.</p>
+
+<pre><code>$ git pull
+</code></pre>
+
+<p>Lea los comentarios de sus compañeros en el log.</p>
+
+<pre><code>$ git log
+</code></pre>
+
+<h4 id="despues-de-aportar-debe-respaldar-localmente">Despues de aportar debe respaldar localmente</h4>
+
+<p>Debe respaldar cada buen avance que lleve, ya sea al final del día o antes si lo amerita. Agregue sus archivos nuevos y modificados. Luego revise.</p>
+
+<pre><code>$ git add .
+$ git status
+</code></pre>
+
+<p>Si Usted lo aprueba. Integre.</p>
+
+<pre><code>$ git commit -m "Avance en el módulo Direcciones."
+</code></pre>
+
+<h4 id="derivaciones">Derivaciones</h4>
+
+<p>Una derivación o <em>branch</em> es una rama en el desarrollo de un sistema que permite establecer una distinta en el desarrollo. Ésto le permite trabajar con una nueva cualidad sin dañar al sistema que ya funcione bien. De inicio todo repositorio tiene el <em>branch master</em>. Para listar las derivaciones ejecute:</p>
+
+<pre><code>$ git branch
+* master
+</code></pre>
+
+<p>Para agregar una nueva derivación use la orden <em>branch</em>. Luego cámbiese a la derivación en uso con la orden <em>checkout</em>. Por ejemplo, para mantener dos versiones del sistema, <em>master</em> y <em>desarrollo</em>:</p>
+
+<pre><code>$ git branch desarrollo
+$ git checkout desarrollo
+  master
+* desarrollo
+</code></pre>
+
+<p>El marcado con asterisco es el <em>branch</em> en uso.</p>
+
+<h4 id="trabaje-en-su-derivacin">Trabaje en su derivación</h4>
+
+<p>Trabaje en su <em>branch</em>. Los cambios que haga se quedan en éste. Para integrar use los comandos ya mencionados.</p>
+
+<pre><code>$ git status
+$ git add .
+$ git commit -m "He hecho un par de mejoras."
+</code></pre>
+
+<p>Puede dejar de programar, conmutar el sistema usando otro <em>branch</em>. Por ejemplo, para cambiar a <em>master</em>:</p>
+
+<pre><code>$ git checkout master
+</code></pre>
+
+<p>Si observa su directorio base en un administrador de archivos notará como aparecen y reaparecen archivos que hayan sido agregados y elimnados de un <em>branch</em> a otro. Para cambiar a <em>desarrollo</em>:</p>
+
+<pre><code>$ git checkout desarrollo
+</code></pre>
+
+<h4 id="fusionar-derivaciones">Fusionar derivaciones</h4>
+
+<p>Conforme va haciendo <em>commits</em> en un <em>brach</em> éste se dice que va adelantado al <em>master</em>. Para mostrar un listado de los <em>branchs</em> y el último comentario de cada <em>commit</em> ejecute:</p>
+
+<pre><code>$ git branch -v
+</code></pre>
+
+<p>Cuando el <em>branch desarrollo</em> quede listo y necesite que <em>master</em> reciba todas las novedades de éste, debe usar la orden <em>merge</em>.</p>
+
+<pre><code>$ git checkout master
+$ git merge desarrollo
+</code></pre>
+
+<p>Ahora <em>master</em> se ha <strong>corrido</strong> a donde apunta <em>desarrollo</em> y son iguales. Verifique con:</p>
+
+<pre><code>$ git branch -v
+</code></pre>
+
+<h4 id="eliminar-derivaciones">Eliminar derivaciones</h4>
+
+<p>En caso de que quiera descartar un <em>branch</em> o derivación.</p>
+
+<pre><code>$ git branch -d desarrollo
+</code></pre>
+
+<p>Este comando funciona siempre y cuando no tenga archivos pendientes de integrar.</p>
+
+<h4 id="repositorios-remotos">Repositorios remotos</h4>
+
+<p>Las más recientes versiones de Git solicitan que defina la forma local de subir los archivos. Así que en su equipo y usuario ejecute sólo una vez:</p>
+
+<pre><code>$ git --config push.default simple
+</code></pre>
+
+<p>Git recuerda el origen de cada repositorio cuyo origen sea un servidor remoto. Ejecute este comando para averiguar cuál es:</p>
+
+<pre><code>$ git remote -v
+</code></pre>
+
+<p>He notado que Git va impedir que suba cambios al <em>branch master</em> de su servidor, a excepción de <strong>GitHub</strong>. Por lo que debe estar en una derivación distinta a <em>master</em> antes de subir.</p>
+
+<h4 id="subir-una-nueva-derivacin-al-servidor">Subir una nueva derivación al servidor</h4>
+
+<p>Teniendo permiso de lectura y escritura en el servidor, puede subir un nuevo branch al servidor con la orden push.</p>
+
+<pre><code>$ git push origin nombredelbranch
+</code></pre>
+
+<p>Si esa derivación no existe en el servidor, será creada.</p>
+
+<h4 id="bajar-una-derivacin-desde-el-servidor">Bajar una derivación desde el servidor</h4>
+
+<p>Al clonar sólo se bajará el <em>branch master</em>. Si desea bajar una derivación del repositorio remoto, ejecute:</p>
+
+<pre><code>$ git fetch origin desarrollo
+$ git checkout desarrollo
+</code></pre>
+
+<h4 id="subir-actualizaciones-de-la-derivacin-local-al-servidor">Subir actualizaciones de la derivación local al servidor</h4>
+
+<p>Si ha hecho nuevos programas o cambios en los mismos, suba su actualización al servidor con el siguiente comando. Claro que localmente debe estar en ese branch.</p>
+
+<pre><code>$ git push
+</code></pre>
+
+<p>Puede ser específico a un <em>brach</em> por ejemplo para <em>desarrollo</em>:</p>
+
+<pre><code>$ git push origin desarrollo
+</code></pre>
+
+<h4 id="actualizar-el-repositorio-local">Actualizar el repositorio local</h4>
+
+<p>Para bajar las actualizaciones de una derivación (sólo el branch en uso) desde el servidor, use la orden pull.</p>
+
+<pre><code>$ git checkout desarrollo
+$ git pull origin desarrollo
+</code></pre>
+
+  </div>
+  <!-- PIE -->
+  <footer>
+    <div class="container">
+    <!-- MENU SECUNDARIO -->
+    <div class="panel panel-default panel-menu-secundario">
+      <div class="panel-body">
+<div class="panel panel-default col-md-4 menu-secundario">
+  <div class="panel-heading">Últimas publicaciones</div>
+<ul class="list-group">
+      <li class="list-group-item"><a href="../apuntes/git-apuntes.html">Apuntes de Git</a></li>
+      <li class="list-group-item"><a href="../presentaciones/openstreetmap.html">OpenStreetMap</a></li>
+      <li class="list-group-item"><a href="../articulos/caida-de-meteorito-2014-01-14.html">Avistamiento de un bólido</a></li>
+      <li class="list-group-item"><a href="../articulos/oferta-de-trabajo.html">Oferta de trabajo</a></li>
+      <li class="list-group-item"><a href="../presentaciones/distribuciones-gnulinux.html">Distribuciones GNU/Linux</a></li>
+      <li class="list-group-item"><a href="../presentaciones/virtualizacion-con-qemu.html">Virtualización con QEmu</a></li>
+      <li class="list-group-item"><a href="../presentaciones/ruby-basico-taller.html">Taller de Ruby Básico</a></li>
+      <li class="list-group-item"><a href="../presentaciones/edubuntu-en-la-educacion.html">Edubuntu en la educación</a></li>
+      <li class="list-group-item"><a href="../articulos/gentoo-linux-10-years.html">Gentoo Linux... ¡10 años compilando!</a></li>
+      <li class="list-group-item"><a href="../articulos/revista-del-consumidor-la-descarga-te-hara-libre.html">La descarga te hará libre</a></li>
+</ul>
+</div><div class="panel panel-default col-md-4 menu-secundario">
+  <div class="panel-heading">Categorías</div>
+<ul class="list-group">
+      <li class="list-group-item"><a href="../categorias/astronomia.html">Astronomía (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/educacion.html">Educación (3)</a></li>
+      <li class="list-group-item"><a href="../categorias/gis.html">GIS (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/gnu_linux.html">GNU/Linux (8)</a></li>
+      <li class="list-group-item"><a href="../categorias/gentoo.html">Gentoo (3)</a></li>
+      <li class="list-group-item"><a href="../categorias/git.html">Git (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/inkscape.html">Inkscape (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/kde.html">KDE (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/kernel.html">Kernel (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/latex.html">LaTeX (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/mini-itx.html">Mini-ITX (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/openstreetmap.html">OpenStreetMap (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/php.html">PHP (2)</a></li>
+      <li class="list-group-item"><a href="../categorias/politica.html">Política (2)</a></li>
+      <li class="list-group-item"><a href="../categorias/qemu.html">QEmu (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/ruby.html">Ruby (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/trabajo.html">Trabajo (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/ubuntu.html">Ubuntu (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/vida_cotidiana.html">Vida cotidiana (3)</a></li>
+      <li class="list-group-item"><a href="../categorias/wallpapers.html">Wallpapers (1)</a></li>
+</ul>
+</div><div class="panel panel-default col-md-4 menu-secundario">
+  <div class="panel-heading">Autores</div>
+<ul class="list-group">
+      <li class="list-group-item"><a href="../autores/guivaloz.html">guivaloz (28)</a></li>
+      <li class="list-group-item"><a href="../autores/rosy.html">rosy (1)</a></li>
+</ul>
+</div><div class="panel panel-default col-md-4 menu-secundario">
+  <div class="panel-heading">Sindicalización</div>
+<ul class="list-group">
+      <li class="list-group-item"><a href="../rss.xml"><img src="../imagenes/rss.png" alt="RSS 2.0"> RSS 2.0</a></li>
+</ul>
+</div>
+      </div>
+    </div>
+  Copyright (c) 2006-2013 Guillermo Valdés Lozano.<br>
+  Se otorga permiso para copiar, distribuir y/o modificar este documento bajo los términos de la Licencia de Documentación Libre de GNU, Versión 1.2 o cualquier otra versión posterior publicada por la Free Software Foundation; sin Secciones Invariantes ni Textos de Cubierta Delantera ni Textos de Cubierta Trasera.<br>
+  Una copia de la licencia está incluida en la sección titulada GNU Free Documentation License.
+
+    </div>
+  </footer>
+  <!-- CODIGO JAVASCRIPT DE BOOTSTRAP PUESTO AL FINAL PARA QUE SE CARGUE MAS RAPIDO LA PAGINA -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
