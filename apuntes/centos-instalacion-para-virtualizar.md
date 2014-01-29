@@ -107,7 +107,7 @@ Esta descarga es grande y puede demorar algo de tiempo, dependiendo de su veloci
 
 #### Configuración del bridge
 
-    # cd /etc/sysconfig/network-scripts
+    # cd /etc/sysconfig/network-scripts/
     # nano ifcfg-br0
 
     DEVICE=br0
@@ -127,7 +127,12 @@ Esta descarga es grande y puede demorar algo de tiempo, dependiendo de su veloci
     ONBOOT="yes"
     BRIDGE="br0"
 
-    # service network restart
+#### Reinicie el servidor
+
+    # shutdown -r 1 &
+    # exit
+
+#### Revise
 
     # ifconfig br0
     # ifconfig eth0
@@ -137,8 +142,4 @@ Esta descarga es grande y puede demorar algo de tiempo, dependiendo de su veloci
 
     useradd -g users -G tty,lp,wheel,uucp,games,video,audio,cdrom,kvm,qemu -m saturno
 
-#### Reinicie el servidor
-
-    # shutdown -r 1 &
-    # exit
 
