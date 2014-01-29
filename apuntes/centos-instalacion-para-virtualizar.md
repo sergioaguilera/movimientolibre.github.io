@@ -10,7 +10,7 @@ Categorías: CentOS, Virtualización
 
 #### Arranque con el CD Minimal
 
-Hay varios tipos de discos ISO de CentOS para cada versión. Desde DVD completos a CD para instarar por red. Su servidor recomienda usar el **CD Minimal x86_64** ya que contiene lo básico para llegar a una terminal. Considere que es poco útil y riesgoso tener una interfaz gráfica en un servidor. 
+Hay varios tipos de discos ISO de CentOS para cada versión. Desde DVD completos a CD para instarar por red. Su servidor recomienda usar el **CD Minimal x86_64** ya que contiene lo básico para llegar a una terminal. Considere que es poco útil y riesgoso tener una interfaz gráfica en un servidor.
 
 Durante la instalación elija estas opciones:
 
@@ -29,7 +29,7 @@ Por defecto no levanta ningún dispositivo de red. Como partimos del **CD Minima
     # cd /etc/sysconfig/network-scripts
     # vi ifcfg-eth0
 
-Si quiere usar una **dirección IP fija**, por ejemplo 192.168.0.250 con ruteador 192.168.0.254:
+Si quiere usar una **dirección IP fija**, por ejemplo 192.168.0.250 con ruteador 192.168.0.254 (conserve el **HWADDR**):
 
     DEVICE=eth0
     HWADDR=xx:xx:xx:xx:xx:xx
@@ -51,7 +51,7 @@ Escriba el dominio si lo usa, luego cada servidor DNS como una línea _nameserve
     nameserver 8.8.8.8
     nameserver 8.8.4.4
 
-En cambio, para solicitar una **dirección IP dinámica** al servidor DHCP:
+En cambio, para solicitar una **dirección IP dinámica** al servidor DHCP se usa **BOOTPROTO**:
 
     DEVICE=eth0
     HWADDR=xx:xx:xx:xx:xx:xx
@@ -107,19 +107,27 @@ Esta descarga es grande y puede demorar algo de tiempo, dependiendo de su veloci
 
 #### Configuración del bridge
 
+Cree el archivo **ifcfg-br0** con la configuración para el _bridge_:
+
     # cd /etc/sysconfig/network-scripts/
     # nano ifcfg-br0
+
+Si **br0** va a tener una dirección IP estática, use lo siguiente como contenido del archivo **ifcfg-br0** ajustando la dirección IP, la máscara y el _gateway_ a sus necesidades:
 
     DEVICE=br0
     TYPE=Bridge
     ONBOOT=yes
     DELAY=0
     NM_CONTROLLED=no
-    IPADDR=192.168.6.253
+    IPADDR=192.168.0.250
     NETMASK=255.255.255.0
-    GATEWAY=192.168.6.247
+    GATEWAY=192.168.0.254
+
+Luego, hay que editar el archivo **ifcfg-eth0** para indicar que ese dispositivo de red se va conectar al _bridge_:
 
     # nano ifcfg-eth0
+
+Con este contenido:
 
     DEVICE="eth0"
     HWADDR="xx:xx:xx:xx:xx:xx"
@@ -127,12 +135,40 @@ Esta descarga es grande y puede demorar algo de tiempo, dependiendo de su veloci
     ONBOOT="yes"
     BRIDGE="br0"
 
+#### Configure el muro de fuego
+
+Para que se permitan todas las comunicaciones que fluyan a través del _bridge_ es necesario indicarlo.
+
+    # cd /etc/sysconfig/
+    # nano iptables
+
+Agregue la línea **-A FORWARD -i br0 -j ACCEPT**
+
+    *filter
+    :INPUT ACCEPT [0:0]
+    :FORWARD ACCEPT [0:0]
+    :OUTPUT ACCEPT [0:0]
+    -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+    -A INPUT -p icmp -j ACCEPT
+    -A INPUT -i lo -j ACCEPT
+    -A INPUT -m state --state NEW -m tcp -p tcp --dport 22 -j ACCEPT
+    -A INPUT -j REJECT --reject-with icmp-host-prohibited
+    -A FORWARD -i br0 -j ACCEPT
+    -A FORWARD -j REJECT --reject-with icmp-host-prohibited
+    COMMIT
+
+Verifique...
+
+    # iptables -L -v
+
 #### Reinicie el servidor
+
+Para asegurar que la nueva configuración se aplica al encender el equipo, reinicie.
 
     # shutdown -r 1 &
     # exit
 
-#### Revise
+Y revise la salida de estos comandos:
 
     # ifconfig br0
     # ifconfig eth0
@@ -141,5 +177,4 @@ Esta descarga es grande y puede demorar algo de tiempo, dependiendo de su veloci
 #### Agregue un usuario común
 
     useradd -g users -G tty,lp,wheel,uucp,games,video,audio,cdrom,kvm,qemu -m saturno
-
 
