@@ -289,13 +289,13 @@ Establezca la contraseña:
 
 Desde un equipo con interfaz gráfica y el **VirtManager** instalado administramos las virtaliuzaciones.
 
-[Administrador de Virtualizaciones](centos-instalacion-para-virtualizar/administrador-virtualizaciones-1.png)
+![Administrador de Virtualizaciones](centos-instalacion-para-virtualizar/administrador-virtualizaciones-1.png)
 
 Establezca la conexión vía OpenSSH. Le solicitará la contraseña _root_:
 
-[Administrador de Virtualizaciones nueva conexion](centos-instalacion-para-virtualizar/administrador-virtualizaciones-2-nueva-conexion.png)
+![Administrador de Virtualizaciones nueva conexion](centos-instalacion-para-virtualizar/administrador-virtualizaciones-2-nueva-conexion.png)
 
 Verifique que en los detalles se use la configuración de red con el _bridge_ **br0**:
 
-[Administrador de Virtualizaciones detalle](centos-instalacion-para-virtualizar/administrador-virtualizaciones-3-detalles-redes.png)
+![Administrador de Virtualizaciones detalle](centos-instalacion-para-virtualizar/administrador-virtualizaciones-3-detalles-redes.png)
 
