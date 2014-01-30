@@ -1,7 +1,7 @@
 Instalación de CentOS para virtualizar
 ======================================
 
-Fecha: 2014-01-30 09:30
+Fecha: 2014-01-30 10:20
 Categorías: CentOS, Virtualización
 
 [CentOS](https://www.centos.org/) es una distribución GNU/Linux mantenida por la comunidad a partir del código libre de [Red Hat](https://www.redhat.com/). De una forma práctica, **CentOS** es lo mismo que **Red Hat** pero sin su marca comercial ni soporte técnico de paga. La estabilidad y confiabilidad de CentOS lo hacen la mejor opción para sistema operativo base de un servidor cuyo fin sea virtualizar. Recientemente se ha anunciado el apoyo directo de Red Hat a la comunidad de CentOS; de lo cual esperamos muchas ganancias para todos.
@@ -283,5 +283,19 @@ Como en todo equipo de escritorio o servidor, es ampliamente recomendable dar de
 
 Establezca la contraseña:
 
-    # passwd guivaloz
+    # passwd minombre
+
+#### Administrador de virtualizaciones
+
+Desde un equipo con interfaz gráfica y el **VirtManager** instalado administramos las virtaliuzaciones.
+
+[Administrador de Virtualizaciones](centos-instalacion-para-virtualizar/administrador-virtualizaciones-1.png)
+
+Establezca la conexión vía OpenSSH. Le solicitará la contraseña _root_:
+
+[Administrador de Virtualizaciones nueva conexion](centos-instalacion-para-virtualizar/administrador-virtualizaciones-2-nueva-conexion.png)
+
+Verifique que en los detalles se use la configuración de red con el _bridge_ **br0**:
+
+[Administrador de Virtualizaciones detalle](centos-instalacion-para-virtualizar/administrador-virtualizaciones-3-detalles-redes.png)
 
