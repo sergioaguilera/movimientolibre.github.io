@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
-  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
-  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  version="2.0"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
   <channel>
     <title>Movimiento Libre</title>
     <link>http://www.movimientolibre.com</link>
     <description>Colección de ideas.</description>
+    <item>
+      <title>Instalación de CentOS para virtualizar</title>
+      <link>http://www.movimientolibre.com/apuntes/centos-instalacion-para-virtualizar.html</link>
+      <description>
+&lt;p&gt;&lt;a href=&quot;https://www.centos.org/&quot;&gt;CentOS&lt;/a&gt; es una distribución GNU/Linux mantenida por la comunidad a partir del código libre de &lt;a href=&quot;https://www.redhat.com/&quot;&gt;Red Hat&lt;/a&gt;. De una forma práctica, &lt;strong&gt;CentOS&lt;/strong&gt; es lo mismo que &lt;strong&gt;Red Hat&lt;/strong&gt; pero sin su marca comercial ni soporte técnico de paga. La estabilidad y confiabilidad de CentOS lo hacen la mejor opción para sistema operativo base de un servidor cuyo fin sea virtualizar. Recientemente se ha anunciado el apoyo directo de Red Hat a la comunidad de CentOS; de lo cual esperamos muchas ganancias para todos.&lt;/p&gt;
+
+</description>
+      <author>guivaloz</author>
+      <pubDate>Thu, 30 Jan 2014 09:30:00 -0600</pubDate>
+      <dc:date>2014-01-30T09:30:00-06:00</dc:date>
+    </item>
     <item>
       <title>Apuntes de Git</title>
       <link>http://www.movimientolibre.com/apuntes/git-apuntes.html</link>
@@ -139,7 +150,7 @@
       <description>
 &lt;p&gt;&lt;img src=&quot;edubuntu-en-la-educacion/edubuntu-en-la-educacion-1-small.jpg&quot; alt=&quot;Edubuntu 1&quot; /&gt; &lt;img src=&quot;edubuntu-en-la-educacion/edubuntu-en-la-educacion-2-small.jpg&quot; alt=&quot;Edubuntu 2&quot; /&gt; &lt;img src=&quot;edubuntu-en-la-educacion/edubuntu-en-la-educacion-3-small.jpg&quot; alt=&quot;Edubuntu 3&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Para la &lt;a href=&quot;http://www.conacyt.mx/Comunicacion/sncyt/index.html&quot;&gt;16va. Semana Nacional de Ciencia y Tecnología&lt;/a&gt; en un evento organizado por el &lt;a href=&quot;http://www.coecyt-coah.gob.mx/&quot;&gt;COECYT de Coahuila&lt;/a&gt; representando a &lt;a href=&quot;http://www.innovatic.org.mx/&quot;&gt;InnovaTIC&lt;/a&gt; y al &lt;a href=&quot;http://www.gulag.org.mx/&quot;&gt;GULAG&lt;/a&gt;, elaboré la presentación “Edubuntu en la educación”.&lt;/p&gt;
+&lt;p&gt;Para la &lt;a href=&quot;http://www.conacyt.mx/Comunicacion/sncyt/index.html&quot;&gt;16va. Semana Nacional de Ciencia y Tecnología&lt;/a&gt; en un evento organizado por el &lt;a href=&quot;http://www.coecyt-coah.gob.mx/&quot;&gt;COECYT de Coahuila&lt;/a&gt; representando a &lt;a href=&quot;http://www.innovatic.org.mx/&quot;&gt;InnovaTIC&lt;/a&gt; y al &lt;a href=&quot;http://www.gulag.org.mx/&quot;&gt;GULAG&lt;/a&gt;, elaboré la presentación &amp;#8220;Edubuntu en la educación&amp;#8221;.&lt;/p&gt;
 
 &lt;p&gt;Este material es una semblanza de lo que es el Software Libre, &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;Ubuntu&lt;/a&gt; y &lt;a href=&quot;http://www.edubuntu.org/&quot;&gt;Edubuntu&lt;/a&gt;, haciendo énfasis en su aplicación para el ámbito educativo. Se le hace la pregunta al público de que si sabe cuánto se gasta por comprar software privativo, si sabe que se estén usando copias ilegales del mismo y si es justo que sólo se enseñe una alternativa comercial habiendo otras libres. Concluye reflexionando sobre el potencial de la Comarca Lagunera para integrarse a las Industrias de la Información y Comunicación.&lt;/p&gt;
 
@@ -166,21 +177,6 @@
       <author>guivaloz</author>
       <pubDate>Tue, 06 Oct 2009 22:00:00 -0500</pubDate>
       <dc:date>2009-10-06T22:00:00-05:00</dc:date>
-    </item>
-    <item>
-      <title>Revista del Consumidor - La descarga te hará libre</title>
-      <link>http://www.movimientolibre.com/articulos/revista-del-consumidor-la-descarga-te-hara-libre.html</link>
-      <description>
-&lt;p&gt;&lt;img src=&quot;revista-del-consumidor-la-descarga-te-hara-libre/portada-software-gratis.jpg&quot; alt=&quot;software gratis&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Una muy grata sorpresa es encontrar un artículo dedicado al &lt;em&gt;software gratuito&lt;/em&gt; en una revista de circulación nacional. Es en la &lt;a href=&quot;http://revistadelconsumidor.gob.mx/&quot;&gt;Revista del Consumidor&lt;/a&gt; de Mayo de 2009. En la portada aparece como “Software Gratis que sí te ayuda a ahorrar (y no te convierte en pirata)”.&lt;/p&gt;
-
-&lt;p&gt;Escrito por Sara Velázquez, habla a cerca de las desventajas de usar &lt;em&gt;software pirata&lt;/em&gt; y que la solución, en estos tiempos de crisis, es recurrir al software gratuito. Ella menciona: “Por lo regular, lo que es gratis suena a que es malo, o que será de menor calidad, pero no siempre es así. Por ejemplo, este artículo fue escrito utilizando OpenOffice 3.0, un paquete gratuito para oficina que no le pide nada al popular Office 2007.”&lt;/p&gt;
-
-</description>
-      <author>guivaloz</author>
-      <pubDate>Sat, 09 May 2009 14:00:00 -0500</pubDate>
-      <dc:date>2009-05-09T14:00:00-05:00</dc:date>
     </item>
   </channel>
 </rss>

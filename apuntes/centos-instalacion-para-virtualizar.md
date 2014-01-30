@@ -1,7 +1,7 @@
 Instalación de CentOS para virtualizar
 ======================================
 
-Fecha: 2014-01-22
+Fecha: 2014-01-30 09:30
 Categorías: CentOS, Virtualización
 
 [CentOS](https://www.centos.org/) es una distribución GNU/Linux mantenida por la comunidad a partir del código libre de [Red Hat](https://www.redhat.com/). De una forma práctica, **CentOS** es lo mismo que **Red Hat** pero sin su marca comercial ni soporte técnico de paga. La estabilidad y confiabilidad de CentOS lo hacen la mejor opción para sistema operativo base de un servidor cuyo fin sea virtualizar. Recientemente se ha anunciado el apoyo directo de Red Hat a la comunidad de CentOS; de lo cual esperamos muchas ganancias para todos.
@@ -137,12 +137,12 @@ Con este contenido:
 
 #### Configure el muro de fuego
 
-Para que se permitan todas las comunicaciones que fluyan a través del _bridge_ es necesario indicarlo.
+Para que se permitan todas las comunicaciones que fluyan a través del _bridge_ **br0** es necesario indicarlo. Edite la configuración del muro de fuego:
 
     # cd /etc/sysconfig/
     # nano iptables
 
-Agregue la línea **-A FORWARD -i br0 -j ACCEPT**
+Agregue la línea **-A FORWARD -i br0 -j ACCEPT** como la primer línea con _FORWARD_, por ejemplo:
 
     *filter
     :INPUT ACCEPT [0:0]
@@ -157,24 +157,131 @@ Agregue la línea **-A FORWARD -i br0 -j ACCEPT**
     -A FORWARD -j REJECT --reject-with icmp-host-prohibited
     COMMIT
 
+Reinicie el muro de fuego
+
+    # service iptables restart
+
 Verifique...
 
-    # iptables -L -v
+    # iptables -L -v -n
+
+#### Destruir el puente virbr0
+
+Como se va a levantar el _bridge_ **br0** desde el sistema operativo, sale sobrando el puente que por defecto habilita **libvirt**. Para observar que esta presente **virtbr0** ejecute:
+
+    # ifconfig
+
+Notará que hay un dispositivo **virbr0** con una dirección IP indpenediente (p.e. 192.168.122.1). El comando **virsh net-list** mostrará las redes para las virtualizaciones:
+
+    # virsh net-list
+    Nombre               Estado     Inicio automático Persistente
+    --------------------------------------------------
+    default              activo     si            si
+
+Para destruir la red **default** ejecute:
+
+    # virsh net-destroy default
+    # virsh net-undefine default
+
+Revise:
+
+    # virsh net-list
+    # ifconfig
 
 #### Reinicie el servidor
 
-Para asegurar que la nueva configuración se aplica al encender el equipo, reinicie.
+Para asegurar que las actualizaciones y configuraciones inicien al encender, reinicie el servidor.
 
     # shutdown -r 1 &
     # exit
 
-Y revise la salida de estos comandos:
+Y revise que los dispositivos de red y los servicios estén trabajando como debe.
 
     # ifconfig br0
     # ifconfig eth0
     # brctl show
 
+#### Configurar libvirt para que use br0
+
+Para que las virtualizaciones usen el _bridge_ del sistema operativo, cree un archivo de configuración **xml**. Use el nombre de archivo que guste:
+
+    # cd /root
+    # nano bridge-br0.xml
+
+Escriba el siguiente contenido, cambiando **bridge-br0** por el nombre que usted prefiera:
+
+    <network>
+      <name>bridge-br0</name>
+      <forward mode="bridge"/>
+      <bridge name="br0"/>
+    </network>
+
+Para cargar ese archivo **xml** en **libvirt** ejecute...
+
+    # virsh net-define bridge-br0.xml
+    La red bridge-br0 se encuentra definida desde bridge-br0.xml
+
+**Atención:** En este momento, el comando **# virsh net-list** NO mostrará esta red. En cambio, con el parámetro **--all** sí lo verá:
+
+    # virsh net-list --all
+    Nombre               Estado     Inicio automático
+    -----------------------------------------
+    bridge-br0           activo     no
+
+Puede solicitar información detallada de una red con el comando **virsh net-info** seguido por el nombre de la red.
+
+    # virsh net-info bridge-br0
+    Nombre          bridge-br0
+    UUID            xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+    Activar:        no
+    Persistente:    si
+    Autoinicio:     no
+    Puente:         br0
+
+Observe que Activar y Autoinicio están en **no**. Configure que esta red se habilite al inicio, con:
+
+    # virsh net-autostart bridge-br0
+    La red bridge-br0-dgspm ha sido marcada para iniciarse automáticamente
+
+Luego, arranque esta red con:
+
+    # virsh net-start bridge-br0
+    La red bridge-br0 se ha iniciado
+
+Verifique que Activar, Persistente y Autoinicio estén en **si**:
+
+    # virsh net-info bridge-br0
+    Nombre          bridge-br0
+    UUID            xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+    Activar:        si
+    Persistente:    si
+    Autoinicio:     si
+    Puente:         br0
+
+También con el comando **virsh net-list**:
+
+    # virsh net-list
+    Nombre               Estado     Inicio automático Persistente
+    --------------------------------------------------
+    bridge-br0           activo     si            si
+
+En dado caso de que necesite recuperar la información de la red en formato **xml**, use el comando **virsh net-dumpxml**:
+
+    # virsh net-dumpxml bridge-br0
+    <network>
+      <name>bridge-br0</name>
+      <uuid>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</uuid>
+      <forward mode='bridge'/>
+      <bridge name='br0' />
+   </network>
+
 #### Agregue un usuario común
 
-    useradd -g users -G tty,lp,wheel,uucp,games,video,audio,cdrom,kvm,qemu -m saturno
+Como en todo equipo de escritorio o servidor, es ampliamente recomendable dar de alta un usuario común y no usar root para todo. Para dar de alta un usuario ejecute el comando **useradd** con los grupos a los que necesite pertenecer y cambie _minombre_ por su nombre para ingresar.
+
+    # useradd -g users -G tty,lp,wheel,uucp,games,video,audio,cdrom,kvm,qemu -m minombre
+
+Establezca la contraseña:
+
+    # passwd guivaloz
 
