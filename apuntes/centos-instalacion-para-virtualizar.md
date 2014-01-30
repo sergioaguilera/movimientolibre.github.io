@@ -273,7 +273,7 @@ En dado caso de que necesite recuperar la información de la red en formato **xm
       <uuid>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</uuid>
       <forward mode='bridge'/>
       <bridge name='br0' />
-   </network>
+    </network>
 
 #### Agregue un usuario común
 
