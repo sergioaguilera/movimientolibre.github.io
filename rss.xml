@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Movimiento Libre</title>
+    <link>http://www.movimientolibre.com</link>
+    <description>Colección de ideas.</description>
+    <item>
+      <title>Mozilla Firefox | Dejar de preguntar por plugin Adobe Flash</title>
+      <link>http://www.movimientolibre.com/apuntes/mozilla-firefox-dejar-preguntar-plugin-faltante.html</link>
+      <description>
+&lt;p&gt;&lt;img src=&quot;mozilla-firefox-dejar-preguntar-plugin-faltante/mozilla-firefox-pregunta-plugin-faltante.png&quot; alt=&quot;Mozilla Firefox pregunta plug-in faltante&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Quienes hemos optado por no instalar el Adobe Flash nos encontramos ante la situación de que Mozilla Firefox nos pregunte si lo queremos instalar al entrar a cada sitio web que lo use. Esto resulta muy molesto por las decenas de veces que damos clic en la equis de la &lt;em&gt;ventana emergente&lt;/em&gt; para cerrarla.&lt;/p&gt;
+
+</description>
+      <author>guivaloz</author>
+      <pubDate>Mon, 03 Feb 2014 19:30:00 -0600</pubDate>
+      <dc:date>2014-02-03T19:30:00-06:00</dc:date>
+    </item>
+    <item>
+      <title>Instalación de CentOS para virtualizar</title>
+      <link>http://www.movimientolibre.com/apuntes/centos-instalacion-para-virtualizar.html</link>
+      <description>
+&lt;p&gt;&lt;a href=&quot;https://www.centos.org/&quot;&gt;CentOS&lt;/a&gt; es una distribución GNU/Linux mantenida por la comunidad a partir del código libre de &lt;a href=&quot;https://www.redhat.com/&quot;&gt;Red Hat&lt;/a&gt;. De una forma práctica, &lt;strong&gt;CentOS&lt;/strong&gt; es lo mismo que &lt;strong&gt;Red Hat&lt;/strong&gt; pero sin su marca comercial ni soporte técnico de paga. La estabilidad y confiabilidad de CentOS lo hacen la mejor opción para sistema operativo base de un servidor cuyo fin sea virtualizar. Recientemente se ha anunciado el apoyo directo de Red Hat a la comunidad de CentOS; de lo cual esperamos muchas ganancias para todos.&lt;/p&gt;
+
+</description>
+      <author>guivaloz</author>
+      <pubDate>Thu, 30 Jan 2014 10:20:00 -0600</pubDate>
+      <dc:date>2014-01-30T10:20:00-06:00</dc:date>
+    </item>
+    <item>
+      <title>Apuntes de Git</title>
+      <link>http://www.movimientolibre.com/apuntes/git-apuntes.html</link>
+      <description>
+&lt;ul&gt;
+  &lt;li&gt;GIT es un software de Control de Revisiones. Esto significa que es capaz de recordar los estados previos en que se hayan guardado los muchos archivos de un sistema.&lt;/li&gt;
+  &lt;li&gt;GIT también se puede comunicar con computadoras y servidores remotos, para lograr así la descarga, sincronización y actualización en un solo comando.&lt;/li&gt;
+  &lt;li&gt;GIT es Software Libre con licencia GPL versión 2. Usado por los desarrolladores del kernel Linux y diseñado por Linus Torvalds.&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+      <author>guivaloz</author>
+      <pubDate>Tue, 21 Jan 2014 19:20:00 -0600</pubDate>
+      <dc:date>2014-01-21T19:20:00-06:00</dc:date>
+    </item>
+    <item>
+      <title>OpenStreetMap</title>
+      <link>http://www.movimientolibre.com/presentaciones/openstreetmap.html</link>
+      <description>
+&lt;p&gt;&lt;img src=&quot;openstreetmap/openstreetmap01small.png&quot; alt=&quot;OSM&quot; /&gt; &lt;img src=&quot;openstreetmap/openstreetmap02small.png&quot; alt=&quot;OSM 2&quot; /&gt; &lt;img src=&quot;openstreetmap/openstreetmap03small.png&quot; alt=&quot;OSM 3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;El pasado 14 de diciembre de 2013 expuse en el &lt;a href=&quot;http://gulag.org.mx&quot;&gt;Grupo de Usuarios de GNU/Linux de la Laguna&lt;/a&gt; el tema &lt;strong&gt;OpenStreetMap&lt;/strong&gt;. De éste material extraigo estos apuntes:&lt;/p&gt;
+
+</description>
+      <author>guivaloz</author>
+      <pubDate>Sun, 19 Jan 2014 20:00:00 -0600</pubDate>
+      <dc:date>2014-01-19T20:00:00-06:00</dc:date>
+    </item>
+    <item>
+      <title>Avistamiento de un bólido</title>
+      <link>http://www.movimientolibre.com/articulos/caida-de-meteorito-2014-01-14.html</link>
+      <description>
+&lt;p&gt;&lt;img src=&quot;caida-de-meteorito-2014-01-14/diagrama-avistamiento-bolido-2014-01-14.jpg&quot; alt=&quot;Diagrama avistamiento del bólido 14 enero 2014&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Les informo que mi esposa Rosy y su servidor veníamos conduciendo la mañana de hoy por el Periférico (en Gómez Palacio, Durango, México) y antes de subir el paso a desnivel que está frente a &lt;em&gt;Soriana Hamburgo&lt;/em&gt; vimos un &lt;strong&gt;bólido&lt;/strong&gt; surcar el cielo.&lt;/p&gt;
+
+&lt;p&gt;Rosy me ha dado dos notas regionales sobre el fenómeno, además de otra por parte de Sergio:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://conexiontotal.mx/2014/01/14/meteorito-cae-en-saltillo/&quot;&gt;http://conexiontotal.mx/2014/01/14/meteorito-cae-en-saltillo/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.vanguardia.com.mx/caeovniensaltilloautoridadeslobuscan-1923456.html&quot;&gt;http://www.vanguardia.com.mx/caeovniensaltilloautoridadeslobuscan-1923456.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.elsiglodetorreon.com.mx/noticia/952770.reportan-caida-de-meteorito-en-saltillo.html&quot;&gt;http://www.elsiglodetorreon.com.mx/noticia/952770.reportan-caida-de-meteorito-en-saltillo.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;¡Fue maravilloso! ¡El más grande y fantástico que haya visto!&lt;/strong&gt; Lástima que iba manejando y no lo esperábamos (para tratar de tomar video), como suele ocurrir.&lt;/p&gt;
+
+</description>
+      <author>guivaloz</author>
+      <pubDate>Tue, 14 Jan 2014 15:55:00 -0600</pubDate>
+      <dc:date>2014-01-14T15:55:00-06:00</dc:date>
+    </item>
+    <item>
+      <title>Oferta de trabajo</title>
+      <link>http://www.movimientolibre.com/articulos/oferta-de-trabajo.html</link>
+      <description>
+&lt;p&gt;Escribo, en esta ocasión después de mucho tiempo, para hacer de su conocimiento una oferta de trabajo y para que me ayuden a propagar mi llamado.&lt;/p&gt;
+
+&lt;p&gt;Tengo una oferta de trabajo para un desarrollador; trabajará conmigo, aprenderá mucho y será estable (el trabajo) por largo tiempo (claro, si hace lo que tiene hacer). Sueldo ~7K.&lt;/p&gt;
+
+&lt;p&gt;Deberá aprobar los exámenes que aplicaré.&lt;/p&gt;
+
+</description>
+      <author>guivaloz</author>
+      <pubDate>Mon, 13 Jan 2014 09:00:00 -0600</pubDate>
+      <dc:date>2014-01-13T09:00:00-06:00</dc:date>
+    </item>
+    <item>
+      <title>FOSS 2.0 - Reseña</title>
+      <link>http://www.movimientolibre.com/articulos/congreso-iberoamericano-foss-2011-resena.html</link>
+      <description>
+&lt;p&gt;&lt;img src=&quot;congreso-iberoamericano-foss-2011/2011-06-01_01-small.jpg&quot; alt=&quot;FOSS 2011 foto 1&quot; /&gt; &lt;img src=&quot;congreso-iberoamericano-foss-2011/2011-06-01_03-small.jpg&quot; alt=&quot;FOSS 2011 foto 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Los días 1 y 2 de junio de 2011 fue el &lt;a href=&quot;http://www.estudiosdeldesarrollo.net/floss2&quot;&gt;Segundo Congreso Internacional de Software Libre&lt;/a&gt; organizado por la &lt;a href=&quot;http://www.uaz.edu.mx/&quot;&gt;Universidad Autónoma de Zacatecas&lt;/a&gt;. A modo de reseña les muestro fotografías y fragmentos de las ponencias.&lt;/p&gt;
+
+</description>
+      <author>guivaloz</author>
+      <pubDate>Tue, 14 Jun 2011 10:17:00 -0500</pubDate>
+      <dc:date>2011-06-14T10:17:00-05:00</dc:date>
+    </item>
+    <item>
+      <title>Segundo Congreso Internacional de Software Libre</title>
+      <link>http://www.movimientolibre.com/articulos/congreso-iberoamericano-foss-2011.html</link>
+      <description>
+&lt;p&gt;&lt;img src=&quot;congreso-iberoamericano-foss-2011/floss2.png&quot; alt=&quot;FOSS 2011&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;El &lt;a href=&quot;http://www.estudiosdeldesarrollo.net/floss2&quot;&gt;Segundo Congreso Internacional de Software Libre&lt;/a&gt; se llevará acabo los días 1 y 2 de junio del 2011, en la ciudad de Zacatecas, México. El marco del evento será el Auditorio de la &lt;a href=&quot;http://www.estudiosdeldesarrollo.net/&quot;&gt;Unidad Académica en Estudios del Desarrollo&lt;/a&gt; de la &lt;a href=&quot;http://www.uaz.edu.mx/&quot;&gt;Universidad Autónoma de Zacatecas&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+      <author>guivaloz</author>
+      <pubDate>Fri, 27 May 2011 11:20:00 -0500</pubDate>
+      <dc:date>2011-05-27T11:20:00-05:00</dc:date>
+    </item>
+    <item>
+      <title>Distribuciones GNU/Linux, entornos y programas libres</title>
+      <link>http://www.movimientolibre.com/presentaciones/distribuciones-gnulinux.html</link>
+      <description>
+&lt;p&gt;&lt;img src=&quot;distribuciones-gnulinux/03-distribuciones-small.jpg&quot; alt=&quot;Distribuciones GNU/Linux 1&quot; /&gt; &lt;img src=&quot;distribuciones-gnulinux/09-scientific-small.jpg&quot; alt=&quot;Distribuciones GNU/Linux 2&quot; /&gt; &lt;img src=&quot;distribuciones-gnulinux/17-equivalentes-small.jpg&quot; alt=&quot;Distribuciones GNU/Linux 3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para el XX Semana Académica en la &lt;a href=&quot;http://www.uadec.mx/&quot;&gt;Universidad Autónoma de Coahuila&lt;/a&gt; su servidor elaboró esta amena y visual presentación sobre las distribuciones GNU/Linux y los entornos de escritorio más populares.&lt;/p&gt;
+
+&lt;h4 id=&quot;descargar&quot;&gt;Descargar&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;distribuciones-gnulinux/distribuciones-gnulinux.pdf&quot;&gt;Presentación 3.2 MB&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;distribuciones-gnulinux/distribuciones-gnulinux.tar.gz&quot;&gt;Fuentes LaTeX 6.2 MB&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <author>guivaloz</author>
+      <pubDate>Tue, 19 Oct 2010 23:55:00 -0500</pubDate>
+      <dc:date>2010-10-19T23:55:00-05:00</dc:date>
+    </item>
+    <item>
+      <title>Congreso Iberoamericano FOSS 1.0</title>
+      <link>http://www.movimientolibre.com/articulos/congreso-iberoamericano-foss-2009.html</link>
+      <description>
+&lt;p&gt;&lt;img src=&quot;congreso-iberoamericano-foss-2009/2009-11-29-1_zacatecas_small.jpg&quot; alt=&quot;Zacatecas&quot; /&gt; &lt;img src=&quot;congreso-iberoamericano-foss-2009/2009-11-29-2_previo-small.jpg&quot; alt=&quot;Previo al evento&quot; /&gt; &lt;img src=&quot;congreso-iberoamericano-foss-2009/2009-11-30-1_rms_small.jpg&quot; alt=&quot;RMS&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Los días 30 de noviembre y 1 de diciembre de 2009 se efectuó el &lt;a href=&quot;http://www.estudiosdeldesarrollo.net/foss/&quot;&gt;Primer Congreso Iberoamericano de Software Libre&lt;/a&gt;. Cinco miembros del &lt;a href=&quot;http://www.gulag.org.mx/&quot;&gt;GULAG&lt;/a&gt; estuvimos presentes en lo que fué el evento más importante del Software Libre del año.&lt;/p&gt;
+
+</description>
+      <author>guivaloz</author>
+      <pubDate>Fri, 25 Dec 2009 16:00:00 -0600</pubDate>
+      <dc:date>2009-12-25T16:00:00-06:00</dc:date>
+    </item>
+  </channel>
+</rss>

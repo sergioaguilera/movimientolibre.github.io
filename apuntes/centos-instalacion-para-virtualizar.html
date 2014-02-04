@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="alternate" type="application/rss+xml" title="Movimiento Libre" href="../rss.xml" />
+  <title>Movimiento Libre | Instalación de CentOS para virtualizar</title>
+  <!-- TWITTER BOOTSTRAP INICIA -->
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootswatch/3.0.0/journal/bootstrap.min.css" rel="stylesheet">
+  <!-- ESTILOS CSS PROPIOS DE ESTE CMS -->
+  <link href="../css/cms.css" rel="stylesheet">
+  <!-- SOPORTE PARA IE8 -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+  <!-- TWITTER BOOTSTRAP TERMINA -->
+</head>
+<body>
+  <!-- MENU PRINCIPAL -->
+  <div class="navbar navbar-default navbar-fixed-top menu-principal" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">Movimiento Libre</a>
+      </div>
+    <div class="navbar-collapse collapse">
+<ul class="nav navbar-nav">
+  <li><a href="../apuntes/">Apuntes</a></li>
+  <li><a href="../articulos/">Artículos</a></li>
+  <li><a href="../presentaciones/">Presentaciones</a></li>
+  <li><a href="../contacto/">Contacto</a></li>
+</ul>
+    </div>
+    </div>
+  </div>
+  <div class="container contenido">
+    <!-- JUMBOTRON -->
+    <div class="jumbotron">
+      <h2>Movimiento Libre</h2>
+      <p>Colección de ideas.</p>
+    </div>
+    <!-- CONTENIDO -->
+    <h1>Instalación de CentOS para virtualizar</h1>
+  <p><small>2014-01-30 10:20 - guivaloz</small></p>
+
+<p><a href="https://www.centos.org/">CentOS</a> es una distribución GNU/Linux mantenida por la comunidad a partir del código libre de <a href="https://www.redhat.com/">Red Hat</a>. De una forma práctica, <strong>CentOS</strong> es lo mismo que <strong>Red Hat</strong> pero sin su marca comercial ni soporte técnico de paga. La estabilidad y confiabilidad de CentOS lo hacen la mejor opción para sistema operativo base de un servidor cuyo fin sea virtualizar. Recientemente se ha anunciado el apoyo directo de Red Hat a la comunidad de CentOS; de lo cual esperamos muchas ganancias para todos.</p>
+
+<h4 id="objetivo">Objetivo</h4>
+
+<p>Instalar CentOS con lo mínimo necesario para virtualizar con KVM. Teniendo en mente que sólo va a llegar a Terminal, es decir, sin interfaz gráfica o <em>GUI</em>. La administración será vía <strong>OpenSSH</strong> y por el <strong>Administrador de Virtualizaciones</strong> desde otro equipo.</p>
+
+<h4 id="requerimientos">Requerimientos</h4>
+
+<ul>
+  <li>Una computadora o servidor con capacidad para virtualizar en hardware. Consulte el sitio del <a href="http://www.linux-kvm.org/page/Main_Page">KVM</a> para saber más.</li>
+  <li>Un mínimo de 2 GB de RAM.</li>
+  <li>Disco duro dedicado de por lo menos 100 GB.</li>
+  <li>Descargar y quemar el CD Minimal de <a href="https://www.centos.org/">CentOS</a>.</li>
+</ul>
+
+<h4 id="arranque-con-el-cd-minimal">Arranque con el CD Minimal</h4>
+
+<p>Hay varios tipos de discos ISO de CentOS para cada versión. Desde DVD completos a CD para instarar por red. Su servidor recomienda usar el <strong>CD Minimal x86_64</strong> ya que contiene lo básico para llegar a una terminal. Considere que es poco útil y riesgoso tener una interfaz gráfica en un servidor.</p>
+
+<p>Durante la instalación elija estas opciones:</p>
+
+<ul>
+  <li>GRUB: Install or Update</li>
+  <li>Idioma: Spanish</li>
+  <li>Teclado: Latinoamericano</li>
+  <li>Special Storage Devices</li>
+  <li>Use All Space</li>
+</ul>
+
+<p>Ya que haga su primer arranque, a partir de lo instalado en el disco duro, continúe con los siguientes pasos.</p>
+
+<h4 id="levante-la-red">Levante la red</h4>
+
+<p>Por defecto no levanta ningún dispositivo de red. Como partimos del <strong>CD Minimal</strong> necesitaremos salida a internet para bajar el software. Para configurar el dispositivo de red <strong>eth0</strong> edite:</p>
+
+<pre><code># cd /etc/sysconfig/network-scripts
+# vi ifcfg-eth0
+</code></pre>
+
+<p>Si quiere usar una <strong>dirección IP fija</strong>, por ejemplo 192.168.0.250 con ruteador 192.168.0.254 (conserve el <strong>HWADDR</strong>):</p>
+
+<pre><code>DEVICE=eth0
+HWADDR=xx:xx:xx:xx:xx:xx
+TYPE=Ethernet
+ONBOOT=yes
+NM_CONTROLLED=no
+IPADDR=192.168.0.250
+NETMASK=255.255.255.0
+GATEWAY=192.168.0.254
+</code></pre>
+
+<p>Luego debe configurar cuáles serán sus servidores DNS:</p>
+
+<pre><code>vi /etc/resolv.conf
+</code></pre>
+
+<p>Escriba el dominio si lo usa, luego cada servidor DNS como una línea <em>nameserver</em>. En el siguiente ejemplo se usa un dominio <em>oficina.lan</em> y las direcciones IP de los <a href="https://developers.google.com/speed/public-dns/?hl=es-">DNS de Google</a>:</p>
+
+<pre><code>domain oficina.lan
+search oficina.lan
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+</code></pre>
+
+<p>En cambio, para solicitar una <strong>dirección IP dinámica</strong> al servidor DHCP se usa <strong>BOOTPROTO</strong>:</p>
+
+<pre><code>DEVICE=eth0
+HWADDR=xx:xx:xx:xx:xx:xx
+TYPE=Ethernet
+ONBOOT=yes
+NM_CONTROLLED=no
+BOOTPROTO=dhcp
+</code></pre>
+
+<p>Después de cambiar estos archivos de configuración, reinicie el servicio de red para hacerlos efectivos.</p>
+
+<pre><code># service network restart
+</code></pre>
+
+<p>Revise la dirección IP obtenida con:</p>
+
+<pre><code># ifconfig eth0
+</code></pre>
+
+<p>Revise la tabla de ruteo también:</p>
+
+<pre><code># route -n
+</code></pre>
+
+<h4 id="configure-proxy-de-ser-necesario">Configure proxy de ser necesario</h4>
+
+<p>En caso de tener internet a través de un <em>proxy</em> debe de editar el archivo de configuración de <strong>Yum</strong>:</p>
+
+<pre><code># vi /etc/yum.conf
+</code></pre>
+
+<p>Agregue una línea como la siguiente para definir el servidor <em>proxy</em>. Cambie <em>proxy.oficina.lan</em> por el nombre o dirección IP del <em>proxy</em>.</p>
+
+<pre><code>proxy=http://proxy.oficina.lan:3128
+</code></pre>
+
+<h4 id="actualize-e-instale-el-software-para-virtualizar">Actualize e instale el software para virtualizar</h4>
+
+<p>Ejecute estos dos comandos para actualizar las listas de los repositorios de CentOS:</p>
+
+<pre><code># yum check-update
+# yum update
+</code></pre>
+
+<p>Por ser programas indispensables, instale <strong>nano</strong>, <strong>sudo</strong> y <strong>man</strong>:</p>
+
+<pre><code># yum install nano sudo man
+</code></pre>
+
+<p>Yum ofrece la instalación por <strong>grupos</strong>, éstos son conjuntos de paquetes de software. Para listar los <strong>grupos</strong> ejecute este comando:</p>
+
+<pre><code># yum grouplist
+</code></pre>
+
+<p>Instale los <strong>grupos</strong> de paquetes que tienen que ver con virtualización en servidor:</p>
+
+<pre><code># yum groupinstall "Virtualización"
+# yum groupinstall "Plataforma de virtualización"
+# yum install tunctl
+</code></pre>
+
+<p>Esta descarga es grande y puede demorar algo de tiempo, dependiendo de su velocidad de internet. Al terminar de instalar reinicie el servidor para asegurar que las actualizaciones y el nuevo software estén trabajando. Reinicie con:</p>
+
+<pre><code># shutdown -r 1 &amp;
+# exit
+</code></pre>
+
+<h4 id="configuracin-del-bridge">Configuración del bridge</h4>
+
+<p>Cree el archivo <strong>ifcfg-br0</strong> con la configuración para el <em>bridge</em>:</p>
+
+<pre><code># cd /etc/sysconfig/network-scripts/
+# nano ifcfg-br0
+</code></pre>
+
+<p>Si <strong>br0</strong> va a tener una dirección IP estática, use lo siguiente como contenido del archivo <strong>ifcfg-br0</strong> ajustando la dirección IP, la máscara y el <em>gateway</em> a sus necesidades:</p>
+
+<pre><code>DEVICE=br0
+TYPE=Bridge
+ONBOOT=yes
+DELAY=0
+NM_CONTROLLED=no
+IPADDR=192.168.0.250
+NETMASK=255.255.255.0
+GATEWAY=192.168.0.254
+</code></pre>
+
+<p>Luego, hay que editar el archivo <strong>ifcfg-eth0</strong> para indicar que ese dispositivo de red se va conectar al <em>bridge</em>:</p>
+
+<pre><code># nano ifcfg-eth0
+</code></pre>
+
+<p>Con este contenido:</p>
+
+<pre><code>DEVICE="eth0"
+HWADDR="xx:xx:xx:xx:xx:xx"
+NM_CONTROLLED="no"
+ONBOOT="yes"
+BRIDGE="br0"
+</code></pre>
+
+<h4 id="configure-el-muro-de-fuego">Configure el muro de fuego</h4>
+
+<p>Para que se permitan todas las comunicaciones que fluyan a través del <em>bridge</em> <strong>br0</strong> es necesario indicarlo. Edite la configuración del muro de fuego:</p>
+
+<pre><code># cd /etc/sysconfig/
+# nano iptables
+</code></pre>
+
+<p>Agregue la línea <strong>-A FORWARD -i br0 -j ACCEPT</strong> como la primer línea con <em>FORWARD</em>, por ejemplo:</p>
+
+<pre><code>*filter
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+-A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+-A INPUT -p icmp -j ACCEPT
+-A INPUT -i lo -j ACCEPT
+-A INPUT -m state --state NEW -m tcp -p tcp --dport 22 -j ACCEPT
+-A INPUT -j REJECT --reject-with icmp-host-prohibited
+-A FORWARD -i br0 -j ACCEPT
+-A FORWARD -j REJECT --reject-with icmp-host-prohibited
+COMMIT
+</code></pre>
+
+<p>Reinicie el muro de fuego</p>
+
+<pre><code># service iptables restart
+</code></pre>
+
+<p>Verifique…</p>
+
+<pre><code># iptables -L -v -n
+</code></pre>
+
+<h4 id="destruir-el-puente-virbr0">Destruir el puente virbr0</h4>
+
+<p>Como se va a levantar el <em>bridge</em> <strong>br0</strong> desde el sistema operativo, sale sobrando el puente que por defecto habilita <strong>libvirt</strong>. Para observar que esta presente <strong>virtbr0</strong> ejecute:</p>
+
+<pre><code># ifconfig
+</code></pre>
+
+<p>Notará que hay un dispositivo <strong>virbr0</strong> con una dirección IP indpenediente (p.e. 192.168.122.1). El comando <strong>virsh net-list</strong> mostrará las redes para las virtualizaciones:</p>
+
+<pre><code># virsh net-list
+Nombre               Estado     Inicio automático Persistente
+--------------------------------------------------
+default              activo     si            si
+</code></pre>
+
+<p>Para destruir la red <strong>default</strong> ejecute:</p>
+
+<pre><code># virsh net-destroy default
+# virsh net-undefine default
+</code></pre>
+
+<p>Revise:</p>
+
+<pre><code># virsh net-list
+# ifconfig
+</code></pre>
+
+<h4 id="reinicie-el-servidor">Reinicie el servidor</h4>
+
+<p>Para asegurar que las actualizaciones y configuraciones inicien al encender, reinicie el servidor.</p>
+
+<pre><code># shutdown -r 1 &amp;
+# exit
+</code></pre>
+
+<p>Y revise que los dispositivos de red y los servicios estén trabajando como debe.</p>
+
+<pre><code># ifconfig br0
+# ifconfig eth0
+# brctl show
+</code></pre>
+
+<h4 id="configurar-libvirt-para-que-use-br0">Configurar libvirt para que use br0</h4>
+
+<p>Para que las virtualizaciones usen el <em>bridge</em> del sistema operativo, cree un archivo de configuración <strong>xml</strong>. Use el nombre de archivo que guste:</p>
+
+<pre><code># cd /root
+# nano bridge-br0.xml
+</code></pre>
+
+<p>Escriba el siguiente contenido, cambiando <strong>bridge-br0</strong> por el nombre que usted prefiera:</p>
+
+<pre><code>&lt;network&gt;
+  &lt;name&gt;bridge-br0&lt;/name&gt;
+  &lt;forward mode="bridge"/&gt;
+  &lt;bridge name="br0"/&gt;
+&lt;/network&gt;
+</code></pre>
+
+<p>Para cargar ese archivo <strong>xml</strong> en <strong>libvirt</strong> ejecute…</p>
+
+<pre><code># virsh net-define bridge-br0.xml
+La red bridge-br0 se encuentra definida desde bridge-br0.xml
+</code></pre>
+
+<p><strong>Atención:</strong> En este momento, el comando <strong># virsh net-list</strong> NO mostrará esta red. En cambio, con el parámetro <strong>–all</strong> sí lo verá:</p>
+
+<pre><code># virsh net-list --all
+Nombre               Estado     Inicio automático
+-----------------------------------------
+bridge-br0           activo     no
+</code></pre>
+
+<p>Puede solicitar información detallada de una red con el comando <strong>virsh net-info</strong> seguido por el nombre de la red.</p>
+
+<pre><code># virsh net-info bridge-br0
+Nombre          bridge-br0
+UUID            xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+Activar:        no
+Persistente:    si
+Autoinicio:     no
+Puente:         br0
+</code></pre>
+
+<p>Observe que Activar y Autoinicio están en <strong>no</strong>. Configure que esta red se habilite al inicio, con:</p>
+
+<pre><code># virsh net-autostart bridge-br0
+La red bridge-br0-dgspm ha sido marcada para iniciarse automáticamente
+</code></pre>
+
+<p>Luego, arranque esta red con:</p>
+
+<pre><code># virsh net-start bridge-br0
+La red bridge-br0 se ha iniciado
+</code></pre>
+
+<p>Verifique que Activar, Persistente y Autoinicio estén en <strong>si</strong>:</p>
+
+<pre><code># virsh net-info bridge-br0
+Nombre          bridge-br0
+UUID            xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+Activar:        si
+Persistente:    si
+Autoinicio:     si
+Puente:         br0
+</code></pre>
+
+<p>También con el comando <strong>virsh net-list</strong>:</p>
+
+<pre><code># virsh net-list
+Nombre               Estado     Inicio automático Persistente
+--------------------------------------------------
+bridge-br0           activo     si            si
+</code></pre>
+
+<p>En dado caso de que necesite recuperar la información de la red en formato <strong>xml</strong>, use el comando <strong>virsh net-dumpxml</strong>:</p>
+
+<pre><code># virsh net-dumpxml bridge-br0
+&lt;network&gt;
+  &lt;name&gt;bridge-br0&lt;/name&gt;
+  &lt;uuid&gt;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&lt;/uuid&gt;
+  &lt;forward mode='bridge'/&gt;
+  &lt;bridge name='br0' /&gt;
+&lt;/network&gt;
+</code></pre>
+
+<h4 id="agregue-un-usuario-comn">Agregue un usuario común</h4>
+
+<p>Como en todo equipo de escritorio o servidor, es ampliamente recomendable dar de alta un usuario común y no usar root para todo. Para dar de alta un usuario ejecute el comando <strong>useradd</strong> con los grupos a los que necesite pertenecer y cambie <em>minombre</em> por su nombre para ingresar.</p>
+
+<pre><code># useradd -g users -G tty,lp,wheel,uucp,games,video,audio,cdrom,kvm,qemu -m minombre
+</code></pre>
+
+<p>Establezca la contraseña:</p>
+
+<pre><code># passwd minombre
+</code></pre>
+
+<h4 id="administrador-de-virtualizaciones">Administrador de virtualizaciones</h4>
+
+<p>Desde un equipo con interfaz gráfica y el <strong>VirtManager</strong> instalado administramos las virtaliuzaciones.</p>
+
+<p><img src="centos-instalacion-para-virtualizar/administrador-virtualizaciones-1.png" alt="Administrador de Virtualizaciones" /></p>
+
+<p>Establezca la conexión vía OpenSSH. Le solicitará la contraseña <em>root</em>:</p>
+
+<p><img src="centos-instalacion-para-virtualizar/administrador-virtualizaciones-2-nueva-conexion.png" alt="Administrador de Virtualizaciones nueva conexion" /></p>
+
+<p>Verifique que en los detalles se use la configuración de red con el <em>bridge</em> <strong>br0</strong>:</p>
+
+<p><img src="centos-instalacion-para-virtualizar/administrador-virtualizaciones-3-detalles-redes.png" alt="Administrador de Virtualizaciones detalle" /></p>
+
+
+  </div>
+  <!-- PIE -->
+  <footer>
+    <div class="container">
+    <!-- MENU SECUNDARIO -->
+    <div class="panel panel-default panel-menu-secundario">
+      <div class="panel-body">
+<div class="panel panel-default col-md-4 menu-secundario">
+  <div class="panel-heading">Últimas publicaciones</div>
+<ul class="list-group">
+      <li class="list-group-item"><a href="../apuntes/mozilla-firefox-dejar-preguntar-plugin-faltante.html">Firefox dejar de pedir Flash</a></li>
+      <li class="list-group-item"><a href="../apuntes/centos-instalacion-para-virtualizar.html">Instalación de CentOS para virtualizar</a></li>
+      <li class="list-group-item"><a href="../apuntes/git-apuntes.html">Apuntes de Git</a></li>
+      <li class="list-group-item"><a href="../presentaciones/openstreetmap.html">OpenStreetMap</a></li>
+      <li class="list-group-item"><a href="../articulos/caida-de-meteorito-2014-01-14.html">Avistamiento de un bólido</a></li>
+      <li class="list-group-item"><a href="../articulos/oferta-de-trabajo.html">Oferta de trabajo</a></li>
+      <li class="list-group-item"><a href="../articulos/congreso-iberoamericano-foss-2011-resena.html">FOSS 2.0 - Reseña</a></li>
+      <li class="list-group-item"><a href="../articulos/congreso-iberoamericano-foss-2011.html">FOSS 2.0</a></li>
+      <li class="list-group-item"><a href="../presentaciones/distribuciones-gnulinux.html">Distribuciones GNU/Linux</a></li>
+      <li class="list-group-item"><a href="../articulos/congreso-iberoamericano-foss-2009.html">FOSS 1.0</a></li>
+</ul>
+</div><div class="panel panel-default col-md-4 menu-secundario">
+  <div class="panel-heading">Categorías</div>
+<ul class="list-group">
+      <li class="list-group-item"><a href="../categorias/astronomia.html">Astronomía (2)</a></li>
+      <li class="list-group-item"><a href="../categorias/centos.html">CentOS (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/conferencias.html">Conferencias (5)</a></li>
+      <li class="list-group-item"><a href="../categorias/educacion.html">Educación (3)</a></li>
+      <li class="list-group-item"><a href="../categorias/firefox.html">Firefox (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/flash.html">Flash (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/gis.html">GIS (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/gnu_linux.html">GNU/Linux (8)</a></li>
+      <li class="list-group-item"><a href="../categorias/gentoo.html">Gentoo (3)</a></li>
+      <li class="list-group-item"><a href="../categorias/git.html">Git (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/inkscape.html">Inkscape (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/kde.html">KDE (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/kernel.html">Kernel (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/latex.html">LaTeX (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/mini-itx.html">Mini-ITX (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/openstreetmap.html">OpenStreetMap (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/php.html">PHP (2)</a></li>
+      <li class="list-group-item"><a href="../categorias/politica.html">Política (2)</a></li>
+      <li class="list-group-item"><a href="../categorias/qemu.html">QEmu (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/ruby.html">Ruby (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/trabajo.html">Trabajo (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/ubuntu.html">Ubuntu (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/vida_cotidiana.html">Vida cotidiana (3)</a></li>
+      <li class="list-group-item"><a href="../categorias/virtualizacion.html">Virtualización (1)</a></li>
+      <li class="list-group-item"><a href="../categorias/wallpapers.html">Wallpapers (1)</a></li>
+</ul>
+</div><div class="panel panel-default col-md-4 menu-secundario">
+  <div class="panel-heading">Autores</div>
+<ul class="list-group">
+      <li class="list-group-item"><a href="../autores/guivaloz.html">guivaloz (36)</a></li>
+      <li class="list-group-item"><a href="../autores/rosy.html">rosy (1)</a></li>
+</ul>
+</div><div class="panel panel-default col-md-4 menu-secundario">
+  <div class="panel-heading">Sindicalización</div>
+<ul class="list-group">
+      <li class="list-group-item"><a href="../rss.xml"><img src="../imagenes/rss.png" alt="RSS 2.0"> RSS 2.0</a></li>
+</ul>
+</div>
+      </div>
+    </div>
+  Copyright (c) 2006-2013 Guillermo Valdés Lozano.<br>
+  Se otorga permiso para copiar, distribuir y/o modificar este documento bajo los términos de la Licencia de Documentación Libre de GNU, Versión 1.2 o cualquier otra versión posterior publicada por la Free Software Foundation; sin Secciones Invariantes ni Textos de Cubierta Delantera ni Textos de Cubierta Trasera.<br>
+  Una copia de la licencia está incluida en la sección titulada GNU Free Documentation License.
+
+    </div>
+  </footer>
+  <!-- CODIGO JAVASCRIPT DE BOOTSTRAP PUESTO AL FINAL PARA QUE SE CARGUE MAS RAPIDO LA PAGINA -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  
+</body>
+</html>

@@ -9,6 +9,8 @@ Categorías: Conferencias
 
 El [Segundo Congreso Internacional de Software Libre](http://www.estudiosdeldesarrollo.net/floss2) se llevará acabo los días 1 y 2 de junio del 2011, en la ciudad de Zacatecas, México. El marco del evento será el Auditorio de la [Unidad Académica en Estudios del Desarrollo](http://www.estudiosdeldesarrollo.net/) de la [Universidad Autónoma de Zacatecas](http://www.uaz.edu.mx/).
 
+<!-- break -->
+
 #### Software Libre y la U.A.Z.
 
 La tendencia mundial y los casos de éxito en el uso de software libre por parte de empresas, universidades y gobiernos alrededor del mundo, advierten al menos un camino alterno a seguir en cuanto a la elección de la plataforma de software y, evidentemente, el software libre juega ya un papel muy importante. La plataforma académica parece ser el medio más indicado para la divulgación de este tipo de tecnología y, en el estado de Zacatecas la Unidad Académica en Estudios del Desarrollo de la UAZ ha venido promoviendo este movimiento mediante la elaboración de dos proyectos usando este tipo de software: El Sistema de Información sobre Migración y Desarrollo para el Estado de Zacatecas y El Sistema de Información Geográfico para el Estado de Zacatecas.

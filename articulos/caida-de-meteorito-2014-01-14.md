@@ -6,7 +6,7 @@ Categorías: Vida cotidiana, Astronomía
 
 ![Diagrama avistamiento del bólido 14 enero 2014](caida-de-meteorito-2014-01-14/diagrama-avistamiento-bolido-2014-01-14.jpg)
 
-Les informo que mi esposa Rosa Elena y su servidor veníamos conduciendo la mañana de hoy por el Periférico (en Gómez Palacio, Durango, México) y antes de subir el paso a desnivel que está frente a _Soriana Hamburgo_ vimos un **bólido** surcar el cielo.
+Les informo que mi esposa Rosy y su servidor veníamos conduciendo la mañana de hoy por el Periférico (en Gómez Palacio, Durango, México) y antes de subir el paso a desnivel que está frente a _Soriana Hamburgo_ vimos un **bólido** surcar el cielo.
 
 Rosy me ha dado dos notas regionales sobre el fenómeno, además de otra por parte de Sergio:
 
