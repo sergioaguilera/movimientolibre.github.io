@@ -9,6 +9,30 @@
     <link>http://www.movimientolibre.com</link>
     <description>Colección de ideas.</description>
     <item>
+      <title>Mozilla Firefox | Dejar de preguntar por plugin Adobe Flash</title>
+      <link>http://www.movimientolibre.com/apuntes/mozilla-firefox-dejar-preguntar-plugin-faltante.html</link>
+      <description>
+&lt;p&gt;&lt;img src=&quot;mozilla-firefox-dejar-preguntar-plugin-faltante/mozilla-firefox-pregunta-plugin-faltante.png&quot; alt=&quot;Mozilla Firefox pregunta plug-in faltante&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Quienes hemos optado por no instalar el Adobe Flash nos encontramos ante la situación de que Mozilla Firefox nos pregunte si lo queremos instalar al entrar a cada sitio web que lo use. Esto resulta muy molesto por las decenas de veces que damos clic en la equis de la ventanita para cerrarla.&lt;/p&gt;
+
+</description>
+      <author>guivaloz</author>
+      <pubDate>Mon, 03 Feb 2014 19:30:00 -0600</pubDate>
+      <dc:date>2014-02-03T19:30:00-06:00</dc:date>
+    </item>
+    <item>
+      <title>Instalación de CentOS para virtualizar</title>
+      <link>http://www.movimientolibre.com/apuntes/centos-instalacion-para-virtualizar.html</link>
+      <description>
+&lt;p&gt;&lt;a href=&quot;https://www.centos.org/&quot;&gt;CentOS&lt;/a&gt; es una distribución GNU/Linux mantenida por la comunidad a partir del código libre de &lt;a href=&quot;https://www.redhat.com/&quot;&gt;Red Hat&lt;/a&gt;. De una forma práctica, &lt;strong&gt;CentOS&lt;/strong&gt; es lo mismo que &lt;strong&gt;Red Hat&lt;/strong&gt; pero sin su marca comercial ni soporte técnico de paga. La estabilidad y confiabilidad de CentOS lo hacen la mejor opción para sistema operativo base de un servidor cuyo fin sea virtualizar. Recientemente se ha anunciado el apoyo directo de Red Hat a la comunidad de CentOS; de lo cual esperamos muchas ganancias para todos.&lt;/p&gt;
+
+</description>
+      <author>guivaloz</author>
+      <pubDate>Wed, 22 Jan 2014 00:00:00 -0600</pubDate>
+      <dc:date>2014-01-22T00:00:00-06:00</dc:date>
+    </item>
+    <item>
       <title>Apuntes de Git</title>
       <link>http://www.movimientolibre.com/apuntes/git-apuntes.html</link>
       <description>
@@ -75,6 +99,72 @@
       <dc:date>2014-01-13T09:00:00-06:00</dc:date>
     </item>
     <item>
+      <title>FOSS 2.0 - Reseña</title>
+      <link>http://www.movimientolibre.com/articulos/congreso-iberoamericano-foss-2011-resena.html</link>
+      <description>
+&lt;p&gt;&lt;img src=&quot;congreso-iberoamericano-foss-2011/2011-06-01_01-small.jpg&quot; alt=&quot;FOSS 2011 foto 1&quot; /&gt; &lt;img src=&quot;congreso-iberoamericano-foss-2011/2011-06-01_03-small.jpg&quot; alt=&quot;FOSS 2011 foto 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Los días 1 y 2 de junio de 2011 fue el &lt;a href=&quot;http://www.estudiosdeldesarrollo.net/floss2&quot;&gt;Segundo Congreso Internacional de Software Libre&lt;/a&gt; organizado por la &lt;a href=&quot;http://www.uaz.edu.mx/&quot;&gt;Universidad Autónoma de Zacatecas&lt;/a&gt;. A modo de reseña les muestro fotografías y fragmentos de las ponencias.&lt;/p&gt;
+
+</description>
+      <author>guivaloz</author>
+      <pubDate>Tue, 14 Jun 2011 10:17:00 -0500</pubDate>
+      <dc:date>2011-06-14T10:17:00-05:00</dc:date>
+    </item>
+    <item>
+      <title>Segundo Congreso Internacional de Software Libre</title>
+      <link>http://www.movimientolibre.com/articulos/congreso-iberoamericano-foss-2011.html</link>
+      <description>
+&lt;p&gt;&lt;img src=&quot;congreso-iberoamericano-foss-2011/floss2.png&quot; alt=&quot;FOSS 2011&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;El &lt;a href=&quot;http://www.estudiosdeldesarrollo.net/floss2&quot;&gt;Segundo Congreso Internacional de Software Libre&lt;/a&gt; se llevará acabo los días 1 y 2 de junio del 2011, en la ciudad de Zacatecas, México. El marco del evento será el Auditorio de la &lt;a href=&quot;http://www.estudiosdeldesarrollo.net/&quot;&gt;Unidad Académica en Estudios del Desarrollo&lt;/a&gt; de la &lt;a href=&quot;http://www.uaz.edu.mx/&quot;&gt;Universidad Autónoma de Zacatecas&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;software-libre-y-la-uaz&quot;&gt;Software Libre y la U.A.Z.&lt;/h4&gt;
+
+&lt;p&gt;La tendencia mundial y los casos de éxito en el uso de software libre por parte de empresas, universidades y gobiernos alrededor del mundo, advierten al menos un camino alterno a seguir en cuanto a la elección de la plataforma de software y, evidentemente, el software libre juega ya un papel muy importante. La plataforma académica parece ser el medio más indicado para la divulgación de este tipo de tecnología y, en el estado de Zacatecas la Unidad Académica en Estudios del Desarrollo de la UAZ ha venido promoviendo este movimiento mediante la elaboración de dos proyectos usando este tipo de software: El Sistema de Información sobre Migración y Desarrollo para el Estado de Zacatecas y El Sistema de Información Geográfico para el Estado de Zacatecas.&lt;/p&gt;
+
+&lt;p&gt;Dentro del quehacer de la Unidad Académica en Estudios del Desarrollo se encuentran el análisis, discusión, evaluación y la generación de insumos en diferentes campos del conocimiento, que contribuyan al desarrollo del estado de Zacatecas y del país con una perspectiva internacional. Es por ello que la difusión y divulgación de tecnologías de información que promuevan el desarrollo, como el software libre, resulta de gran importancia dentro del proyecto estratégico de la Unidad Académica en Estudios del Desarrollo.&lt;/p&gt;
+
+&lt;h4 id=&quot;programa&quot;&gt;Programa&lt;/h4&gt;
+
+&lt;p&gt;Día 1, miércoles 1 de Junio.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Richard Stallman, Free Software Foundation, USA; &lt;em&gt;El Movimiento del Software Libre y el Sistema Operativo GNU/Linux&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Offray Vladimir Luna Cárdenas, Pontificia Universidad Javeriana, Colombia; &lt;em&gt;Nómadas digitales, libre cultura y aprendizaje&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Rubén Rodríguez (Quidam), Director del Proyecto Trisquel GNU/Linux, España; &lt;em&gt;Introducción a la distribución libre Trisquel GNU/Linux&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Jose E. Marchesi, Agencia Espacial Europea, Alemania; &lt;em&gt;El Proyecto GNU: software y comunidad&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Día 2, jueves 2 de Junio.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fernando Javier Magariños Lamas ‘Mancha’, Instituto de Geofísica de la UNAM, México; &lt;em&gt;Software libre para una sociedad libre&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Guillermo Valdés Lozano, Grupo de Usuarios de GNU/Linux de la Laguna, México; &lt;em&gt;Estudiando el Cablegate de Wikileaks con Software Libre&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Maximino Gerardo Luna Estrada, Unidad Académica en Estudios del Desarrollo, UAZ, México; &lt;em&gt;El software libre: una alternativa viable para la administración pública&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;José Masdeu, Jefe Centro de Datos, Investigacion y Desarrollo, Dirección General de Tecnología, Poder Judicial de la Nación, Argentina; &lt;em&gt;El DataCenter LIBRE en el Estado. Un caso de éxito&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Corinto Meffe, Ministerio de Planeación, Presupuesto y Administración Gobierno de Brasil, Brasil. &lt;em&gt;Las reflexiones con los resultados de la experiencia brasileña del software público&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;direccin&quot;&gt;Dirección&lt;/h4&gt;
+
+&lt;p&gt;Edificio de Doctorado en Estudios del Desarrollo, detrás de Biblioteca Central
+Av. Preparatoria S/N, Col. Loma Dorada,
+Apartado postal 3-138, C.P. 98065.
+Zacatecas, Zac., México.&lt;/p&gt;
+
+&lt;h4 id=&quot;ms-informacin-en&quot;&gt;Más información en…&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.estudiosdeldesarrollo.net/floss2&quot;&gt;Segundo Congreso Internacional de Software Libre&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.oem.com.mx/laprensa/notas/n2078640.htm&quot;&gt;Artículo publicado en La Prensa&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <author>guivaloz</author>
+      <pubDate>Fri, 27 May 2011 11:20:00 -0500</pubDate>
+      <dc:date>2011-05-27T11:20:00-05:00</dc:date>
+    </item>
+    <item>
       <title>Distribuciones GNU/Linux, entornos y programas libres</title>
       <link>http://www.movimientolibre.com/presentaciones/distribuciones-gnulinux.html</link>
       <description>
@@ -94,93 +184,26 @@
       <dc:date>2010-10-19T23:55:00-05:00</dc:date>
     </item>
     <item>
-      <title>Virtualización con QEmu</title>
-      <link>http://www.movimientolibre.com/presentaciones/virtualizacion-con-qemu.html</link>
+      <title>Congreso Iberoamericano FOSS 1.0</title>
+      <link>http://www.movimientolibre.com/articulos/congreso-iberoamericano-foss-2009.html</link>
       <description>
-&lt;p&gt;&lt;img src=&quot;virtualizacion-con-qemu/diapositiva-03-small.jpg&quot; alt=&quot;Virtualización QEmu 1&quot; /&gt; &lt;img src=&quot;virtualizacion-con-qemu/diapositiva-14-small.jpg&quot; alt=&quot;Virtualización QEmu 2&quot; /&gt; &lt;img src=&quot;virtualizacion-con-qemu/diapositiva-16-small.jpg&quot; alt=&quot;Virtualización QEmu 3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;congreso-iberoamericano-foss-2009/2009-11-29-1_zacatecas_small.jpg&quot; alt=&quot;Zacatecas&quot; /&gt; &lt;img src=&quot;congreso-iberoamericano-foss-2009/2009-11-29-2_previo-small.jpg&quot; alt=&quot;Previo al evento&quot; /&gt; &lt;img src=&quot;congreso-iberoamericano-foss-2009/2009-11-30-1_rms_small.jpg&quot; alt=&quot;RMS&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Con motivo del &lt;a href=&quot;http://www.estudiosdeldesarrollo.net/foss/&quot;&gt;Congreso Iberoamericano FOSS 2009&lt;/a&gt; que organiza la &lt;a href=&quot;http://www.uaz.edu.mx/&quot;&gt;Universidad Autónoma de Zacatecas&lt;/a&gt; he elaborado la conferencia &lt;strong&gt;Virtualización con QEmu&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Los días 30 de noviembre y 1 de diciembre de 2009 se efectuó el &lt;a href=&quot;http://www.estudiosdeldesarrollo.net/foss/&quot;&gt;Primer Congreso Iberoamericano de Software Libre&lt;/a&gt;. Cinco miembros del &lt;a href=&quot;http://www.gulag.org.mx/&quot;&gt;GULAG&lt;/a&gt; estuvimos presentes en lo que fué el evento más importante del Software Libre del año.&lt;/p&gt;
 
-&lt;p&gt;En este material se ilustra de forma sencilla cómo se usa el virtualizador QEmu y cómo lo he usado en la impartición de clases de GNU/Linux en la &lt;a href=&quot;http://www.utt.edu.mx/&quot;&gt;Universidad Tecnológica de Torreón&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Es muy difícil sintetizar en pocas palabras todo lo que vivimos en esos dos días: los temas de las conferencias fueron mayoritariamente de corte social y político, los distinguidos ponentes nos dejaron impresionados con sus años de experiencia en la implantación de Software Libre en sus países, la hospitalidad fue inigualable, etc.&lt;/p&gt;
 
-&lt;h4 id=&quot;descargar&quot;&gt;Descargar&lt;/h4&gt;
+&lt;p&gt;Les escribiré una grata experiencia. Su servidor (guivaloz) tuvo el gran honor de compartir la mesa con Corinto Meffe (Brasil), Herny Rivero (Venezuela) y Mauricio Haro (Ecuador). Terminada la comida preguntamos por el postre, nos ofrecieron un copa de helado de vainilla con guayaba. Como no teníamos idea del tamaño de la copa sólo dos personas en la mesa lo pidieron. Al llegar las dos copas se nos antojó también a los otros dos, pero la mesera nos dijo que ya se había terminado el helado. Inmediatamente, Corinto solicitó dos cucharas más para compartir las cuatro personas las dos copas de helado. Al igual que compartimos el helado, compartimos el Software Libre.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;virtualizacion-con-qemu/virtualizacion-con-qemu.pdf&quot;&gt;Presentación 5.5 MB&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;virtualizacion-con-qemu/virtualizacion-con-qemu.tar.gz&quot;&gt;Fuentes LaTeX 5.5 MB&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;congreso-iberoamericano-foss-2009/2009-11-30-2_ponentes_small.jpg&quot; alt=&quot;Ponentes&quot; /&gt; &lt;img src=&quot;congreso-iberoamericano-foss-2009/2009-12-01-1_guivaloz_small.jpg&quot; alt=&quot;Guivaloz&quot; /&gt; &lt;img src=&quot;congreso-iberoamericano-foss-2009/2009-12-01-2_migracao_dos_ambientes_small.jpg&quot; alt=&quot;Migracao dos ambientes&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Su servidor, &lt;a href=&quot;http://www.movimientolibre.com/&quot;&gt;Guillermo Valdés&lt;/a&gt; tuvo el honor de participar con el tema &lt;a href=&quot;http://www.movimientolibre.com/presentaciones/virtualizacion-con-qemu.html&quot;&gt;Virtualización con QEmu&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;El &lt;a href=&quot;http://www.gulag.org.mx/&quot;&gt;GULAG&lt;/a&gt; agradece a la &lt;a href=&quot;http://www.uaz.edu.mx/&quot;&gt;Universidad Autónoma de Zacatecas&lt;/a&gt;, a la &lt;a href=&quot;http://www.estudiosdeldesarrollo.net/&quot;&gt;Unidad Académica en Estudios del Desarrollo&lt;/a&gt; y a Maximinio Luna el habernos invitado al primero de lo que seguramente será una serie de eventos trascendentes y exitosos.&lt;/p&gt;
 </description>
       <author>guivaloz</author>
-      <pubDate>Sat, 28 Nov 2009 23:00:00 -0600</pubDate>
-      <dc:date>2009-11-28T23:00:00-06:00</dc:date>
-    </item>
-    <item>
-      <title>Taller de Ruby Básico</title>
-      <link>http://www.movimientolibre.com/presentaciones/ruby-basico-taller.html</link>
-      <description>
-&lt;p&gt;&lt;img src=&quot;ruby-basico-taller/diapositiva-03-small.png&quot; alt=&quot;Rubi Basico 03&quot; /&gt; &lt;img src=&quot;ruby-basico-taller/diapositiva-16-small.png&quot; alt=&quot;Rubi Basico 16&quot; /&gt; &lt;img src=&quot;ruby-basico-taller/diapositiva-25-small.png&quot; alt=&quot;Rubi Basico 25&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Para el &lt;a href=&quot;http://www.sistemasitl.com/foro2009/html/&quot;&gt;Foro Académico Regional 2009&lt;/a&gt; en el &lt;a href=&quot;http://www.itlalaguna.edu.mx/&quot;&gt;Instituto Tecnológico de la Laguna&lt;/a&gt; su servidor impartió un Taller Básico de Ruby. Los asistentes conocieron y practicaron las bases de este relativamente nuevo lenguaje de programación que promete un gran futuro.&lt;/p&gt;
-
-&lt;h4 id=&quot;descargar&quot;&gt;Descargar&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;ruby-basico-taller/taller-de-ruby-basico.pdf&quot;&gt;Presentación 354 KB&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;ruby-basico-taller/taller-de-ruby-basico.tar.gz&quot;&gt;Fuentes LaTeX 5 KB&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>guivaloz</author>
-      <pubDate>Sun, 22 Nov 2009 23:55:00 -0600</pubDate>
-      <dc:date>2009-11-22T23:55:00-06:00</dc:date>
-    </item>
-    <item>
-      <title>Edubuntu en la educación</title>
-      <link>http://www.movimientolibre.com/presentaciones/edubuntu-en-la-educacion.html</link>
-      <description>
-&lt;p&gt;&lt;img src=&quot;edubuntu-en-la-educacion/edubuntu-en-la-educacion-1-small.jpg&quot; alt=&quot;Edubuntu 1&quot; /&gt; &lt;img src=&quot;edubuntu-en-la-educacion/edubuntu-en-la-educacion-2-small.jpg&quot; alt=&quot;Edubuntu 2&quot; /&gt; &lt;img src=&quot;edubuntu-en-la-educacion/edubuntu-en-la-educacion-3-small.jpg&quot; alt=&quot;Edubuntu 3&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Para la &lt;a href=&quot;http://www.conacyt.mx/Comunicacion/sncyt/index.html&quot;&gt;16va. Semana Nacional de Ciencia y Tecnología&lt;/a&gt; en un evento organizado por el &lt;a href=&quot;http://www.coecyt-coah.gob.mx/&quot;&gt;COECYT de Coahuila&lt;/a&gt; representando a &lt;a href=&quot;http://www.innovatic.org.mx/&quot;&gt;InnovaTIC&lt;/a&gt; y al &lt;a href=&quot;http://www.gulag.org.mx/&quot;&gt;GULAG&lt;/a&gt;, elaboré la presentación “Edubuntu en la educación”.&lt;/p&gt;
-
-&lt;p&gt;Este material es una semblanza de lo que es el Software Libre, &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;Ubuntu&lt;/a&gt; y &lt;a href=&quot;http://www.edubuntu.org/&quot;&gt;Edubuntu&lt;/a&gt;, haciendo énfasis en su aplicación para el ámbito educativo. Se le hace la pregunta al público de que si sabe cuánto se gasta por comprar software privativo, si sabe que se estén usando copias ilegales del mismo y si es justo que sólo se enseñe una alternativa comercial habiendo otras libres. Concluye reflexionando sobre el potencial de la Comarca Lagunera para integrarse a las Industrias de la Información y Comunicación.&lt;/p&gt;
-
-&lt;h4 id=&quot;descargar&quot;&gt;Descargar&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;edubuntu-en-la-educacion/edubuntu-en-la-educacion.pdf&quot;&gt;Presentación 5.4 MB&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;edubuntu-en-la-educacion/edubuntu-en-la-educacion.tar.gz&quot;&gt;Fuentes LaTeX 12.3 MB&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>guivaloz</author>
-      <pubDate>Wed, 28 Oct 2009 01:00:00 -0600</pubDate>
-      <dc:date>2009-10-28T01:00:00-06:00</dc:date>
-    </item>
-    <item>
-      <title>Gentoo Linux... ¡10 años compilando!</title>
-      <link>http://www.movimientolibre.com/articulos/gentoo-linux-10-years.html</link>
-      <description>
-&lt;p&gt;&lt;img src=&quot;gentoo-linux-10-years/banner.jpg&quot; alt=&quot;10 años de Gentoo Linux&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;El 5 de octubre de 2009 se celebró el décimo aniversario de la distribución &lt;a href=&quot;http://www.gentoo.org/&quot;&gt;Gentoo Linux&lt;/a&gt; con la liberación de un &lt;em&gt;LiveDVD&lt;/em&gt; conmemorativo. Hace &lt;a href=&quot;http://www.gentoo.org/news/20090722-anniversary.xml&quot;&gt;diez años&lt;/a&gt;, el proyecto &lt;em&gt;Enoch&lt;/em&gt; fue renombrado como &lt;em&gt;Gentoo&lt;/em&gt; y el nombre de dominio &lt;em&gt;gentoo.org&lt;/em&gt; fue registrado.&lt;/p&gt;
-
-</description>
-      <author>guivaloz</author>
-      <pubDate>Tue, 06 Oct 2009 22:00:00 -0500</pubDate>
-      <dc:date>2009-10-06T22:00:00-05:00</dc:date>
-    </item>
-    <item>
-      <title>Revista del Consumidor - La descarga te hará libre</title>
-      <link>http://www.movimientolibre.com/articulos/revista-del-consumidor-la-descarga-te-hara-libre.html</link>
-      <description>
-&lt;p&gt;&lt;img src=&quot;revista-del-consumidor-la-descarga-te-hara-libre/portada-software-gratis.jpg&quot; alt=&quot;software gratis&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Una muy grata sorpresa es encontrar un artículo dedicado al &lt;em&gt;software gratuito&lt;/em&gt; en una revista de circulación nacional. Es en la &lt;a href=&quot;http://revistadelconsumidor.gob.mx/&quot;&gt;Revista del Consumidor&lt;/a&gt; de Mayo de 2009. En la portada aparece como “Software Gratis que sí te ayuda a ahorrar (y no te convierte en pirata)”.&lt;/p&gt;
-
-&lt;p&gt;Escrito por Sara Velázquez, habla a cerca de las desventajas de usar &lt;em&gt;software pirata&lt;/em&gt; y que la solución, en estos tiempos de crisis, es recurrir al software gratuito. Ella menciona: “Por lo regular, lo que es gratis suena a que es malo, o que será de menor calidad, pero no siempre es así. Por ejemplo, este artículo fue escrito utilizando OpenOffice 3.0, un paquete gratuito para oficina que no le pide nada al popular Office 2007.”&lt;/p&gt;
-
-</description>
-      <author>guivaloz</author>
-      <pubDate>Sat, 09 May 2009 14:00:00 -0500</pubDate>
-      <dc:date>2009-05-09T14:00:00-05:00</dc:date>
+      <pubDate>Fri, 25 Dec 2009 16:00:00 -0600</pubDate>
+      <dc:date>2009-12-25T16:00:00-06:00</dc:date>
     </item>
   </channel>
 </rss>

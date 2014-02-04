@@ -8,9 +8,20 @@ Categorías: CentOS, Virtualización
 
 <!-- break -->
 
+#### Objetivo
+
+Instalar CentOS con lo mínimo necesario para virtualizar con KVM. Teniendo en mente que sólo va a llegar a Terminal, es decir, sin interfaz gráfica o _GUI_. La administración será vía **OpenSSH** y por el **Administrador de Virtualizaciones** desde otro equipo.
+
+#### Requerimientos
+
+* Una computadora o servidor con capacidad para virtualizar en hardware. Consulte el sitio del [KVM](http://www.linux-kvm.org/page/Main_Page) para saber más.
+* Un mínimo de 2 GB de RAM.
+* Disco duro dedicado de por lo menos 100 GB.
+* Descargar y quemar el CD Minimal de [CentOS](https://www.centos.org/).
+
 #### Arranque con el CD Minimal
 
-Hay varios tipos de discos ISO de CentOS para cada versión. Desde DVD completos a CD para instarar por red. Su servidor recomienda usar el **CD Minimal x86_64** ya que contiene lo básico para llegar a una terminal. Considere que es poco útil y riesgoso tener una interfaz gráfica en un servidor. 
+Hay varios tipos de discos ISO de CentOS para cada versión. Desde DVD completos a CD para instarar por red. Su servidor recomienda usar el **CD Minimal x86_64** ya que contiene lo básico para llegar a una terminal. Considere que es poco útil y riesgoso tener una interfaz gráfica en un servidor.
 
 Durante la instalación elija estas opciones:
 
@@ -44,7 +55,7 @@ Luego debe configurar cuáles serán sus servidores DNS:
 
     vi /etc/resolv.conf
 
-Escriba el dominio si lo usa, luego cada servidor DNS como una línea _nameserver_. En el siguiente ejemplo he puesto las direcciones IP de los DNS de Google:
+Escriba el dominio si lo usa, luego cada servidor DNS como una línea _nameserver_. En el siguiente ejemplo se usa un dominio _oficina.lan_ y las direcciones IP de los [DNS de Google](https://developers.google.com/speed/public-dns/?hl=es-):
 
     domain oficina.lan
     search oficina.lan
@@ -82,7 +93,7 @@ Agregue una línea como la siguiente para definir el servidor _proxy_. Cambie _p
 
     proxy=http://proxy.oficina.lan:3128
 
-#### Actualize e instale
+#### Actualize e instale el software para virtualizar
 
 Ejecute estos dos comandos para actualizar las listas de los repositorios de CentOS:
 
@@ -103,9 +114,14 @@ Instale los **grupos** de paquetes que tienen que ver con virtualización en ser
     # yum groupinstall "Plataforma de virtualización"
     # yum install tunctl
 
-Esta descarga es grande y puede demorar algo de tiempo, dependiendo de su velocidad de internet.
+Esta descarga es grande y puede demorar algo de tiempo, dependiendo de su velocidad de internet. Al terminar de instalar reinicie el servidor para asegurar que las actualizaciones y el nuevo software estén trabajando. Reinicie con:
+
+    # shutdown -r 1 &
+    # exit
 
 #### Configuración del bridge
+
+
 
     # cd /etc/sysconfig/network-scripts
     # nano ifcfg-br0

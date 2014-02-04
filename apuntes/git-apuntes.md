@@ -21,12 +21,17 @@ Ejecute GIT sin parámetros para mostrar una ayuda simple.
 
     $ git
 
-#### Antes de su primer uso
+#### Configuraciones globales
 
 Debe configurar sus datos personales. Con estos datos se firmarán sus cambios y aportaciones al código.
 
     $ git config --global user.name "Tu Nombre Completo"
     $ git config --global user.email tunombre@servidor.com
+
+Algo muy útil son colores en los textos del comando Git.
+Habilite el uso de color en la terminal con:
+
+    $ git config --global color.ui auto
 
 También es recomendable crear un par de llaves OpenSSH para asegurar la transmisión de datos entre el servidor y su equipo.
 
@@ -37,7 +42,7 @@ También es recomendable crear un par de llaves OpenSSH para asegurar la transmi
 
 GitHub es el repositorio más grande y popular de software que usa GIT. Obtener un clon de un software desde ahí es sencillo. Por ejemplo, para descargar [Twitter Bootstrap](http://getbootstrap.com/):
 
-    $ mkdir -p ~/Descargas/GIT/bootstrap
+    $ mkdir -p ~/Descargas/GIT
     $ cd ~/Descargas/GIT
     $ git clone git@github.com:twbs/bootstrap.git
     $ cd bootstrap
@@ -51,7 +56,14 @@ Cabe resaltar la flexibilidad de Git en que puede iniciar un nuevo repositorio e
     $ cd ~/Documentos/Prueba
     $ git init
 
-Se creará un directorio oculto con nombre **.git**. Como dato importante, de aquí en delante, todos los comandos Git de este repositorio debe ejecutarlos en el directorio base, donde está oculto **.git**.
+Se creará un directorio oculto con nombre **.git**. Como dato importante, de aquí en delante, todos los comandos Git de este repositorio debe ejecutarlos en este directorio. También puede ejecutar este comendo indicando el nombre del directorio a crear:
+
+    $ git init Proyecto
+
+Se creará un directorio de nombre _Proyecto_. Verifique cambiándose a ese directorio y solicitando el _estatus_ del repositorio:
+
+    $ cd Proyecto
+    $ git status
 
 #### Directorios y archivos a ignorar
 
@@ -70,12 +82,12 @@ Y en cada línea agregue los nombres de archivos y directorios que NO serán inc
 
 #### Agregar archivos al repositorio local
 
-Para agregar archivos y directorios, nuevos y modificados al repositorio, debe de estar en el directorio base y ejecutar:
+Para agregar archivos y directorios, nuevos y modificados al repositorio, debe de estar en el directorio base y ejecutar **git add**:
 
     $ cd ~/Documentos/Prueba
     $ git add .
 
-Para mostrar el listado con los cambios en el repositorio que están en espera de aplicarse ejecute:
+Para mostrar un listado con los cambios en el repositorio que están en espera de aplicarse ejecute **git status**:
 
     $ git status
 
@@ -83,7 +95,7 @@ Para mostrar el listado con los cambios en el repositorio que están en espera d
 
 #### Remover archivos o directorios antes de integrar
 
-Si al ver el status nota que un archivo o directorio NO debiera incluirse, ejecute el comando rm.
+Si al ver el status nota que un archivo o directorio NO debiera incluirse, ejecute el comando **git rm**.
 
     $ git rm directorio/archivoquenodebeincluirse.txt
 
@@ -97,7 +109,7 @@ De otra forma, para agregar archivos y tomar en cuenta de una vez los eliminados
 
 #### Integrar los cambios
 
-Después de agregar, modificar o eliminar archivos proceda a integrar. Para integrar hay que hacer un _commit_. Este comando debe de incluir un comentario.
+Después de agregar, modificar o eliminar archivos proceda a integrar. Para integrar hay que hacer un **git commit**. Este comando puede incluir un comentario:
 
     $ git commit -m "He terminado la rama de Informática."
 
@@ -105,17 +117,17 @@ Después de éste, ejecute otro status para observar que ya no hay nada más nue
 
     $ git status
 
-Cada integración agrega un registro en una bitácora de cambios. La bitacora puede verse con _git log_.
+Cada integración agrega un registro en una bitácora de cambios. La bitacora puede verse con **git log**.
 
     $ git log
 
 #### Descargue las novedades del servidor
 
-Para actualizar su copia local con las novedades en el servidor, ya sea por que otra persona haya subido aportaciones o porque usted haya hecho cambios en otro equipo, _jale_ una actualización del servidor. En caso de no haber cambios, mostrará un mensaje de que está al día.
+Para actualizar su copia local con las novedades en el servidor, ya sea por que otra persona haya subido aportaciones o porque usted haya hecho cambios en otro equipo, _jale_ una actualización del servidor con **git pull**. En caso de no haber cambios, mostrará un mensaje de que está al día.
 
     $ git pull
 
-Lea los comentarios de sus compañeros en el log.
+Lea los comentarios de sus compañeros con **git log**:
 
     $ git log
 
@@ -126,39 +138,45 @@ Debe respaldar cada buen avance que lleve, ya sea al final del día o antes si l
     $ git add .
     $ git status
 
-Si Usted lo aprueba. Integre.
+Si Usted lo aprueba, integre...
 
     $ git commit -m "Avance en el módulo Direcciones."
 
 #### Derivaciones
 
-Una derivación o _branch_ es una rama en el desarrollo de un sistema que permite establecer una distinta en el desarrollo. Ésto le permite trabajar con una nueva cualidad sin dañar al sistema que ya funcione bien. De inicio todo repositorio tiene el _branch master_. Para listar las derivaciones ejecute:
+Una derivación o _branch_ es una rama en el desarrollo de un sistema que permite establecer una distinta en el desarrollo. Ésto le permite trabajar con una nueva cualidad sin dañar al sistema que ya funcione bien. De inicio todo repositorio tiene el _branch master_. Para listar las derivaciones ejecute **git branch** solamente:
 
     $ git branch
     * master
 
-Para agregar una nueva derivación use la orden _branch_. Luego cámbiese a la derivación en uso con la orden _checkout_. Por ejemplo, para mantener dos versiones del sistema, _master_ y _desarrollo_:
+Para agregar una nueva derivación use la orden _branch_ seguida del nombre de la nueva derivación, por ejemplo para crear el _branch desarrollo_:
 
     $ git branch desarrollo
+
+Luego cámbiese a la derivación en uso con la orden _checkout_
+
     $ git checkout desarrollo
+
+Verifique listando las derivaciones. El marcado con asterisco es el _branch_ en uso.
+
+    $ git branch
       master
     * desarrollo
 
-El marcado con asterisco es el _branch_ en uso.
-
 #### Trabaje en su derivación
 
-Trabaje en su _branch_. Los cambios que haga se quedan en éste. Para integrar use los comandos ya mencionados.
+Trabaje en su _branch_. Los cambios que haga se quedan en éste. Para integrar use los comandos **git add** y **git commit** ya mencionados.
 
     $ git status
     $ git add .
+    $ git status
     $ git commit -m "He hecho un par de mejoras."
 
-Puede dejar de programar, conmutar el sistema usando otro _branch_. Por ejemplo, para cambiar a _master_:
+Puede conmutar a otro _branch_, siempre y cuando no tenga archivos pendientes por agregar y _comitear_. Por ejemplo, para cambiar a _master_:
 
     $ git checkout master
 
-Si observa su directorio base en un administrador de archivos notará como aparecen y reaparecen archivos que hayan sido agregados y elimnados de un _branch_ a otro. Para cambiar a _desarrollo_:
+Si observa el contenido del directorio en un administrador de archivos notará como aparecen archivos agregados y desaparecen los que han sido eliminados o no existentes en el otro _branch_. Para cambiar de nuevo a _desarrollo_:
 
     $ git checkout desarrollo
 
@@ -168,12 +186,12 @@ Conforme va haciendo _commits_ en un _brach_ éste se dice que va adelantado al 
 
     $ git branch -v
 
-Cuando el _branch desarrollo_ quede listo y necesite que _master_ reciba todas las novedades de éste, debe usar la orden _merge_.
+Cuando el _branch desarrollo_ quede listo y necesite que _master_ reciba todas las novedades de éste, debe usar la orden **git merge**.
 
     $ git checkout master
     $ git merge desarrollo
 
-Ahora _master_ se ha **corrido** a donde apunta _desarrollo_ y son iguales. Verifique con:
+Ahora _master_ se ha _corrido_ a donde apunta _desarrollo_ y son iguales. Verifique con:
 
     $ git branch -v
 
@@ -207,10 +225,22 @@ Si esa derivación no existe en el servidor, será creada.
 
 #### Bajar una derivación desde el servidor
 
-Al clonar sólo se bajará el _branch master_. Si desea bajar una derivación del repositorio remoto, ejecute:
+Al clonar sólo se bajará el _branch master_. Si desea bajar una derivación del repositorio remoto, por ejemplo _desarrollo_, ejecute:
 
     $ git fetch origin desarrollo
+
+Luego, cámbiese a ese _branch_ que ha bajado y descargue.
+
     $ git checkout desarrollo
+    $ git pull origin desarollo
+
+Además, el comando **git fetch** bajará la información de todos las derivaciones remotas.
+
+    $ git fetch
+
+Tendrá que ejecutar el _checkout_ para que se listen con un **git branch**.
+
+    $ git branch -v
 
 #### Subir actualizaciones de la derivación local al servidor
 
