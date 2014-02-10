@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
-  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+<rss xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   version="2.0"
-  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Movimiento Libre</title>
     <link>http://www.movimientolibre.com</link>
@@ -14,7 +14,7 @@
       <description>
 &lt;p&gt;Este artículo es una traducción de &lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;Markdown Syntax Documentation&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Markdown es una forma fácil de escribir y de leer para crear archivos HTML. Un archivo escrito en makdown es de texto plano, es to significa que puede ser elaborado en cualquier editor de texto. Cabe recalcar que mientras el HTML es un formato para &lt;em&gt;publicar&lt;/em&gt; en la web, el markdown es un formato para &lt;em&gt;escribir&lt;/em&gt; en la web. En ese concpeto, entonces markdown no pretende ser un sustituto del HTML, sino una forma cómoda para escribir contenidos.&lt;/p&gt;
+&lt;p&gt;Markdown es una forma fácil de escribir y de leer para crear archivos HTML. Un archivo escrito en makdown es de texto plano, esto significa que puede ser elaborado en cualquier editor de texto. Cabe recalcar que mientras el HTML es un formato para &lt;em&gt;publicar&lt;/em&gt; en la web, el markdown es un formato para &lt;em&gt;escribir&lt;/em&gt; en la web. En ese concepto, entonces markdown no pretende ser un sustituto del HTML, sino una forma cómoda para escribir contenidos.&lt;/p&gt;
 
 </description>
       <author>guivaloz</author>
