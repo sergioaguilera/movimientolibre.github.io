@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
   <link rel="alternate" type="application/rss+xml" title="Movimiento Libre" href="../rss.xml" />
-  <title>Movimiento Libre | Intolerancia absoluta</title>
+  <title>Movimiento Libre | Crear certificados autofirmados para Apache 2</title>
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
   <link href="//netdna.bootstrapcdn.com/bootswatch/3.0.0/journal/bootstrap.min.css" rel="stylesheet">
   <link href="../css/cms.css" rel="stylesheet">
@@ -47,20 +47,142 @@
       <p>Colección de ideas.</p>
     </div>
     <!-- CONTENIDO -->
-    <h1>Intolerancia absoluta</h1>
-  <p><small>2008-04-11 14:10 - rosy</small></p>
+    <h1>Crear certificados autofirmados para Apache 2</h1>
+  <p><small>2014-02-22 17:30 - guivaloz</small></p>
 
-<p><img src="intolerancia-absoluta/in_an_absolut_world-mexico-small.jpg" alt="Intolerancia Absoluta" /></p>
+<p>Involucrarse en el <strong>cifrado de la información</strong> que viaja a través de internet es como adentrarse a un mundo <em>bizarro</em> que es más complicado que el nuestro. Pero cada día se vuelve más importante e indispensable para cada servicio <em>web</em> que fabriquemos.</p>
 
-<p>El vodka <a href="http://www.absolut.com">Absolut</a> tiene una de las más ingeniosas campañas publicitarias, de hecho, se ha vuelto todo un icono del medio publicitario. Podríamos asegurar que no existe un consumidor que no haya visto algún anuncio de <a href="http://absolutad.com/absolut_gallery/singles/">su conocida botella</a>.</p>
+<p>Podemos listar muchas razones para justificar que <strong>todos</strong> los sistemas y sitios web deberían <strong>cifrar sus datos al viajar del servidor al cliente y viceversa</strong>. Pero sólo basta una: el fin de dificultar las acciones de <em>espionaje masivo</em> al que todos estamos expuestos.</p>
 
-<p><a href="http://www.absolut.com/es/iaaw">In An Absolut World</a> es la actual campaña publicitaria, donde se juega con la idea del mundo al revés. Para México se hizo el siguiente anuncio, trata de un mapa de México el cual nos recuerda nuestro pasado, los tiempos en los que <a href="http://es.wikipedia.org/wiki/Antonio_L%C3%B3pez_de_Santa_Anna">Antonio López de Santa Anna</a> aún no <a href="http://es.wikipedia.org/wiki/Antonio_L%C3%B3pez_de_Santa_Anna#Exiliado">malbarataba gran parte del territorio</a>, que ahora es de los Estados Unidos de América.</p>
+<p>En este <strong>apunte</strong> escribo los pasos para <strong>crear certificados autofirmados</strong> para que el servidor web <strong>Apache</strong> opere cifrando las comunicaciones con <strong>SSL</strong>. Dicho de otra forma, es usar el <strong>HTTPS</strong> en lugar del <strong>HTTP</strong>.</p>
 
-<p>Dicho anuncio sólo apareció en revistas nacionales y espectaculares de la Ciudad de México. De algún modo llegó a los <a href="http://www.youtube.com/watch?v=2XDFdcyBaMk">medios de comunicación estadounidenses</a>. Este anuncio levantó sentimientos racistas antimexicanos (¿más?) y las opiniones más radicales en contra de la empresa de esta bebida alcóholica, al grado que hay <a href="http://www.boycottabsolut.com/">voces que incitan a no consumir los productos Absolut</a>.</p>
+<h4 id="advertencia">Advertencia</h4>
 
-<p>La empresa sueca ha retirado esta campaña y dado ha conocer un <a href="http://www.absolut.com/iaaw/blog/in-an-absolut-world-according-to-mexico">comunicado</a> donde expresa que no hubo intensión de motivar a transgredir las fronteras o crear un sentimiento antiamericano en México.</p>
+<p>Cabe aclarar que las grandes entidades, sean empresas o gobiernos, quienes tienen grandes cantidades de usuarios vía internet <strong>deberían adquirir certificados firmados por entidades más altas</strong>. Éstos certificados ya están instalados en los navegadores de internet más populares. Para verlos en <strong>Mozilla Firefox</strong> vaya a <em>Preferencias</em>, en <em>Avanzado</em>, en <em>Ver Certificados</em> y a <em>Autoridades</em>.</p>
 
-<p>Pero bueno… ¿qué los Estados Unidos no han navegado siempre con su bandera de libertad de expresión? ellos que aman tanto su bandera que hasta se la ponen de calzones, y que sin ningún reparo ridiculizan a latinos, musulmanes, judíos, canadienses, etc. <em>bajo las faldas de la libertad de expresión</em>; ellos que llevan la guerra a otros países en pro de la  democracia y derechos humanos… ¿les ofende un mapa?… ¿pues qué acaso ignoran que las cosas alguna vez fueron así?.</p>
+<p>Adquirir un certificado de un proveedor de prestigio es costoso. Una alternativa es optar por generar un certificado gratuito de <a href="http://www.cacert.org/">CAcert</a>.</p>
+
+<p>En cambio, los certificados autofirmados convienen cuando no podemos desembolsar el costo de un certificado comercial, los usuarios son pocos y confían en nosotros. La desventaja es que la primera vez que ingresen al sitio, su navegador de internet pondrá una <strong>advertencia de seguridad</strong>; a la cual debemos de indicar que el sitio <strong>sí es de confianza</strong> y guardarla para que no nos pregunte en el futuro.</p>
+
+<h4 id="procedimiento-para-crear-certificados-autofirmados">Procedimiento para crear certificados autofirmados</h4>
+
+<p>Primero, como un usuario común vamos a abrir una terminal en <strong>GNU/Linux</strong> y crear un directorio donde vamos a trabajar con los certificados.</p>
+
+<pre><code>$ mkdir apache-self-signed-cert
+$ cd apache-self-signed-cert
+</code></pre>
+
+<p>Ejecute el siguiente comando <strong>openssl</strong> reemplazando el texto <em>SERVIDORSISTEMA</em> por algo que identifique el servidor y/o nombre del sistema o sitio:</p>
+
+<pre><code>$ openssl req -x509 -nodes -days 1460 -newkey rsa:2048 \
+  -keyout SERVIDORSISTEMA.key \
+  -out SERVIDORSISTEMA.crt
+</code></pre>
+
+<p>Este programa le preguntará datos importantes que ayudarán a identificar el certificado. En particular en <em>common name</em> use el nombre de domino completo del servidor.</p>
+
+<pre><code>Country Name (2 letter code) [AU]: **
+State or Province Name (full name) [Some-State]: ******
+Locality Name (eg, city) []: ******
+Organization Name (eg, company) [Internet Widgits Pty Ltd]: ******
+Organizational Unit Name (eg, section) []: ******
+Common Name (e.g. server FQDN or YOUR name) []: sistema.servidor.com
+Email Address []: webmaster@servidor.com
+</code></pre>
+
+<p>Copie los archivos creados al directorio donde <strong>Apache</strong> espere encontrarlos. Lea la documentación de su distribución de <strong>GNU/Linux</strong> porque puede ser distinta a la que muestro a continuación que es para <a href="http://gentoo.org/">Gentoo Linux</a>:</p>
+
+<pre><code>$ sudo cp * /etc/ssl/apache2/
+</code></pre>
+
+<p>Cambie los permisos de estos archivos como lo indican estos comandos:</p>
+
+<pre><code>$ sudo chmod 444 /etc/ssl/apache2/SERVIDORSISTEMA.crt
+$ sudo chmod 400 /etc/ssl/apache2/SERVIDORSISTEMA.key
+</code></pre>
+
+<p>Configure el sitio o sistema web en <strong>Apache</strong> para que haga uso del cifrado <strong>SSL</strong> creando un archivo <strong>conf</strong>. En <a href="http://gentoo.org/">Gentoo Linux</a> se usa el directorio <code>/etc/apache2/vhosts.d</code>. Consulte la documentación de su <em>distro</em> para hacerlo de la forma correcta.</p>
+
+<pre><code>$ sudo nano /etc/apache2/vhosts.d/0443_https.conf
+</code></pre>
+
+<p>A continuación sigue una muestra del contenido de <code>0443_https.conf</code> que deberá de ajustar a sus necesidades:</p>
+
+<pre><code># Escuchar el puerto 443
+Listen 443
+
+# Desde cualquier IP por el puerto 80
+NameVirtualHost *:443
+
+# Raiz
+&lt;VirtualHost *:443&gt;
+
+    # Nombre de este servidor web
+    ServerName sistema.servidor.com
+
+    # Habilitar SSL
+    SSLEngine on
+    SSLCipherSuite ALL:!ADH:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv2:+EXP:+eNULL
+    SSLCertificateFile /etc/ssl/apache2/SERVIDORSISTEMA.crt
+    SSLCertificateKeyFile /etc/ssl/apache2/SERVIDORSISTEMA.key
+
+    # Raíz del sitio o sistema web
+    DocumentRoot /var/www/htdocs
+    &lt;Directory /var/www/htdocs&gt;
+        Options -Indexes -FollowSymLinks
+        AllowOverride all
+        Order allow,deny
+        Allow from all
+    &lt;/Directory&gt;
+
+    # Bitácoras
+    ErrorLog /var/log/apache2/ssl_error_log
+    &lt;IfModule log_config_module&gt;
+        TransferLog /var/log/apache2/ssl_access_log
+    &lt;/IfModule&gt;
+
+    # OptRenegotiate
+    &lt;FilesMatch "\.(cgi|shtml|phtml|php)$"&gt;
+        SSLOptions +StdEnvVars
+    &lt;/FilesMatch&gt;
+    &lt;Directory "/var/www/localhost/cgi-bin"&gt;
+        SSLOptions +StdEnvVars
+    &lt;/Directory&gt;
+
+    # ssl-accurate-shutdown
+    &lt;IfModule setenvif_module&gt;
+        BrowserMatch ".*MSIE.*" \
+        nokeepalive ssl-unclean-shutdown \
+        downgrade-1.0 force-response-1.0
+    &lt;/IfModule&gt;
+
+&lt;/VirtualHost&gt;
+</code></pre>
+
+<p>La instalación de <strong>Apache</strong> en <a href="http://gentoo.org/">Gentoo Linux</a> deja por defecto el <strong>SSL</strong> deshabilitado. Así que hay que cambiar el archivo de configuración de arranque:</p>
+
+<pre><code>$ sudo nano /etc/conf.d/apache2
+</code></pre>
+
+<p>Ubique la línea que define el valor <code>APACHE2_OPTS</code> y agregue <code>-D SSL</code>. Por ejemplo, para declarar el uso de <strong>PHP 5</strong> y de <strong>SSL</strong> la línea debe ser:</p>
+
+<pre><code>APACHE2_OPTS="-D SSL -D PHP5"
+</code></pre>
+
+<p>Guarde los cambios realizados en el archivo. Luego, arranque o reinicie el <em>daemon</em> de <strong>Apache</strong> para aplicarlos.</p>
+
+<pre><code>$ sudo /etc/init.d/apache2 restart
+</code></pre>
+
+<p>Verifique que el puerto 443 esté abierto y ejecute su navegador de internet consultando la URL <code>https://localhost</code> para comprobar que funcione. No deje de revisar su <strong>muro de fuego</strong> para tener abierto el puerto 443 si necesita acceder desde otros equipos por red.</p>
+
+<h4 id="referencias">Referencias</h4>
+
+<ul>
+  <li><a href="https://wiki.archlinux.org/index.php/LAMP">Arch Linux LAMP</a></li>
+  <li><a href="http://httpd.apache.org/docs/2.2/ssl/">Apache Documentation 2.2 SSL/TLS Encryption</a></li>
+  <li><a href="https://www.cacert.org/">CAcert</a></li>
+</ul>
 
   </div>
   <!-- PIE -->

@@ -1,6 +1,7 @@
 Markdown: la forma fácil de escribir para web
 =============================================
 
+Corto: Guía de Markdown
 Fecha: 2014-02-09 23:30
 Categorías: Documentación, Markdown
 

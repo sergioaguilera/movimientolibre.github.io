@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
-  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
-  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
     <title>Movimiento Libre</title>
     <link>http://www.movimientolibre.com</link>
     <description>Colección de ideas.</description>
+    <item>
+      <title>Crear certificados autofirmados para Apache 2</title>
+      <link>http://www.movimientolibre.com/apuntes/apache2-certificados-autofirmados.html</link>
+      <description>
+&lt;p&gt;Involucrarse en el &lt;strong&gt;cifrado de la información&lt;/strong&gt; que viaja a través de internet es como adentrarse a un mundo &lt;em&gt;bizarro&lt;/em&gt; que es más complicado que el nuestro. Pero cada día se vuelve más importante e indispensable para cada servicio &lt;em&gt;web&lt;/em&gt; que fabriquemos.&lt;/p&gt;
+
+&lt;p&gt;Podemos listar muchas razones para justificar que &lt;strong&gt;todos&lt;/strong&gt; los sistemas y sitios web deberían &lt;strong&gt;cifrar sus datos al viajar del servidor al cliente y viceversa&lt;/strong&gt;. Pero sólo basta una: el fin de dificultar las acciones de &lt;em&gt;espionaje masivo&lt;/em&gt; al que todos estamos expuestos.&lt;/p&gt;
+
+&lt;p&gt;En este &lt;strong&gt;apunte&lt;/strong&gt; escribo los pasos para &lt;strong&gt;crear certificados autofirmados&lt;/strong&gt; para que el servidor web &lt;strong&gt;Apache&lt;/strong&gt; opere cifrando las comunicaciones con &lt;strong&gt;SSL&lt;/strong&gt;. Dicho de otra forma, es usar el &lt;strong&gt;HTTPS&lt;/strong&gt; en lugar del &lt;strong&gt;HTTP&lt;/strong&gt;.&lt;/p&gt;
+
+</description>
+      <author>guivaloz</author>
+      <pubDate>Sat, 22 Feb 2014 17:30:00 -0600</pubDate>
+      <dc:date>2014-02-22T17:30:00-06:00</dc:date>
+    </item>
     <item>
       <title>Markdown: la forma fácil de escribir para web</title>
       <link>http://www.movimientolibre.com/apuntes/markdown.html</link>
@@ -136,25 +151,6 @@
       <author>guivaloz</author>
       <pubDate>Fri, 27 May 2011 11:20:00 -0500</pubDate>
       <dc:date>2011-05-27T11:20:00-05:00</dc:date>
-    </item>
-    <item>
-      <title>Distribuciones GNU/Linux, entornos y programas libres</title>
-      <link>http://www.movimientolibre.com/presentaciones/distribuciones-gnulinux.html</link>
-      <description>
-&lt;p&gt;&lt;img src=&quot;distribuciones-gnulinux/03-distribuciones-small.jpg&quot; alt=&quot;Distribuciones GNU/Linux 1&quot; /&gt; &lt;img src=&quot;distribuciones-gnulinux/09-scientific-small.jpg&quot; alt=&quot;Distribuciones GNU/Linux 2&quot; /&gt; &lt;img src=&quot;distribuciones-gnulinux/17-equivalentes-small.jpg&quot; alt=&quot;Distribuciones GNU/Linux 3&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Para el XX Semana Académica en la &lt;a href=&quot;http://www.uadec.mx/&quot;&gt;Universidad Autónoma de Coahuila&lt;/a&gt; su servidor elaboró esta amena y visual presentación sobre las distribuciones GNU/Linux y los entornos de escritorio más populares.&lt;/p&gt;
-
-&lt;h4 id=&quot;descargar&quot;&gt;Descargar&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;distribuciones-gnulinux/distribuciones-gnulinux.pdf&quot;&gt;Presentación 3.2 MB&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;distribuciones-gnulinux/distribuciones-gnulinux.tar.gz&quot;&gt;Fuentes LaTeX 6.2 MB&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <author>guivaloz</author>
-      <pubDate>Tue, 19 Oct 2010 23:55:00 -0500</pubDate>
-      <dc:date>2010-10-19T23:55:00-05:00</dc:date>
     </item>
   </channel>
 </rss>

@@ -1,6 +1,7 @@
 Instalación de CentOS para virtualizar
 ======================================
 
+Corto: CentOS para virtualizar
 Fecha: 2014-01-30 10:20
 Categorías: CentOS, Virtualización
 
