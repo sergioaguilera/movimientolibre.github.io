@@ -126,7 +126,7 @@ imprenta.usar_contenido_secundario = false
 
 # El pie es lo que aparecerá en la parte inferior de todas las páginas
 imprenta.pie_html = <<FIN_PIE_HTML
-  Copyright (c) 2006-2013 Guillermo Valdés Lozano.<br>
+  Copyright (c) 2006-2014 Guillermo Valdés Lozano.<br>
   Se otorga permiso para copiar, distribuir y/o modificar este documento bajo los términos de la Licencia de Documentación Libre de GNU, Versión 1.2 o cualquier otra versión posterior publicada por la Free Software Foundation; sin Secciones Invariantes ni Textos de Cubierta Delantera ni Textos de Cubierta Trasera.<br>
   Una copia de la licencia está incluida en la sección titulada GNU Free Documentation License.
 FIN_PIE_HTML

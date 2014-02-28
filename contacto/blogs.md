@@ -1,10 +1,11 @@
 Blogs que recomiendo
 ====================
 
-Fecha: 2006-08-01 00:00
+Fecha: 2006-08-29 00:00
 
 Ya sea por amistad, afinidad tecnológica o mero interés, recomiendo que visiten y sigan estos _blogs_ en español. Están por orden alfabético:
 
+* [De todo un poco](http://guabyboy.blogspot.mx/) es el blog de _guabyboy_ donde escribe experiencias sobre Guadalinex y OpenSUSE.
 * [Enekosarasola](http://enekosarasola.ikasle.aeg.es) comparte sus descubrimientos del Software Libre.
 * [Jesús Gómez](http://mx-it.blogspot.com/) escribe el blog _Tecnologías de Información_ que tiene como temática principal el desarrollo de software.
 * [La sombra del helicóptero](http://www.lasombradelhelicoptero.com/) trata sobre GNU/Linux y varias personas escriben allí.
